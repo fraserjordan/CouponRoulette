@@ -1,0 +1,86 @@
+﻿@model string
+
+@{
+    ViewBag.Title = "Create Coupon";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<form action="/Coupon/Create" method="post" name="form">
+    <div class="FormContent" ng-controller="createCouponController">
+        @*<h2 class="FormTitle">Register</h2>*@
+        <div id="GeneralInput">
+            <div class="InputContainer">
+                <md-input-container style="text-align: left;" class="MinWidth">
+                    <span>Get</span>
+                    <label>Quantity</label>
+                    <md-select style="margin-top: 16px;" name="QuantityOne" ng-model="couponModel.quantityOne" ng-disabled="isLoading" ng-required="true">
+                        <md-option ng-repeat="quantity in quantityOptions" ng-value="quantity">
+                            {{quantity}}
+                        </md-option>
+                    </md-select>
+                    @Html.Partial("_AngularMessages", "form.QuantityOne")
+                </md-input-container>
+            </div>
+            <div class="InputContainer">
+                <md-input-container style="text-align: left; margin: 0;" class="MinWidth">
+                    <label>Item One</label>
+                    <input type="text" ng-model="couponModel.itemOne" name="ItemOne" ng-required="true"/>
+                    @Html.Partial("_AngularMessages", "form.ItemOne")
+                </md-input-container>
+            </div>
+            <div class="InputContainer">
+                <md-input-container style="text-align: left; margin: 0;" class="MinWidth">
+                    <label>Option</label>
+                    <md-select ng-model="couponModel.multiplierOption" name="MultiplierOption" ng-required="true" ng-disabled="isLoading">
+                        <md-option ng-repeat="multiplierOption in multiplierOptions" ng-click="changeFreeOptionInput(multiplierOption)" ng-value="multiplierOption">
+                            {{multiplierOption}}
+                        </md-option>
+                    </md-select>
+                    @Html.Partial("_AngularMessages", "form.MultiplierOption")
+                </md-input-container>
+            </div>
+            <div ng-hide="hidePriceOptions">
+                <div class="InputContainer">
+                    <md-input-container style="text-align: left; margin-bottom: 0;" class="MinWidth">
+                        <label>Price</label>
+                        <input type="text" ng-model="couponModel.price" typ="number" ng-maxlength="3" name="Price" ng-required="!hidePriceOptions" />
+                        @Html.Partial("_AngularMessages", "form.Price")
+                    </md-input-container>
+                </div>
+            </div>
+            <div ng-hide="hideOtherOptions">
+                <div class="InputContainer">
+                    <md-input-container style="text-align: left;" class="MinWidth">
+                        <label>Quantity</label>
+                        <md-select ng-model="couponModel.quantityTwo" name="QuantityTwo" ng-required="!hideOtherOptions" ng-disabled="isLoading">
+                            <md-option ng-repeat="quantity in quantityOptions" ng-value="quantity">
+                                {{quantity}}
+                            </md-option>
+                        </md-select>
+                        @Html.Partial("_AngularMessages", "form.QuantityTwo")
+                    </md-input-container>
+                </div>
+                <div class="InputContainer">
+                    <md-input-container style="text-align: left; margin: 0;" class="MinWidth">
+                        <label>Item Two</label>
+                        <input type="text" ng-model="couponModel.itemTwo" name="ItemTwo" ng-required="!hideOtherOptions"/>
+                        @Html.Partial("_AngularMessages", "form.ItemTwo")
+                    </md-input-container>
+                </div>
+            </div>
+            <h4 style="margin-bottom: 0;">Preview of your deal.</h4>
+            <div class="FormContent" style="width: 80%">
+                <md-card>
+                    <md-card-title class="PreviewCardTitleContainer">
+                        <div class="previewDealTitle">
+                            <div class="previewDealTitleText">Get {{couponModel.quantityOne}} {{couponModel.itemOne}} {{couponModel.multiplierOption}} {{couponModel.price === '' ? '' : "$"+couponModel.price}} {{couponModel.quantityTwo}} {{couponModel.itemTwo}}</div>
+                        </div>
+                    </md-card-title>
+                </md-card>
+                <md-button class="Button" ng-disabled="!form.$valid" ng-click="createCoupon()" style="width: 200px; margin-bottom: 25px; margin-top: 15px;">Create Coupon</md-button>
+            </div>
+        </div>
+    </div>
+</form>
+
+

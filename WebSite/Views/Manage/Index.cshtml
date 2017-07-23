@@ -1,0 +1,40 @@
+﻿@model Customer.Models.IndexViewModel
+@{
+    ViewBag.Title = "Manage";
+    Layout = null;
+}
+
+@Html.Partial("_LoginPartial")
+<div class="Main">
+    <div style="height: auto;" ng-controller="accountController">
+        <h2>your coupons</h2>
+        <div class="Coupons">
+            @foreach (var coupon in Model.Coupons)
+            {
+                <md-card class="CouponCard">
+                    <md-card-title style="text-align: left;">
+                        <md-card-title-text>
+                            <span class="md-headline">@coupon.Title</span>
+                            <span class="md-subhead"><strong>@coupon.Business.BusinessName</strong></span>
+                            <span class="md-subhead"><strong><i style="vertical-align: middle" class="material-icons">access_time</i> @coupon.ValidFrom.ToString("htt")-@coupon.ValidTo.ToString("htt")</strong></span>
+                        </md-card-title-text>
+                    </md-card-title>
+                    <md-card-actions layout="row" style="padding-bottom: 15px;">
+                        <a class="CouponCardLink" target="_blank" href="http://maps.google.com/?q=@coupon.Business.BusinessAddress"><i style="color: #2196F3;" class="material-icons IconButton">location_on</i></a>
+                        <a class="CouponCardLink" href="tel:@coupon.Business.BusinessPhone"><i style="color: #FFCA28;" class="material-icons IconButton">phone</i></a>
+                        <a class="CouponCardLink" target="_blank" href="@coupon.Business.BusinesssWebsite"><i style="color: #F44336;" class="material-icons IconButton">language</i></a>
+                        <a class="CouponCardLink" style="cursor: pointer" ng-click="ShowCouponCode(@coupon.Id, @coupon.ValidFrom.ToString("HH"), @coupon.ValidTo.ToString("HH"))"><i style="color: orangered" class="material-icons IconButton">get_app</i></a>
+                    </md-card-actions>
+                </md-card>
+            }
+        </div>
+        <h4>Change your account settings</h4>
+        <hr />
+        <dl class="dl-horizontal">
+
+            <dd>
+                <md-button href="/Manage/ChangePassword">change password</md-button>
+            </dd>
+        </dl>
+    </div>
+</div>

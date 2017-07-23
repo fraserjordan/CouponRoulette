@@ -1,0 +1,39 @@
+﻿@model Business.Models.ForgotPasswordViewModel
+@{
+    ViewBag.Title = "Verify address";
+}
+
+<form name="form" ng-controller="addressVerificationController">
+    @Html.AntiForgeryToken()
+    <div class="FormContent">
+        <md-card class="ResetPasswordFormContainer" style="height: auto;">
+            <md-card-title class="NoPadding">
+                <md-card-title-text style="text-align: center;">
+                    <md-toolbar class="CardFormSectionHeaderContainer md-theme-light">
+                        <h1 class="ForgotPasswordFormHeader">
+                            <span>Verify address</span>
+                        </h1>
+                    </md-toolbar>
+                    <div class="InputContainer">
+                        <md-input-container style="margin-bottom: 0;">
+                            <label>email</label>
+                            <input name="Email" type="email" ng-model="email" ng-required="true"/>
+                            @Html.Partial("_AngularMessages", "form.Email")
+                        </md-input-container>
+                    </div>
+                    <div class="InputContainer">
+                        <md-input-container style="margin-bottom: 0;">
+                            <label>verification code</label>
+                            <input name="VerificationCode" ng-model="verificationCode" ng-required="true" />
+                            @Html.Partial("_AngularMessages", "form.VerificationCode")
+                        </md-input-container>
+                    </div>
+                    <div style="width: 100%;">
+                        <md-button ng-click="submit(form)" ng-disabled="!form.$valid" class="ManageActionButton Button md-primary">Verify address</md-button>
+                    </div>
+                </md-card-title-text>
+            </md-card-title>
+        </md-card>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    </div>
+</form>

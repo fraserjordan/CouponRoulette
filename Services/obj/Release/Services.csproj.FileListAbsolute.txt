@@ -1,0 +1,155 @@
+E:\WebSite\Services\bin\Release\Services.dll
+E:\WebSite\Services\bin\Release\Services.pdb
+E:\WebSite\Services\bin\Release\Data.dll
+E:\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WebSite\Services\bin\Release\EntityFramework.dll
+E:\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.Core.dll
+E:\WebSite\Services\bin\Release\Data.pdb
+E:\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WebSite\Services\bin\Release\EntityFramework.xml
+E:\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.Core.xml
+E:\WebSite\Services\obj\Release\Services.csprojResolveAssemblyReference.cache
+E:\WebSite\Services\obj\Release\Services.dll
+E:\WebSite\Services\obj\Release\Services.pdb
+E:\WebSite\Services\bin\Release\Microsoft.Web.Infrastructure.dll
+E:\WebSite\Services\bin\Release\RazorEngine.dll
+E:\WebSite\Services\bin\Release\System.Web.Helpers.dll
+E:\WebSite\Services\bin\Release\System.Web.Mvc.dll
+E:\WebSite\Services\bin\Release\System.Web.Razor.dll
+E:\WebSite\Services\bin\Release\System.Web.WebPages.Deployment.dll
+E:\WebSite\Services\bin\Release\System.Web.WebPages.dll
+E:\WebSite\Services\bin\Release\System.Web.WebPages.Razor.dll
+E:\WebSite\Services\bin\Release\RazorEngine.xml
+E:\WebSite\Services\bin\Release\System.Web.Helpers.xml
+E:\WebSite\Services\bin\Release\System.Web.Mvc.xml
+E:\WebSite\Services\bin\Release\System.Web.Razor.xml
+E:\WebSite\Services\bin\Release\System.Web.WebPages.xml
+E:\WebSite\Services\bin\Release\System.Web.WebPages.Deployment.xml
+E:\WebSite\Services\bin\Release\System.Web.WebPages.Razor.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Services.dll.config
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Services.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Services.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\AutoMapper.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Data.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Microsoft.Owin.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Owin.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\RazorEngine.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.Helpers.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.Mvc.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.Razor.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.WebPages.Deployment.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.WebPages.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.WebPages.Razor.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\EntityFramework.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.Core.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Data.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\AutoMapper.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Microsoft.Owin.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\RazorEngine.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.Helpers.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.Mvc.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.Razor.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.WebPages.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.WebPages.Deployment.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\System.Web.WebPages.Razor.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\EntityFramework.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.Core.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\obj\Release\Services.csprojResolveAssemblyReference.cache
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\obj\Release\Services.ReturnMessages.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\obj\Release\Services.csproj.GenerateResource.Cache
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\obj\Release\Services.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\obj\Release\Services.pdb
+D:\WebSite\Services\bin\Release\Services.dll.config
+D:\WebSite\Services\bin\Release\Services.dll
+D:\WebSite\Services\bin\Release\Services.pdb
+D:\WebSite\Services\bin\Release\AutoMapper.dll
+D:\WebSite\Services\bin\Release\Data.dll
+D:\WebSite\Services\bin\Release\Microsoft.Azure.KeyVault.Core.dll
+D:\WebSite\Services\bin\Release\Microsoft.Data.Edm.dll
+D:\WebSite\Services\bin\Release\Microsoft.Data.OData.dll
+D:\WebSite\Services\bin\Release\Microsoft.Data.Services.Client.dll
+D:\WebSite\Services\bin\Release\Microsoft.Owin.dll
+D:\WebSite\Services\bin\Release\Microsoft.Owin.Host.SystemWeb.dll
+D:\WebSite\Services\bin\Release\Microsoft.Web.Infrastructure.dll
+D:\WebSite\Services\bin\Release\Microsoft.WindowsAzure.Storage.dll
+D:\WebSite\Services\bin\Release\Newtonsoft.Json.dll
+D:\WebSite\Services\bin\Release\Owin.dll
+D:\WebSite\Services\bin\Release\RazorEngine.dll
+D:\WebSite\Services\bin\Release\System.Spatial.dll
+D:\WebSite\Services\bin\Release\System.Web.Helpers.dll
+D:\WebSite\Services\bin\Release\System.Web.Mvc.dll
+D:\WebSite\Services\bin\Release\System.Web.Razor.dll
+D:\WebSite\Services\bin\Release\System.Web.WebPages.Deployment.dll
+D:\WebSite\Services\bin\Release\System.Web.WebPages.dll
+D:\WebSite\Services\bin\Release\System.Web.WebPages.Razor.dll
+D:\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WebSite\Services\bin\Release\EntityFramework.dll
+D:\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.Core.dll
+D:\WebSite\Services\bin\Release\Data.pdb
+D:\WebSite\Services\bin\Release\AutoMapper.xml
+D:\WebSite\Services\bin\Release\Microsoft.Azure.KeyVault.Core.xml
+D:\WebSite\Services\bin\Release\Microsoft.Data.Edm.xml
+D:\WebSite\Services\bin\Release\Microsoft.Data.OData.xml
+D:\WebSite\Services\bin\Release\Microsoft.Data.Services.Client.xml
+D:\WebSite\Services\bin\Release\Microsoft.Owin.xml
+D:\WebSite\Services\bin\Release\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebSite\Services\bin\Release\Microsoft.WindowsAzure.Storage.pdb
+D:\WebSite\Services\bin\Release\Microsoft.WindowsAzure.Storage.xml
+D:\WebSite\Services\bin\Release\Newtonsoft.Json.xml
+D:\WebSite\Services\bin\Release\RazorEngine.xml
+D:\WebSite\Services\bin\Release\System.Spatial.xml
+D:\WebSite\Services\bin\Release\System.Web.Helpers.xml
+D:\WebSite\Services\bin\Release\System.Web.Mvc.xml
+D:\WebSite\Services\bin\Release\System.Web.Razor.xml
+D:\WebSite\Services\bin\Release\System.Web.WebPages.xml
+D:\WebSite\Services\bin\Release\System.Web.WebPages.Deployment.xml
+D:\WebSite\Services\bin\Release\System.Web.WebPages.Razor.xml
+D:\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebSite\Services\bin\Release\EntityFramework.xml
+D:\WebSite\Services\bin\Release\Microsoft.AspNet.Identity.Core.xml
+D:\WebSite\Services\bin\Release\de\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Release\es\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Release\fr\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Release\it\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Release\ja\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Release\ko\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Release\ru\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Release\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Release\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Release\de\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Release\es\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Release\fr\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Release\it\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Release\ja\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Release\ko\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Release\ru\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Release\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Release\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Release\de\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Release\es\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Release\fr\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Release\it\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Release\ja\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Release\ko\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Release\ru\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Release\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Release\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Release\de\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Release\es\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Release\fr\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Release\it\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Release\ja\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Release\ko\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Release\ru\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Release\zh-Hans\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Release\zh-Hant\System.Spatial.resources.dll
+D:\WebSite\Services\obj\Release\Services.csprojResolveAssemblyReference.cache
+D:\WebSite\Services\obj\Release\Services.ReturnMessages.resources
+D:\WebSite\Services\obj\Release\Services.csproj.GenerateResource.Cache
+D:\WebSite\Services\obj\Release\Services.dll
+D:\WebSite\Services\obj\Release\Services.pdb

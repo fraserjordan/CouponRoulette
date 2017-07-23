@@ -1,0 +1,503 @@
+﻿@model Customer.Models.ApplicationUser
+
+@{
+    Layout = null;
+}
+
+@Html.Partial("_LoginPartial")
+
+<div ng-controller="businessHomeController" class="Main">
+<div class="Main">
+    <div class="CouponControls">
+            <i style="color: #2196F3; background-color: #BBDEFB; border-top: 1px #2196F3 solid;"class="material-icons CursorPointer BusinessControl" ng-click="createCouponDialog()">add_circle_outline</i>
+            <i style="color: #FFCA28; background-color: #FFF9C4; border-top: 1px #FFCA28 solid;"class="material-icons CursorPointer BusinessControl" ng-click="editCouponDialog()">mode_edit</i>
+            <i style="color: #F44336; background-color: #FFCDD2; border-top: 1px #F44336 solid;"class="material-icons CursorPointer BusinessControl" ng-click="deleteCouponDialog()">delete</i>
+            <i style="color: #4CAF50; background-color: #C8E6C9; border-top: 1px #4CAF50 solid;" class="material-icons CursorPointer BusinessControl" ng-click="showRedeemCouponDialog()">input</i>
+        </div>
+
+    @if (Model.Coupons.Count > 0)
+    {
+        <table class="CouponTable">
+            <tr>
+                <th style="text-align: left;">Coupon title</th>
+                <th style="text-align: right;">Amount left</th>
+            </tr>
+            @foreach (var coupon in Model.Coupons.GroupBy(x => x.Title))
+            {
+                <tr style="border-bottom: solid 1px black;">
+                    <td style="text-align: left">@coupon.Key</td>
+                    <td style="text-align: right">@coupon.Count()</td>
+                </tr>
+            }
+        </table>
+        <md-button ng-click="addNewCouponDialog()" style="z-index: 0; width: 70px;height: 70px;" class="md-fab Button">create</md-button>
+    }
+    else
+    {
+        <h2>You don't currentley have any coupons, try creating one</h2>
+        <md-button ng-click="addNewCouponDialog()" style="z-index: 0; width: 70px;height: 70px;" class="md-fab Button">create</md-button>
+    }
+</div>
+
+<script type="text/ng-template" id="addcoupon.html">
+    <div class="DialogDiv" ng-controller="businessHomeController">
+        <md-input-container class="DialogInput">
+            <label>List of coupons</label>
+            <md-select ng-model="selectedCouponId">
+                @foreach (var coupon in Model.SavedCoupons)
+                {
+                    <md-option value="@coupon.Id">
+                        @coupon.Title
+                    </md-option>
+                }
+            </md-select>
+        </md-input-container>
+
+        <md-input-container class="DialogInput">
+            <label>Amount to add</label>
+            <md-select ng-model="couponAmount">
+                <md-option value="1">
+                    1
+                </md-option>
+                <md-option value="2">
+                    2
+                </md-option>
+                <md-option value="3">
+                    3
+                </md-option>
+                <md-option value="4">
+                    4
+                </md-option>
+                <md-option value="5">
+                    5
+                </md-option>
+            </md-select>
+        </md-input-container>
+        <div>
+            <md-button class="Button DialogButton" ng-click="addNewCoupon()">Add Coupons</md-button>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="deletecoupon.html">
+    <div class="DialogDiv" ng-controller="businessHomeController">
+        <md-input-container class="DialogInput">
+            <label>List of coupons</label>
+            <md-select ng-model="selectedCouponId">
+                @foreach (var coupon in Model.SavedCoupons)
+                {
+                    <md-option value="@coupon.Id">
+                        @coupon.Title
+                    </md-option>
+                }
+            </md-select>
+        </md-input-container>
+        <div>
+            <md-button class="Button DialogButton" style="margin-bottom: 10px !important;" ng-click="deleteSavedCoupon()">Delete Saved Coupon</md-button>
+        </div>
+        <div>
+            <md-button class="Button DialogButton" style="margin-bottom: 10px !important;" ng-click="deleteSingleActiveCoupon()">Delete One Active Coupon</md-button>
+        </div>
+        <div>
+            <md-button class="Button DialogButton" ng-click="deleteAllActiveCoupon()">Delete All Active Coupons</md-button>
+        </div>
+    </div>
+</script>
+
+<script type="text/ng-template" id="editcoupon.html">
+        <div class="DialogDiv" ng-controller="businessHomeController">
+            
+            <md-input-container class="md-block DialogInput">
+                <label>Select a coupon</label>
+                <md-select class="DialogInput" ng-model="selectedCouponEditId" ng-change="loadEditObject()">
+                    @foreach (var coupon in Model.SavedCoupons)
+                    {
+                        <md-option value="@coupon.Id">
+                            @coupon.Title
+                        </md-option>
+                    }
+                </md-select>
+                </md-input-container>
+                <md-input-container class="md-block DialogInput" style="margin-bottom: 0;">
+                    <label>title</label>
+                    <input type="text" ng-model="editCouponTitle">
+                </md-input-container>
+                <md-input-container class="md-block DialogInput" style="margin-top: 0;">
+                    <label>category</label>
+                    <md-select ng-model="editCouponCategory">
+                        <md-option value="0">
+                            Drinks
+                        </md-option>
+                        <md-option value="1">
+                            Breakfast
+                        </md-option>
+                        <md-option value="2">
+                            Lunch
+                        </md-option>
+                        <md-option value="3">
+                            Dinner
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+                <md-input-container class="md-block DialogInput">
+                    <label>valid from</label>
+                    <md-select ng-model="editValidFrom">
+                        <md-option value="01">
+                            01:00
+                        </md-option>
+                        <md-option value="02">
+                            02:00
+                        </md-option>
+                        <md-option value="03">
+                            03:00
+                        </md-option>
+                        <md-option value="04">
+                            04:00
+                        </md-option>
+                        <md-option value="05">
+                            05:00
+                        </md-option>
+                        <md-option value="06">
+                            06:00
+                        </md-option>
+                        <md-option value="07">
+                            07:00
+                        </md-option>
+                        <md-option value="08">
+                            08:00
+                        </md-option>
+                        <md-option value="09">
+                            09:00
+                        </md-option>
+                        <md-option value="10">
+                            10:00
+                        </md-option>
+                        <md-option value="11">
+                            11:00
+                        </md-option>
+                        <md-option value="12">
+                            12:00
+                        </md-option>
+                        <md-option value="13">
+                            13:00
+                        </md-option>
+                        <md-option value="14">
+                            14:00
+                        </md-option>
+                        <md-option value="15">
+                            15:00
+                        </md-option>
+                        <md-option value="16">
+                            16:00
+                        </md-option>
+                        <md-option value="17">
+                            17:00
+                        </md-option>
+                        <md-option value="18">
+                            18:00
+                        </md-option>
+                        <md-option value="19">
+                            19:00
+                        </md-option>
+                        <md-option value="20">
+                            20:00
+                        </md-option>
+                        <md-option value="21">
+                            21:00
+                        </md-option>
+                        <md-option value="22">
+                            22:00
+                        </md-option>
+                        <md-option value="23">
+                            23:00
+                        </md-option>
+                        <md-option value="24">
+                            24:00
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+                <md-input-container class="md-block DialogInput">
+                    <label>valid to</label>
+                    <md-select ng-model="editValidTo">
+                        <md-option value="01">
+                            01:00
+                        </md-option>
+                        <md-option value="02">
+                            02:00
+                        </md-option>
+                        <md-option value="03">
+                            03:00
+                        </md-option>
+                        <md-option value="04">
+                            04:00
+                        </md-option>
+                        <md-option value="05">
+                            05:00
+                        </md-option>
+                        <md-option value="06">
+                            06:00
+                        </md-option>
+                        <md-option value="07">
+                            07:00
+                        </md-option>
+                        <md-option value="08">
+                            08:00
+                        </md-option>
+                        <md-option value="09">
+                            09:00
+                        </md-option>
+                        <md-option value="10">
+                            10:00
+                        </md-option>
+                        <md-option value="11">
+                            11:00
+                        </md-option>
+                        <md-option value="12">
+                            12:00
+                        </md-option>
+                        <md-option value="13">
+                            13:00
+                        </md-option>
+                        <md-option value="14">
+                            14:00
+                        </md-option>
+                        <md-option value="15">
+                            15:00
+                        </md-option>
+                        <md-option value="16">
+                            16:00
+                        </md-option>
+                        <md-option value="17">
+                            17:00
+                        </md-option>
+                        <md-option value="18">
+                            18:00
+                        </md-option>
+                        <md-option value="19">
+                            19:00
+                        </md-option>
+                        <md-option value="20">
+                            20:00
+                        </md-option>
+                        <md-option value="21">
+                            21:00
+                        </md-option>
+                        <md-option value="22">
+                            22:00
+                        </md-option>
+                        <md-option value="23">
+                            23:00
+                        </md-option>
+                        <md-option value="24">
+                            24:00
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+                <md-input-container class="md-block DialogInput">
+                    <label>confirm password</label>
+                    <input type="password" ng-model="editCouponPassword">
+                </md-input-container>
+                <div>
+                    <md-button class="Button DialogButton" style="margin-bottom: 10px !important;" ng-click="editCoupon()">Save Coupon</md-button>
+                </div>
+</div>
+    </script>
+
+<script type="text/ng-template" id="createcoupon.html">
+            <div class="DialogDiv" ng-controller="businessHomeController">
+                <md-input-container class="md-block DialogInput" style="margin-bottom: 0;">
+                    <label>title</label>
+                    <input type="text" ng-model="CouponTitle" autocomplete="off" name="title">
+                </md-input-container>
+                <md-input-container class="md-block DialogInput" style="margin-top: 0;">
+                    <label>category</label>
+                    <md-select ng-model="CouponCategory">
+                        <md-option value="0">
+                            Drinks
+                        </md-option>
+                        <md-option value="1">
+                            Breakfast
+                        </md-option>
+                        <md-option value="2">
+                            Lunch
+                        </md-option>
+                        <md-option value="3">
+                            Dinner
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+                <md-input-container class="md-block DialogInput">
+                    <label>valid from</label>
+                    <md-select ng-model="validFrom">
+                        <md-option value="1">
+                            01:00
+                        </md-option>
+                        <md-option value="2">
+                            02:00
+                        </md-option>
+                        <md-option value="3">
+                            03:00
+                        </md-option>
+                        <md-option value="4">
+                            04:00
+                        </md-option>
+                        <md-option value="5">
+                            05:00
+                        </md-option>
+                        <md-option value="6">
+                            06:00
+                        </md-option>
+                        <md-option value="7">
+                            07:00
+                        </md-option>
+                        <md-option value="8">
+                            08:00
+                        </md-option>
+                        <md-option value="9">
+                            09:00
+                        </md-option>
+                        <md-option value="10">
+                            10:00
+                        </md-option>
+                        <md-option value="11">
+                            11:00
+                        </md-option>
+                        <md-option value="12">
+                            12:00
+                        </md-option>
+                        <md-option value="13">
+                            13:00
+                        </md-option>
+                        <md-option value="14">
+                            14:00
+                        </md-option>
+                        <md-option value="15">
+                            15:00
+                        </md-option>
+                        <md-option value="16">
+                            16:00
+                        </md-option>
+                        <md-option value="17">
+                            17:00
+                        </md-option>
+                        <md-option value="18">
+                            18:00
+                        </md-option>
+                        <md-option value="19">
+                            19:00
+                        </md-option>
+                        <md-option value="20">
+                            20:00
+                        </md-option>
+                        <md-option value="21">
+                            21:00
+                        </md-option>
+                        <md-option value="22">
+                            22:00
+                        </md-option>
+                        <md-option value="23">
+                            23:00
+                        </md-option>
+                        <md-option value="24">
+                            24:00
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+                <md-input-container class="md-block DialogInput">
+                    <label>valid to</label>
+                    <md-select ng-model="validTo">
+                        <md-option value="1">
+                            01:00
+                        </md-option>
+                        <md-option value="2">
+                            02:00
+                        </md-option>
+                        <md-option value="3">
+                            03:00
+                        </md-option>
+                        <md-option value="4">
+                            04:00
+                        </md-option>
+                        <md-option value="5">
+                            05:00
+                        </md-option>
+                        <md-option value="6">
+                            06:00
+                        </md-option>
+                        <md-option value="7">
+                            07:00
+                        </md-option>
+                        <md-option value="8">
+                            08:00
+                        </md-option>
+                        <md-option value="9">
+                            09:00
+                        </md-option>
+                        <md-option value="10">
+                            10:00
+                        </md-option>
+                        <md-option value="11">
+                            11:00
+                        </md-option>
+                        <md-option value="12">
+                            12:00
+                        </md-option>
+                        <md-option value="13">
+                            13:00
+                        </md-option>
+                        <md-option value="14">
+                            14:00
+                        </md-option>
+                        <md-option value="15">
+                            15:00
+                        </md-option>
+                        <md-option value="16">
+                            16:00
+                        </md-option>
+                        <md-option value="17">
+                            17:00
+                        </md-option>
+                        <md-option value="18">
+                            18:00
+                        </md-option>
+                        <md-option value="19">
+                            19:00
+                        </md-option>
+                        <md-option value="20">
+                            20:00
+                        </md-option>
+                        <md-option value="21">
+                            21:00
+                        </md-option>
+                        <md-option value="22">
+                            22:00
+                        </md-option>
+                        <md-option value="23">
+                            23:00
+                        </md-option>
+                        <md-option value="24">
+                            24:00
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+                <md-input-container class="md-block DialogInput">
+                    <label>confirm password</label>
+                    <input type="password" ng-model="CouponPassword">
+                </md-input-container>
+                <div>
+                    <md-button class="Button DialogButton" style="margin-bottom: 10px !important;" ng-click="createCoupon()">Create Coupon</md-button>
+                </div>
+            </div>
+        </script>
+<script type="text/ng-template" id="redeemcoupon.html">
+    <div class="DialogDiv" ng-controller="businessHomeController">
+        <md-input-container class="md-block DialogInput">
+            <label>Coupon Code</label>
+            <input type="text" ng-model="couponCode">
+        </md-input-container>
+        <div>
+            <md-button class="Button DialogButton" ng-click="redeemCoupon()">Redeem Coupon</md-button>
+        </div>
+    </div>
+</script>
+</div>

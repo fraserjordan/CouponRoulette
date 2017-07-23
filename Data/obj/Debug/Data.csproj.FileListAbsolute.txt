@@ -1,0 +1,64 @@
+E:\WebSite\Data\bin\Debug\Data.dll.config
+E:\WebSite\Data\bin\Debug\Data.dll
+E:\WebSite\Data\bin\Debug\Data.pdb
+E:\WebSite\Data\bin\Debug\EntityFramework.dll
+E:\WebSite\Data\bin\Debug\EntityFramework.SqlServer.dll
+E:\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WebSite\Data\bin\Debug\EntityFramework.xml
+E:\WebSite\Data\bin\Debug\EntityFramework.SqlServer.xml
+E:\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WebSite\Data\obj\Debug\Data.Migrations.InitialBusinessUserSetup.resources
+E:\WebSite\Data\obj\Debug\Data.Migrations.AddRatingToBusinessInfo.resources
+E:\WebSite\Data\obj\Debug\Data.Migrations.RemoveGoogleId.resources
+E:\WebSite\Data\obj\Debug\Data.csproj.GenerateResource.Cache
+E:\WebSite\Data\obj\Debug\Data.dll
+E:\WebSite\Data\obj\Debug\Data.pdb
+E:\WebSite\Data\obj\Debug\Data.Migrations.UpdateDatabase.resources
+E:\WebSite\Data\obj\Debug\Data.Migrations.FixRekatonships.resources
+E:\WebSite\Data\obj\Debug\Data.Migrations.addActriveCouponRelationship.resources
+E:\WebSite\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+E:\WebSite\Data\obj\Debug\Data.Migrations.AddAdressVerificationStatus.resources
+E:\WebSite\Data\obj\Debug\Data.Migrations.AddAddressVerificationCode.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\bin\Debug\Data.dll.config
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\bin\Debug\Data.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\bin\Debug\Data.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\bin\Debug\EntityFramework.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\bin\Debug\EntityFramework.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.Migrations.InitialBusinessUserSetup.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.Migrations.AddRatingToBusinessInfo.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.Migrations.RemoveGoogleId.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.Migrations.UpdateDatabase.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.Migrations.FixRekatonships.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.Migrations.addActriveCouponRelationship.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.Migrations.AddAdressVerificationStatus.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.Migrations.AddAddressVerificationCode.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.Migrations.ChangeWebsiteUrlName.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.csproj.GenerateResource.Cache
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
+D:\WebSite\Data\bin\Debug\Data.dll.config
+D:\WebSite\Data\bin\Debug\Data.dll
+D:\WebSite\Data\bin\Debug\Data.pdb
+D:\WebSite\Data\bin\Debug\EntityFramework.dll
+D:\WebSite\Data\bin\Debug\EntityFramework.SqlServer.dll
+D:\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WebSite\Data\bin\Debug\EntityFramework.xml
+D:\WebSite\Data\bin\Debug\EntityFramework.SqlServer.xml
+D:\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\WebSite\Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebSite\Data\obj\Debug\Data.Migrations.initial.resources
+D:\WebSite\Data\obj\Debug\Data.Migrations.AddCouponTextToAvailableCoupons.resources
+D:\WebSite\Data\obj\Debug\Data.Migrations.AddMenuUrlToBusinessInfo.resources
+D:\WebSite\Data\obj\Debug\Data.csproj.GenerateResource.Cache
+D:\WebSite\Data\obj\Debug\Data.dll
+D:\WebSite\Data\obj\Debug\Data.pdb

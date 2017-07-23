@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <!-- Chrome, Firefox OS, Opera and Vivaldi -->
+    <meta name="theme-color" content="#4CAF50">
+    <meta name="mobile-web-app-capable" content="yes">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#4CAF50">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="#4CAF50">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <title>Test</title>
+    @Styles.Render("~/Content/css")
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    @Scripts.Render("~/bundles/angularmaterial")
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9zkC1hWxkL6Ht0GH2gGK7nj-z6ufq8cc&libraries=places"></script>
+</head>
+
+<body>
+    <header style="text-align: center">
+        <div aria-busy="false" aria-label="Loading, please wait." role="progressbar"></div>
+        <div class="Notification MainNotification">
+            <p class="NotificationContent" style="color: white;">
+
+            </p>
+            <hr style="width: 90%;" />
+            <a onclick="HideNotificationSlider()"><i style="cursor: pointer; margin-bottom: 15px; color: white;" class="material-icons">cancel</i></a>
+            <div class="NotificationBorder"></div>
+
+        </div>
+    </header>
+    <div class="navbar">
+        <div style="text-align: center;">
+            <a class="GreyLink SiteTitle" href="/Home/Index">
+
+            </a>
+        </div>
+    </div> 
+    @Html.Partial("_LoginPartial")
+<div id="MainBody" ng-app="freeCouponsApp">
+    @RenderBody()
+</div>
+    <script>
+        (function ($) {
+            $.fn.textfill = function (maxFontSize) {
+                maxFontSize = parseInt(maxFontSize, 10);
+                return this.each(function () {
+                    var ourText = $("span", this),
+                        parent = ourText.parent(),
+                        maxHeight = parent.height(),
+                        maxWidth = parent.width(),
+                        fontSize = parseInt(ourText.css("fontSize"), 10),
+                        multiplier = maxWidth / ourText.width(),
+                        newSize = (fontSize * (multiplier - 0.1));
+                    ourText.css(
+                        "fontSize",
+                        (maxFontSize > 0 && newSize > maxFontSize) ?
+                        maxFontSize :
+                            newSize
+                    );
+                });
+            };
+        })(jQuery);
+    </script>
+@*    <div class="footer">*@
+@*        &copy; @DateTime.Now.Year - Free Stuff*@
+@*    </div>*@
+
+</body>
+
+</html>

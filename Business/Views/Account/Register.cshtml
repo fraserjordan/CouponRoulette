@@ -1,0 +1,65 @@
+﻿@using System.Web.UI.WebControls
+@model Business.Models.RegisterViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<title>Register - Simple Coupons</title>
+
+<form action="/Account/Register" method="post" name="form">
+    <div class="FormContent" ng-controller="registerController">
+        <md-card class="RegisterFormContainer" style="height: auto;">
+            <md-card-title class="NoPadding">
+                <md-card-title-text style="text-align: center;">
+                    <md-toolbar class="CardFormSectionHeaderContainer md-theme-light">
+                        <h1 class="CardFormSectionHeader">
+                            <span>Register</span>
+                        </h1>
+                    </md-toolbar>
+                    <div class="InputContainer">
+                        <md-input-container style="margin-bottom: 0;">
+                            <label>email</label>
+                            <input type="email" ng-model="email" Name="Email" ng-required="true"/>
+                            @Html.Partial("_AngularMessages", "form.Email")
+                        </md-input-container>
+                    </div>
+                    <div class="InputContainer">
+                        <md-input-container style="margin-bottom: 0;">
+                            <label>password</label>
+                            <input type="password" ng-model="password" match="confirmPassword" Name="Password" ng-required="true" ng-minlength="4" ng-maxlength="20" />
+                            @Html.Partial("_AngularMessages", "form.Password")
+                        </md-input-container>
+                    </div>
+                    <div class="InputContainer">
+                        <md-input-container style="margin-bottom: 0;">
+                            <label>confirm password</label>
+                            <input type="password" ng-model="confirmPassword" match="password" Name="ConfirmPassword" ng-required="true" ng-minlength="4" ng-maxlength="20" />
+                            @Html.Partial("_AngularMessages", "form.ConfirmPassword")
+                        </md-input-container>
+                    </div>
+                    <div class="InputContainer Wide">
+                        <md-input-container md-no-float>
+                            <input type="text" id="BusinessAddress" placeholder="Search for your business" ng-model="businessAddress" ng-change="changeAddress()" ng-required="true" />
+                            <input type="hidden" name="BusinessName" value="{{business.name}}" />
+                            <input type="hidden" name="Lat" value="{{business.lat}}" />
+                            <input type="hidden" name="Lng" value="{{business.lng}}" />
+                            <input type="hidden" name="FormattedAddress" value="{{business.formattedAddress}}" />
+                            <input type="hidden" name="PhoneNumber" value="{{business.phoneNumber}}" />
+                            <input type="hidden" name="FormattedPhoneNumber" value="{{business.formattedPhoneNumber}}" />
+                            <input type="hidden" name="Website" value="{{business.website}}" />
+                            <input type="hidden" name="Rating" value="{{business.rating}}" />
+                            <input type="hidden" name="PlaceId" value="{{business.placeId}}" />
+                        </md-input-container>
+                    </div>
+                    <div style="width: 100%;">
+                        <md-button class="ManageActionButton Button md-primary" ng-click="register(form)" ng-disabled="!form.$valid || disableSubmit">register</md-button>
+                    </div>
+                </md-card-title-text>
+            </md-card-title>
+        </md-card>
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    </div>
+</form>
+
+

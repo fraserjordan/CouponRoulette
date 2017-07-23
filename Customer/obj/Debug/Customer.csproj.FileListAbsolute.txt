@@ -1,0 +1,390 @@
+E:\WebSite\WebSite\bin\roslyn\csc.exe
+E:\WebSite\WebSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\WebSite\WebSite\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\WebSite\WebSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\WebSite\WebSite\bin\roslyn\System.Collections.Immutable.dll
+E:\WebSite\WebSite\bin\roslyn\System.Reflection.Metadata.dll
+E:\WebSite\WebSite\bin\roslyn\vbc.exe
+E:\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe
+E:\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe.config
+E:\WebSite\WebSite\bin\Customer.dll.config
+E:\WebSite\WebSite\bin\Customer.dll
+E:\WebSite\WebSite\bin\Customer.pdb
+E:\WebSite\WebSite\bin\Antlr3.Runtime.dll
+E:\WebSite\WebSite\bin\Data.dll
+E:\WebSite\WebSite\bin\EntityFramework.dll
+E:\WebSite\WebSite\bin\EntityFramework.SqlServer.dll
+E:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Core.dll
+E:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\WebSite\WebSite\bin\Microsoft.Owin.dll
+E:\WebSite\WebSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.Cookies.dll
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.dll
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.Facebook.dll
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.Google.dll
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.OAuth.dll
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.Twitter.dll
+E:\WebSite\WebSite\bin\Microsoft.Web.Infrastructure.dll
+E:\WebSite\WebSite\bin\Newtonsoft.Json.dll
+E:\WebSite\WebSite\bin\Owin.dll
+E:\WebSite\WebSite\bin\System.Web.Helpers.dll
+E:\WebSite\WebSite\bin\System.Web.Mvc.dll
+E:\WebSite\WebSite\bin\System.Web.Optimization.dll
+E:\WebSite\WebSite\bin\System.Web.Razor.dll
+E:\WebSite\WebSite\bin\System.Web.WebPages.Deployment.dll
+E:\WebSite\WebSite\bin\System.Web.WebPages.dll
+E:\WebSite\WebSite\bin\System.Web.WebPages.Razor.dll
+E:\WebSite\WebSite\bin\WebGrease.dll
+E:\WebSite\WebSite\bin\Data.pdb
+E:\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\WebSite\WebSite\bin\System.Web.Helpers.xml
+E:\WebSite\WebSite\bin\System.Web.Mvc.xml
+E:\WebSite\WebSite\bin\System.Web.Optimization.xml
+E:\WebSite\WebSite\bin\System.Web.Razor.xml
+E:\WebSite\WebSite\bin\System.Web.WebPages.xml
+E:\WebSite\WebSite\bin\System.Web.WebPages.Deployment.xml
+E:\WebSite\WebSite\bin\System.Web.WebPages.Razor.xml
+E:\WebSite\WebSite\bin\Antlr3.Runtime.pdb
+E:\WebSite\WebSite\bin\Newtonsoft.Json.xml
+E:\WebSite\WebSite\bin\EntityFramework.xml
+E:\WebSite\WebSite\bin\EntityFramework.SqlServer.xml
+E:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Core.xml
+E:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WebSite\WebSite\bin\Microsoft.Owin.xml
+E:\WebSite\WebSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.xml
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.Facebook.xml
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.Cookies.xml
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.OAuth.xml
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.Google.xml
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.Twitter.xml
+E:\WebSite\WebSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+E:\WebSite\WebSite\obj\Debug\Customer.csprojResolveAssemblyReference.cache
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.initializedatabase.resources
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.AddAddressStringActiveCOupons.resources
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.changeCouponHistoryDataTypes.resources
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.addBusinessWebsite.resources
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.addWebsiteToActiveCoupons.resources
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.AddCategory.resources
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.RemoveActiveCOuponsTable.resources
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.addFromandToDates.resources
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.AddSavedCoupons.resources
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.addCoupnToSavedCoupon.resources
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.RemoveBusinessFromSavedCoupons.resources
+E:\WebSite\WebSite\obj\Debug\Customer.Migrations.AddFoodType.resources
+E:\WebSite\WebSite\obj\Debug\Customer.csproj.GenerateResource.Cache
+E:\WebSite\WebSite\obj\Debug\Customer.dll
+E:\WebSite\WebSite\obj\Debug\Customer.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\csc.exe
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\vbc.exe
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Customer.dll.config
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Customer.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Customer.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Antlr3.Runtime.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Data.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\EntityFramework.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\EntityFramework.SqlServer.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Newtonsoft.Json.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Owin.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.Helpers.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.Mvc.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.Optimization.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.Razor.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.WebPages.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.WebPages.Razor.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\WebGrease.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Data.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.Helpers.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.Mvc.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.Optimization.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.Razor.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.WebPages.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\System.Web.WebPages.Razor.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Antlr3.Runtime.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Newtonsoft.Json.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\EntityFramework.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\EntityFramework.SqlServer.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.csprojResolveAssemblyReference.cache
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.initializedatabase.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.AddAddressStringActiveCOupons.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.changeCouponHistoryDataTypes.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.addBusinessWebsite.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.addWebsiteToActiveCoupons.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.AddCategory.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.RemoveActiveCOuponsTable.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.addFromandToDates.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.AddSavedCoupons.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.addCoupnToSavedCoupon.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.RemoveBusinessFromSavedCoupons.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.Migrations.AddFoodType.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.csproj.GenerateResource.Cache
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\WebSite\obj\Debug\Customer.pdb
+D:\WebSite\WebSite\obj\Debug\Customer.csprojResolveAssemblyReference.cache
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.initializedatabase.resources
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.AddAddressStringActiveCOupons.resources
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.changeCouponHistoryDataTypes.resources
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.addBusinessWebsite.resources
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.addWebsiteToActiveCoupons.resources
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.AddCategory.resources
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.RemoveActiveCOuponsTable.resources
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.addFromandToDates.resources
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.AddSavedCoupons.resources
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.addCoupnToSavedCoupon.resources
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.RemoveBusinessFromSavedCoupons.resources
+D:\WebSite\WebSite\obj\Debug\Customer.Migrations.AddFoodType.resources
+D:\WebSite\WebSite\obj\Debug\Customer.csproj.GenerateResource.Cache
+D:\WebSite\WebSite\obj\Debug\Customer.dll
+D:\WebSite\WebSite\obj\Debug\Customer.pdb
+D:\WebSite\WebSite\bin\roslyn\csc.exe
+D:\WebSite\WebSite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebSite\WebSite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebSite\WebSite\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebSite\WebSite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebSite\WebSite\bin\roslyn\System.Collections.Immutable.dll
+D:\WebSite\WebSite\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebSite\WebSite\bin\roslyn\vbc.exe
+D:\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe
+D:\WebSite\WebSite\bin\roslyn\VBCSCompiler.exe.config
+D:\WebSite\WebSite\bin\Customer.dll.config
+D:\WebSite\WebSite\bin\Customer.dll
+D:\WebSite\WebSite\bin\Customer.pdb
+D:\WebSite\WebSite\bin\Antlr3.Runtime.dll
+D:\WebSite\WebSite\bin\AutoMapper.dll
+D:\WebSite\WebSite\bin\Data.dll
+D:\WebSite\WebSite\bin\EntityFramework.dll
+D:\WebSite\WebSite\bin\EntityFramework.SqlServer.dll
+D:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Core.dll
+D:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebSite\WebSite\bin\Microsoft.Owin.dll
+D:\WebSite\WebSite\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.Cookies.dll
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.dll
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.Facebook.dll
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.Google.dll
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.OAuth.dll
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.Twitter.dll
+D:\WebSite\WebSite\bin\Microsoft.Web.Infrastructure.dll
+D:\WebSite\WebSite\bin\Newtonsoft.Json.dll
+D:\WebSite\WebSite\bin\Owin.dll
+D:\WebSite\WebSite\bin\Services.dll
+D:\WebSite\WebSite\bin\System.Web.Helpers.dll
+D:\WebSite\WebSite\bin\System.Web.Mvc.dll
+D:\WebSite\WebSite\bin\System.Web.Optimization.dll
+D:\WebSite\WebSite\bin\System.Web.Razor.dll
+D:\WebSite\WebSite\bin\System.Web.WebPages.Deployment.dll
+D:\WebSite\WebSite\bin\System.Web.WebPages.dll
+D:\WebSite\WebSite\bin\System.Web.WebPages.Razor.dll
+D:\WebSite\WebSite\bin\WebGrease.dll
+D:\WebSite\WebSite\bin\RazorEngine.dll
+D:\WebSite\WebSite\bin\Data.pdb
+D:\WebSite\WebSite\bin\Services.pdb
+D:\WebSite\WebSite\bin\AutoMapper.xml
+D:\WebSite\WebSite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebSite\WebSite\bin\System.Web.Helpers.xml
+D:\WebSite\WebSite\bin\System.Web.Mvc.xml
+D:\WebSite\WebSite\bin\System.Web.Optimization.xml
+D:\WebSite\WebSite\bin\System.Web.Razor.xml
+D:\WebSite\WebSite\bin\System.Web.WebPages.xml
+D:\WebSite\WebSite\bin\System.Web.WebPages.Deployment.xml
+D:\WebSite\WebSite\bin\System.Web.WebPages.Razor.xml
+D:\WebSite\WebSite\bin\Antlr3.Runtime.pdb
+D:\WebSite\WebSite\bin\Newtonsoft.Json.xml
+D:\WebSite\WebSite\bin\EntityFramework.xml
+D:\WebSite\WebSite\bin\EntityFramework.SqlServer.xml
+D:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Core.xml
+D:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\WebSite\WebSite\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebSite\WebSite\bin\Microsoft.Owin.xml
+D:\WebSite\WebSite\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.xml
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.Facebook.xml
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.OAuth.xml
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.Google.xml
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.Twitter.xml
+D:\WebSite\WebSite\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\WebSite\WebSite\bin\RazorEngine.xml
+D:\WebSite\Customer\bin\ApplicationInsights.config
+D:\WebSite\Customer\bin\roslyn\csc.exe
+D:\WebSite\Customer\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebSite\Customer\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebSite\Customer\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebSite\Customer\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebSite\Customer\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebSite\Customer\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebSite\Customer\bin\roslyn\System.Collections.Immutable.dll
+D:\WebSite\Customer\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebSite\Customer\bin\roslyn\vbc.exe
+D:\WebSite\Customer\bin\roslyn\VBCSCompiler.exe
+D:\WebSite\Customer\bin\roslyn\VBCSCompiler.exe.config
+D:\WebSite\Customer\bin\Customer.dll.config
+D:\WebSite\Customer\bin\Customer.dll
+D:\WebSite\Customer\bin\Customer.pdb
+D:\WebSite\Customer\bin\Data.dll
+D:\WebSite\Customer\bin\Services.dll
+D:\WebSite\Customer\bin\Microsoft.WindowsAzure.Storage.dll
+D:\WebSite\Customer\bin\Microsoft.Data.Services.Client.dll
+D:\WebSite\Customer\bin\Microsoft.Data.OData.dll
+D:\WebSite\Customer\bin\Microsoft.Data.Edm.dll
+D:\WebSite\Customer\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\WebSite\Customer\bin\System.Spatial.dll
+D:\WebSite\Customer\bin\Data.pdb
+D:\WebSite\Customer\bin\Services.pdb
+D:\WebSite\Customer\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\WebSite\Customer\bin\Microsoft.WindowsAzure.Storage.xml
+D:\WebSite\Customer\bin\Microsoft.Data.Services.Client.xml
+D:\WebSite\Customer\bin\Microsoft.Data.OData.xml
+D:\WebSite\Customer\bin\Microsoft.Data.Edm.xml
+D:\WebSite\Customer\bin\Microsoft.Azure.KeyVault.Core.xml
+D:\WebSite\Customer\bin\System.Spatial.xml
+D:\WebSite\Customer\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Customer\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Customer\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Customer\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Customer\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Customer\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Customer\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Customer\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Customer\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Customer\bin\de\Microsoft.Data.OData.resources.dll
+D:\WebSite\Customer\bin\es\Microsoft.Data.OData.resources.dll
+D:\WebSite\Customer\bin\fr\Microsoft.Data.OData.resources.dll
+D:\WebSite\Customer\bin\it\Microsoft.Data.OData.resources.dll
+D:\WebSite\Customer\bin\ja\Microsoft.Data.OData.resources.dll
+D:\WebSite\Customer\bin\ko\Microsoft.Data.OData.resources.dll
+D:\WebSite\Customer\bin\ru\Microsoft.Data.OData.resources.dll
+D:\WebSite\Customer\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\WebSite\Customer\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\WebSite\Customer\bin\de\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Customer\bin\es\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Customer\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Customer\bin\it\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Customer\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Customer\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Customer\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Customer\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Customer\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Customer\bin\de\System.Spatial.resources.dll
+D:\WebSite\Customer\bin\es\System.Spatial.resources.dll
+D:\WebSite\Customer\bin\fr\System.Spatial.resources.dll
+D:\WebSite\Customer\bin\it\System.Spatial.resources.dll
+D:\WebSite\Customer\bin\ja\System.Spatial.resources.dll
+D:\WebSite\Customer\bin\ko\System.Spatial.resources.dll
+D:\WebSite\Customer\bin\ru\System.Spatial.resources.dll
+D:\WebSite\Customer\bin\zh-Hans\System.Spatial.resources.dll
+D:\WebSite\Customer\bin\zh-Hant\System.Spatial.resources.dll
+D:\WebSite\Customer\obj\Debug\Customer.csprojResolveAssemblyReference.cache
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.initializedatabase.resources
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.AddAddressStringActiveCOupons.resources
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.changeCouponHistoryDataTypes.resources
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.addBusinessWebsite.resources
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.addWebsiteToActiveCoupons.resources
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.AddCategory.resources
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.RemoveActiveCOuponsTable.resources
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.addFromandToDates.resources
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.AddSavedCoupons.resources
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.addCoupnToSavedCoupon.resources
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.RemoveBusinessFromSavedCoupons.resources
+D:\WebSite\Customer\obj\Debug\Customer.Migrations.AddFoodType.resources
+D:\WebSite\Customer\obj\Debug\Customer.csproj.GenerateResource.Cache
+D:\WebSite\Customer\obj\Debug\Customer.dll
+D:\WebSite\Customer\obj\Debug\Customer.pdb
+D:\WebSite\Customer\bin\AutoMapper.xml
+D:\WebSite\Customer\bin\Microsoft.AI.DependencyCollector.xml
+D:\WebSite\Customer\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\WebSite\Customer\bin\Microsoft.AI.Web.xml
+D:\WebSite\Customer\bin\Microsoft.AI.WindowsServer.xml
+D:\WebSite\Customer\bin\Microsoft.ApplicationInsights.xml
+D:\WebSite\Customer\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebSite\Customer\bin\RazorEngine.xml
+D:\WebSite\Customer\bin\System.Web.Helpers.xml
+D:\WebSite\Customer\bin\System.Web.Mvc.xml
+D:\WebSite\Customer\bin\System.Web.Optimization.xml
+D:\WebSite\Customer\bin\System.Web.Razor.xml
+D:\WebSite\Customer\bin\System.Web.WebPages.xml
+D:\WebSite\Customer\bin\System.Web.WebPages.Deployment.xml
+D:\WebSite\Customer\bin\System.Web.WebPages.Razor.xml
+D:\WebSite\Customer\bin\Antlr3.Runtime.pdb
+D:\WebSite\Customer\bin\Newtonsoft.Json.xml
+D:\WebSite\Customer\bin\EntityFramework.xml
+D:\WebSite\Customer\bin\EntityFramework.SqlServer.xml
+D:\WebSite\Customer\bin\Microsoft.AspNet.Identity.Core.xml
+D:\WebSite\Customer\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\WebSite\Customer\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebSite\Customer\bin\Microsoft.Owin.xml
+D:\WebSite\Customer\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebSite\Customer\bin\Microsoft.Owin.Security.xml
+D:\WebSite\Customer\bin\Microsoft.Owin.Security.Facebook.xml
+D:\WebSite\Customer\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WebSite\Customer\bin\Microsoft.Owin.Security.OAuth.xml
+D:\WebSite\Customer\bin\Microsoft.Owin.Security.Google.xml
+D:\WebSite\Customer\bin\Microsoft.Owin.Security.Twitter.xml
+D:\WebSite\Customer\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+D:\WebSite\Customer\bin\Views\_ViewStart.cshtml
+D:\WebSite\Customer\bin\Scripts\app\app.js
+D:\WebSite\Customer\bin\Scripts\app\controllers\accountController.js
+D:\WebSite\Customer\bin\Scripts\app\controllers\homeController.js
+D:\WebSite\Customer\bin\Scripts\app\controllers\loginController.js
+D:\WebSite\Customer\bin\Scripts\app\controllers\loginPartialController.js
+D:\WebSite\Customer\bin\Scripts\app\controllers\navbarController.js
+D:\WebSite\Customer\bin\Scripts\app\controllers\registerController.js
+D:\WebSite\Customer\bin\Scripts\app\controllers\searchController.js
+D:\WebSite\Customer\bin\Scripts\app\directives\ng-match.js
+D:\WebSite\Customer\bin\Scripts\app\factories\state.js
+D:\WebSite\Customer\bin\Scripts\app\GlobalFunctions.js
+D:\WebSite\Customer\bin\Scripts\app\modules\angular-filter.js
+D:\WebSite\Customer\bin\Scripts\app\modules\_module.js
+D:\WebSite\Customer\bin\Scripts\app\services\alertService.js
+D:\WebSite\Customer\bin\Scripts\app\services\common.js

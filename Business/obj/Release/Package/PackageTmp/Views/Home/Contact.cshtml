@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "Contact";
+}
+
+<div class="Main" ng-controller="contactController">
+    <div class="InputContainer">
+        <md-card class="ContactCardContainer" style="height: auto;">
+            <md-card-title class="NoPadding">
+                <md-card-title-text style="text-align: center;">
+                    <md-toolbar class="CardFormSectionHeaderContainer md-theme-light">
+                        <h1 class="CardFormSectionHeader">
+                            <span>Contact info</span>
+                        </h1>
+                    </md-toolbar>
+                    <h3>Phone</h3>
+                    <div>
+                        <a href="tel:+64211686062"><md-button ng-click="updateInfoFromGoogle()" class="ManageActionButton Button md-primary">(021) 168 6062</md-button></a>
+                    </div>
+                    <h3>Location</h3>
+                    <a target="_blank" href="http://maps.google.com/?q=288C+Ellerslie+-+Panmure+Hwy,+Mount+Wellington,+Auckland+1060">
+                        <div style="height: 250px;" id="BusinessLocation"></div>
+                    </a>
+                    <form name="form" style="margin-top: 15px;">
+                        <h3>Email</h3>
+                        <div class="InputContainer">
+                            <md-input-container style="width: 70%; margin-bottom: 0; margin-top: 0;">
+                                <label>name</label>
+                                <input type="text" name="EmailName" ng-model="emailName" ng-maxlength="20" ng-required="true"/>
+                                @Html.Partial("_AngularMessages", "form.EmailName")
+                            </md-input-container>
+                        </div>
+                        <div class="InputContainer">
+                            <md-input-container style="width: 70%;margin-bottom: 0;">
+                                <label>email address</label>
+                                <input type="email" name="EmailFrom" ng-model="emailFrom" ng-required="true"/>
+                                @Html.Partial("_AngularMessages", "form.EmailFrom")
+                            </md-input-container>
+                        </div>
+                        <div class="InputContainer" style="margin-bottom: 15px;">
+                            <md-input-container style="width: 70%; margin-bottom: 0;">
+                                <label>email body</label>
+                                <textarea class="ContactEmailBodyTextArea" rows="10" cols="32" type="text" name="EmailBody" ng-model="emailBody" ng-required="true"></textarea>
+                                @Html.Partial("_AngularMessages", "form.EmailBody")
+                            </md-input-container>
+                        </div>
+                        <div style="width: 100%;">
+                            <md-button ng-click="sendEmail(form)" ng-disabled="!form.$valid" class="ManageActionButton Button md-primary">Send Email</md-button>
+                        </div>
+                    </form>
+                </md-card-title-text>
+            </md-card-title>
+        </md-card>
+    </div>
+</div>

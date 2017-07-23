@@ -1,0 +1,155 @@
+E:\WebSite\Services\bin\Debug\Services.dll
+E:\WebSite\Services\bin\Debug\Services.pdb
+E:\WebSite\Services\bin\Debug\Data.dll
+E:\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WebSite\Services\bin\Debug\EntityFramework.dll
+E:\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+E:\WebSite\Services\bin\Debug\Data.pdb
+E:\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WebSite\Services\bin\Debug\EntityFramework.xml
+E:\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+E:\WebSite\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+E:\WebSite\Services\obj\Debug\Services.dll
+E:\WebSite\Services\obj\Debug\Services.pdb
+E:\WebSite\Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\WebSite\Services\bin\Debug\RazorEngine.dll
+E:\WebSite\Services\bin\Debug\System.Web.Helpers.dll
+E:\WebSite\Services\bin\Debug\System.Web.Mvc.dll
+E:\WebSite\Services\bin\Debug\System.Web.Razor.dll
+E:\WebSite\Services\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\WebSite\Services\bin\Debug\System.Web.WebPages.dll
+E:\WebSite\Services\bin\Debug\System.Web.WebPages.Razor.dll
+E:\WebSite\Services\bin\Debug\RazorEngine.xml
+E:\WebSite\Services\bin\Debug\System.Web.Helpers.xml
+E:\WebSite\Services\bin\Debug\System.Web.Mvc.xml
+E:\WebSite\Services\bin\Debug\System.Web.Razor.xml
+E:\WebSite\Services\bin\Debug\System.Web.WebPages.xml
+E:\WebSite\Services\bin\Debug\System.Web.WebPages.Deployment.xml
+E:\WebSite\Services\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Services.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Services.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\AutoMapper.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Data.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\RazorEngine.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.Helpers.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.Mvc.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.Razor.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.WebPages.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\EntityFramework.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Data.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\AutoMapper.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\RazorEngine.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.Helpers.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.Mvc.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.Razor.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.WebPages.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.WebPages.Deployment.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\EntityFramework.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\obj\Debug\Services.ReturnMessages.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\obj\Debug\Services.csproj.GenerateResource.Cache
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\obj\Debug\Services.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\obj\Debug\Services.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Services.dll.config
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Microsoft.Owin.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Owin.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Microsoft.Owin.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Services\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebSite\Services\bin\Debug\Services.dll.config
+D:\WebSite\Services\bin\Debug\Services.dll
+D:\WebSite\Services\bin\Debug\Services.pdb
+D:\WebSite\Services\bin\Debug\AutoMapper.dll
+D:\WebSite\Services\bin\Debug\Data.dll
+D:\WebSite\Services\bin\Debug\Microsoft.Azure.KeyVault.Core.dll
+D:\WebSite\Services\bin\Debug\Microsoft.Data.Edm.dll
+D:\WebSite\Services\bin\Debug\Microsoft.Data.OData.dll
+D:\WebSite\Services\bin\Debug\Microsoft.Data.Services.Client.dll
+D:\WebSite\Services\bin\Debug\Microsoft.Owin.dll
+D:\WebSite\Services\bin\Debug\Microsoft.Owin.Host.SystemWeb.dll
+D:\WebSite\Services\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\WebSite\Services\bin\Debug\Microsoft.WindowsAzure.Storage.dll
+D:\WebSite\Services\bin\Debug\Newtonsoft.Json.dll
+D:\WebSite\Services\bin\Debug\Owin.dll
+D:\WebSite\Services\bin\Debug\RazorEngine.dll
+D:\WebSite\Services\bin\Debug\System.Spatial.dll
+D:\WebSite\Services\bin\Debug\System.Web.Helpers.dll
+D:\WebSite\Services\bin\Debug\System.Web.Mvc.dll
+D:\WebSite\Services\bin\Debug\System.Web.Razor.dll
+D:\WebSite\Services\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\WebSite\Services\bin\Debug\System.Web.WebPages.dll
+D:\WebSite\Services\bin\Debug\System.Web.WebPages.Razor.dll
+D:\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WebSite\Services\bin\Debug\EntityFramework.dll
+D:\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.Core.dll
+D:\WebSite\Services\bin\Debug\Data.pdb
+D:\WebSite\Services\bin\Debug\AutoMapper.xml
+D:\WebSite\Services\bin\Debug\Microsoft.Azure.KeyVault.Core.xml
+D:\WebSite\Services\bin\Debug\Microsoft.Data.Edm.xml
+D:\WebSite\Services\bin\Debug\Microsoft.Data.OData.xml
+D:\WebSite\Services\bin\Debug\Microsoft.Data.Services.Client.xml
+D:\WebSite\Services\bin\Debug\Microsoft.Owin.xml
+D:\WebSite\Services\bin\Debug\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebSite\Services\bin\Debug\Microsoft.WindowsAzure.Storage.pdb
+D:\WebSite\Services\bin\Debug\Microsoft.WindowsAzure.Storage.xml
+D:\WebSite\Services\bin\Debug\Newtonsoft.Json.xml
+D:\WebSite\Services\bin\Debug\RazorEngine.xml
+D:\WebSite\Services\bin\Debug\System.Spatial.xml
+D:\WebSite\Services\bin\Debug\System.Web.Helpers.xml
+D:\WebSite\Services\bin\Debug\System.Web.Mvc.xml
+D:\WebSite\Services\bin\Debug\System.Web.Razor.xml
+D:\WebSite\Services\bin\Debug\System.Web.WebPages.xml
+D:\WebSite\Services\bin\Debug\System.Web.WebPages.Deployment.xml
+D:\WebSite\Services\bin\Debug\System.Web.WebPages.Razor.xml
+D:\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebSite\Services\bin\Debug\EntityFramework.xml
+D:\WebSite\Services\bin\Debug\Microsoft.AspNet.Identity.Core.xml
+D:\WebSite\Services\bin\Debug\de\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Debug\es\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Debug\fr\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Debug\it\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Debug\ja\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Debug\ko\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Debug\ru\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Debug\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Debug\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Services\bin\Debug\de\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Debug\es\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Debug\fr\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Debug\it\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Debug\ja\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Debug\ko\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Debug\ru\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Debug\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Debug\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\WebSite\Services\bin\Debug\de\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Debug\es\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Debug\fr\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Debug\it\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Debug\ja\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Debug\ko\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Debug\ru\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Debug\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Debug\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Services\bin\Debug\de\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Debug\es\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Debug\fr\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Debug\it\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Debug\ja\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Debug\ko\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Debug\ru\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Debug\zh-Hans\System.Spatial.resources.dll
+D:\WebSite\Services\bin\Debug\zh-Hant\System.Spatial.resources.dll
+D:\WebSite\Services\obj\Debug\Services.csprojResolveAssemblyReference.cache
+D:\WebSite\Services\obj\Debug\Services.ReturnMessages.resources
+D:\WebSite\Services\obj\Debug\Services.csproj.GenerateResource.Cache
+D:\WebSite\Services\obj\Debug\Services.dll
+D:\WebSite\Services\obj\Debug\Services.pdb

@@ -1,0 +1,118 @@
+﻿@model Customer.Models.RegisterViewModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div class="FormContent" ng-controller="registerController">
+        @*<h2 class="FormTitle">Register</h2>*@
+        <div id="GeneralInput">
+            <div class="InputContainer">
+                <md-input-container>
+                    <label>email</label>
+                    @Html.TextBoxFor(m => m.Email, new {ng_Model = "email", type = "email", ng_required = "true"})
+                </md-input-container>
+            </div>
+            <div class="InputContainer">
+                <md-input-container>
+                    <label>password</label>
+                    @Html.TextBoxFor(m => m.Password, new {ng_Model = "password", name = "password", type = "password", ng_required = "true", maxlength = "20", minlength = "4"})
+                </md-input-container>
+            </div>
+            <div class="InputContainer">
+                <md-input-container>
+                    <label>confirm password</label>
+                    @Html.TextBoxFor(m => m.ConfirmPassword, new {ng_Model = "confirmPassword", type = "password", ng_required = "true"})
+                </md-input-container>
+            </div>
+        </div>
+        <div class="InputContainer">
+            <md-checkbox ng-model="registerSwitch" ng-change="SwitchCustomerBusiness()" aria-label="are you a business?"></md-checkbox><label>are you a business?</label>
+            <div style="display: none;">"@Html.TextBoxFor(m => m.AccountType, new {ng_model = "AccountType"})</div>
+        </div>
+        <div id="CustomerInput" ng-hide="HideCustomerInput">
+            <div class="InputContainer">
+                <md-input-container>
+                    <label>first name</label>
+                    @Html.TextBoxFor(m => m.CustomerFirstName, new {ng_Model = "firstName", ng_required = "!registerSwitch"})
+                </md-input-container>
+            </div>
+            <div class="InputContainer">
+                <md-input-container>
+                    <label>last name</label>
+                    @Html.TextBoxFor(m => m.CustomerLastName, new {ng_Model = "lastName", ng_required = "!registerSwitch"})
+                </md-input-container>
+            </div>
+            <div class="InputContainer">
+                <md-input-container md-no-float>
+                    @Html.TextBoxFor(m => m.CustomerCity, new {ng_Model = "customerCity", id = "CustomerAddress", placeholder = "city", ng_change = "ChangeAddress()", ng_required = "!registerSwitch"})
+                </md-input-container>
+                </div>
+            </div>
+        <div id="BusinessInput" ng-hide="HideBusinessInput">
+            <div class="InputContainer">
+                <md-input-container>
+                    <label>business name</label>
+                    @Html.TextBoxFor(m => m.BusinessName, new {ng_Model = "businessName", ng_required = "registerSwitch"})
+                </md-input-container>
+            </div>
+            <div class="InputContainer">
+                <md-input-container>
+                    <label>business website address</label>
+                    @Html.TextBoxFor(m => m.WebsiteUrl, new { ng_Model = "businessWebsite", type = "url", pattern = "https?://.+", ng_required = "registerSwitch" })
+                </md-input-container>
+            </div>
+            <div class="InputContainer">
+                <md-input-container>
+                    <label>area</label>
+                    <md-select ng-model="businessPhoneArea">
+                        <md-option value="03">
+                            03
+                        </md-option>
+                        <md-option value="04">
+                            04
+                        </md-option>
+                        <md-option value="06">
+                            06
+                        </md-option>
+                        <md-option value="07">
+                            07
+                        </md-option>
+                        <md-option value="09">
+                            09
+                        </md-option>
+                        <md-option value="021">
+                            021
+                        </md-option>
+                        <md-option value="022">
+                            022
+                        </md-option>
+                        <md-option value="025">
+                            025
+                        </md-option>
+                        <md-option value="027">
+                            027
+                        </md-option>
+                    </md-select>
+                </md-input-container>
+                <md-input-container style="width: 10%;">
+                    <label>business phone</label>
+                    @Html.TextBoxFor(m => m.BusinessPhone, new {ng_Model = "businessPhone", style="width: 99%", ng_required = "registerSwitch", type = "number"})
+                </md-input-container>
+            </div>
+            <div class="InputContainer">
+                <md-input-container md-no-float>
+                    @Html.TextBoxFor(m => m.BusinessAddress, new {ng_Model = "businessAddress", id = "BusinessAddress", placeholder = "business address", ng_change = "ChangeAddress()", ng_required = "registerSwitch"})
+                </md-input-container>
+                </div>
+            </div>
+            <div class="InputContainer">
+                <md-button class="Button" id="RegisterSubmit" ng-click="RegisterUser()">join</md-button>
+            </div>
+        </div>
+
+<script type="text/ng-template" id="toast-template.html">
+    <md-toast><ul><li ng-repeat="n in errors">{{n}}</li></ul></md-toast>
+</script>
+
+

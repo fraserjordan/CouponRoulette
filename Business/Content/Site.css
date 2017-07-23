@@ -1,0 +1,614 @@
+﻿
+/*LAYOUT PAGE**/
+
+/*CHANGE AUTOFILL BACKGROUND COLOR*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
+}
+
+.navbar {
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  min-height: 15% !important;
+  background-color: #4CAF50;
+  box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.26);
+}
+h1 {
+  color: #8BC34A;
+}
+h2 {
+  color: #8BC34A;
+}
+h3 {
+  color: #8BC34A;
+}
+h4 {
+  color: #8BC34A;
+}
+h5 {
+  color: #8BC34A;
+}
+h6 {
+  color: #8BC34A;
+}
+body {
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  background-color: #E0E0E0;
+  text-align: center;
+  height: 100%;
+}
+html {
+  background-color: #E0E0E0;
+  height: 100%;
+}
+.footer {
+    padding-top: 4px;
+    color: white;
+    left: 0;
+    bottom: 0;
+    margin-top: 25px;
+    width: 100%;
+    background-color: #4CAF50;
+    height: 25px;
+}
+
+.footer a {
+    color: white !important;
+}
+
+.wrapper {
+	min-height: 100%;
+	margin: 0 auto -25px;
+}
+.push {
+	height: 25px;
+}
+
+.AccountButton {
+    width: 100px;
+    background-color: white !important;
+    color: #4CAF50 !important;
+}
+
+.Coupons {
+  height: auto;
+  display: block;
+  max-width: 600px;
+}
+.CouponControls {
+  margin-top: 35px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.CouponTable {
+  width: 100%;
+  padding: 0 10px 0 10px;
+}
+.CouponCardLink {
+  text-align: center;
+  padding-top: 13px;
+  height: 35px;
+}
+md-card md-card-actions {
+    margin: 0 !important;
+}
+md-toast .md-toast-content {
+    height: auto !important;
+    width: 100%;
+    color: black;
+    background-color: #8BC34A;
+}
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+.MinimizeDiv {
+    height: 20px;
+}
+.CouponCard {
+    margin-bottom: 20px;
+    max-width: 600px;
+    width: 100%;
+    height: 226px;
+    -webkit-transition: height 0.5s; 
+    -moz-transition: height 0.5s; 
+    -ms-transition: height 0.5s; 
+    -o-transition: height 0.5s; 
+    transition: height 0.5s;  
+}
+.ReviewSperator {
+    height: 50px;
+    width: 1px;
+    background-color: grey;
+    float: right;
+    margin-top: 15px;
+    margin-right: 10px;
+}
+.RatingContainer {
+    float: right;
+    margin-right: 20px;
+}
+.RatingNumber {
+    display: block;
+    color: #EB6E00;
+    font-size: 35pt;
+}
+
+span.stars, span.stars>* {
+    display: inline-block;
+    background: url(/Content/Images/stars.png) 0 -16px repeat-x;
+    width: 80px;
+    height: 16px;
+}
+span.stars>*{
+    max-width:80px;
+    background-position: 0 0;
+}
+.MaxHeight {
+    height: 100%;
+}
+.MdTitle {
+    margin: 20px;
+    font-size: 18pt;
+}
+.NoPadding {
+  padding: 0;
+}
+.AccountCouponCard {
+  max-width: 600px;
+  width: auto;
+  height: 150px;
+}
+.BusinessCouponCard {
+  max-width: 600px;
+  width: auto;
+  height: 75px;
+}
+.SearchButton {
+  margin-bottom: 20px !important;
+  margin-top: 20px !important;
+  width: 80%;
+}
+.CardNavButton {
+  margin: 0 30px 0 30px;
+}
+.SearchInputContainer {
+  margin-right: 50px;
+  margin-left: 50px;
+  margin-bottom: 5px !important;
+  margin-top: 15px !important;
+}
+.Fixed {
+  position: fixed;
+}
+.FloatToTop {
+  -webkit-transform: translate3d(-100%, 0, 0);
+  -o-transform: translate3d(-100%, 0, 0);
+  -moz-transform: translate3d(-100%, 0, 0);
+  -ms-transform: translate3d(-100%, 0, 0);
+}
+.CustomerSearchIconContainer {
+  width: 100%;
+  height: 25px;
+  margin-top: 15px;
+}
+.BusinessCouponTitle {
+  padding: 10px 16px 16px;
+}
+.Main {
+  max-height: 900px;
+  max-width: 600px;
+  width: 100%;
+  display: inline-block;
+}
+.NoDots {
+  margin-top: 0;
+  list-style-type: none;
+  padding-left: 0;
+  display: inline-block;
+  width: 100%;
+}
+.GoogleMapDiv {
+  width: 300px;
+  height: 250px;
+}
+.MinWidth {
+    min-width: 200px;
+}
+.Circle {
+    background-color: #4CAF50;
+    width: 40px;
+    height: 40px;
+    min-width: 0 !important;
+    float: left;
+    border-radius: 40px;
+}
+.CouponListButton {
+  float: right;
+  margin: 0;
+  margin-bottom: 2% !important;
+  margin-right: 10%;
+}
+.CouponListTitle {
+  float: left;
+  margin: 0;
+  margin-left: 10%;
+  margin-top: 2%;
+}
+.pac-icon {
+  height: 0 !important;
+  width: 0 !important;
+}
+.pac-item {
+  border-top: 0 !important;
+}
+@media (max-width: 600px) {
+    .previewDealActionText {
+        margin-top: 15px;
+        float: left;
+        margin: 15px;
+        width: 85%;
+        text-align: left;
+        font-size: 12pt;
+        margin-left: 50px;
+    }
+    .SiteTitle {
+        font-size: 38pt;
+    }
+}
+@media (max-width: 400px) {
+    .SiteTitle {
+        font-size: 30pt;
+    }
+}
+@media (min-width: 600px) {
+    .previewDealActionText {
+        margin-top: 15px;
+        float: left;
+        margin: 15px;
+        width: 85%;
+        text-align: left;
+        font-size: 18pt;
+        margin-left: 50px;
+    }
+    .SiteTitle {
+        font-size: 50pt;
+    }
+}
+
+.NotificationBorder {
+  height: 5px;
+  width: 100%;
+  background-color: green;
+  bottom: 0;
+  position: absolute;
+}
+.Expand {
+  max-height: 400px;
+}
+.CouponTimeDiv {
+  float: left;
+  min-width: 35%;
+  padding: 5px 4px 5px 4px;
+  border: #E0E0E0 1px solid;
+  border-radius: 20px;
+  margin-left: 10%;
+  color: white;
+}
+.CreateCouponInputContainer {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+.CursorPointer {
+  cursor: pointer;
+  width: 24%;
+}
+.DialogDiv {
+  width: auto;
+  height: auto;
+  padding: 15px 5px 15px 5px;
+}
+.DialogInput {
+  width: 100%;
+  text-align: left;
+}
+.DialogButton {
+  width: 90%;
+  margin: 0 0 0 0 !important;
+}
+.AccountActions {
+  width: 80%;
+  height: 50px;
+  background-color: #388E3C;
+  display: inline-block;
+  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.26);
+}
+.Button {
+  background-color: #8BC34A !important;
+  color: white !important;
+}
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+  white-space: normal;
+}
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+  max-width: 280px;
+}
+.FormContent {
+  display: inline-block;
+  text-align: center;
+  margin-top: 25px;
+  width: 100%;
+  height: 100%;
+}
+.InputContainer {
+  text-align: center;
+  margin: 0;
+}
+::-webkit-input-placeholder {
+  color: #A6A6A6;
+  font-size: 16px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+}
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #A6A6A6;
+  font-size: 16px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+}
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #A6A6A6;
+  font-size: 16px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+}
+:-ms-input-placeholder {
+  color: #A6A6A6;
+  font-size: 16px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  font-weight: lighter;
+}
+.NavbarTitle {
+  margin-bottom: 50px;
+}
+.navbarAccount {
+  padding: 20px 20px 0 0;
+}
+.text-danger {
+    color: red;
+}
+.text-danger>ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.SiteTitle {
+  font-weight: bolder;
+  color: white;
+}
+.FormSubmit {
+  margin: 25px 0 25px 100px;
+}
+
+.CardFormSectionHeader {
+    font-size: 26pt;
+    color: white;
+}
+
+.CardFormSectionHeaderContainer {
+    background-color: #4CAF50 !important;
+}
+
+/*#region CONTACT PAGE*/
+
+.ContactCardContainer {
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 35px
+}
+.ContactEmailBodyLabel{
+    color: rgba(0,0,0,0.26);
+    display: block; 
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+.ContactEmailBodyTextArea {
+    border-color: rgba(0,0,0,0.26);
+}
+
+/*#endregion CONTACT PAGE*/
+
+/*#region CREATE COUPON PAGE*/
+.PreviewDealCard {
+    height: 200px;
+}
+.PreviewCardTitleContainer {
+    padding: 0; 
+    padding-left: 15px; 
+    padding-bottom: 10px;
+}
+.previewDealTitle {
+    font-size: 14pt;
+    float: left;
+    font-size: 10pt;
+    width: 100%;
+    text-align: left;
+}
+.previewDealTitleText {
+    font-size: 20pt;
+    float: left;
+    width: 100%;
+    text-align: left;
+    margin-top: 12px;
+    display: inline;
+}
+.PreviewCard {
+    display: inline-block;
+    position: relative;
+    margin: 18px 0;
+    vertical-align: middle;
+}
+.previewSeperator {
+    width: 88%;
+    text-align: center;
+    background-color: lightgray;
+    height: 1px;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+    display: inline-block;
+    position: relative;
+    padding: 2px;
+    margin-top: 60px;
+    vertical-align: middle;
+}
+.previewDealAction{
+    float: right;
+    width: 10%;
+    margin-left: 10px;
+}
+/*#endregion*/
+
+/*#region SEARCH SHIT*/
+.SearchContainer {
+    float: right;
+    height: 50px;
+    width: 70%;
+}
+
+.SearchInput {
+    width: 50%;
+}
+/*#endregion*/
+
+/*#region LOGIN PAGE*/
+.LoginFormContainer {
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+}
+.ForgotPasswordLinkContainer {
+    display: block;
+    margin-bottom: 10px;
+}
+/*#endregion*/
+
+/*#region REGISTER PAGE*/
+.RegisterFormContainer {
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+}
+/*#endregion*/
+
+/*#region RESET PASSWORD PAGE*/
+.ResetPasswordFormContainer {
+    display: inline-block;
+    max-width: 300px;
+    width: 100%;
+}
+/*#endregion*/
+
+/*#region FORGOT PASSWORD PAGE*/
+.ForgotPasswordFormHeader {
+    font-size: 21pt;
+    color: white;
+}
+/*#endregion*/
+
+/*#region HOME PAGE*/
+.HomeActionButton {
+    width: 180px;
+}
+.ActiveCouponTable {
+    width: 100%; 
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+    margin-left: 10px;
+}
+/*#endregion*/
+
+/*#region MANAGE*/
+.ManageCardContainer {
+    display: inline-block;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.ManageActionButton {
+    width: 70%; 
+    margin-bottom: 20px !important;
+}
+
+.ManageBusinessInfoTable {
+    width: 100%; 
+    margin-top: 15px; 
+    margin-bottom: 15px; 
+    margin-left: 10px; 
+    text-align: left;
+    font-size: 10pt;
+    padding-right: 10px;
+}
+/*#endregion*/
+
+/*#region CONFIRMATION MESSAGES*/
+.ConfirmationMessageCardBody {
+    padding: 15px 30px 15px 30px; 
+    text-align: justify;
+}
+
+.ConfirmationMessageCard {
+    height: auto; 
+    max-width: 450px;
+}
+/*#endregion*/
+
+/*#region STYLE CLASSES*/
+.NoTopMargin {
+    margin-top: 0 !important;
+}
+.NoLeftMargin {
+    margin-left: 0 !important;
+}
+.NoRightMargin {
+    margin-right: 0 !important;
+}
+.NoBottomMargin {
+    margin-left: 0 !important;
+}
+.NoMargin {
+    margin: 0 !important;
+}
+.OneHundredPercentWidth {
+    width: 100% !important;
+}
+.CenterAlignText {
+    text-align: center !important;
+}
+/*#endregion*/
+
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    font-weight: 500;
+    color: rgba(0,0,0,0.26);
+}
+::-moz-placeholder { /* Firefox 19+ */
+    color: rgba(0,0,0,0.26);
+}
+:-ms-input-placeholder { /* IE 10+ */
+    color: rgba(0,0,0,0.26);
+}
+:-moz-placeholder { /* Firefox 18- */
+    color: rgba(0,0,0,0.26);
+}

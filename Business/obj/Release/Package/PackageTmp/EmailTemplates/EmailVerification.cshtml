@@ -1,0 +1,17 @@
+﻿@model Services.Models.BasicEmailModel
+
+<!--BODY START-->
+<p>Hi @Model.Name,</p>
+<p>
+    Thanks for registering with Simple Coupons! 
+</p>
+<p>
+    There is a 2 step verification process in place to make sure we don't have anyone impersonating any business'.
+    <ol>
+        <li>Please click <a href="@Model.Link">this link</a> to verify your email address</li>
+        <li>A letter will get sent in the post to your physical address, this will include a unique code that you then use to complete the verification process</li>
+    </ol>
+</p>
+<p>Regards,</p>
+<p>Simple Coupons team</p>
+<!--BODY END-->

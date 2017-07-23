@@ -1,0 +1,36 @@
+﻿@model Customer.Models.LoginViewModel
+
+@{ 
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@Html.Partial("_LoginPartial")
+@using (Html.BeginForm("Login", "Account"))
+{
+    <div class="FormContent" ng-controller="loginController">
+        @*<h2 class="FormTitle">Log in</h2>*@
+        <div class="InputContainer">
+            <md-input-container style="text-align: center;">
+                <label>email @Html.ValidationMessageFor(m => m.Email, "", new {@class = "text-danger"})</label>
+                @Html.TextBoxFor(m => m.Email, new {tabindex = "1", ng_required = "true", autocomplete = "off", type = "email", ng_model = "email"})
+            </md-input-container>
+        </div>
+        <div class="InputContainer">
+            <md-input-container>
+                <label>password @Html.ValidationMessageFor(m => m.Password, "", new {@class = "text-danger"})</label>
+                @Html.PasswordFor(m => m.Password, new {tabindex = "2", type = "password", ng_required = "true", ng_model = "password"})
+            </md-input-container>
+        </div>
+        <md-checkbox ng-model="rememberSwitch" ng-change="SwitchRememberMe()"></md-checkbox><label>remember me?</label>
+        @Html.HiddenFor(m => m.RememberMe, new {tabindex = "3", id = "RememberMe", ng_model = "rememberMe"})
+        <div class="InputContainer">
+            <md-input-container>
+                <md-button class="Button" type="submit">Log in</md-button>
+            </md-input-container>
+        </div>
+        <div class="InputContainer">
+            @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+        </div>
+        @Html.ValidationSummary(true, "", new {@class = "text-danger"})
+    </div>
+}

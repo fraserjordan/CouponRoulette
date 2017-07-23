@@ -1,0 +1,10 @@
+﻿[
+  {
+    "outputFile": "Content/ladda-themed.css",
+    "inputFile": "Content/ladda-themed.scss"
+  },
+  {
+    "outputFile": "Content/ladda.css",
+    "inputFile": "Content/ladda.scss"
+  }
+]

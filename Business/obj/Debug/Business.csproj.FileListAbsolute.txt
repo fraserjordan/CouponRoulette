@@ -1,0 +1,287 @@
+E:\WebSite\Business\bin\ApplicationInsights.config
+E:\WebSite\Business\bin\roslyn\csc.exe
+E:\WebSite\Business\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\WebSite\Business\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\WebSite\Business\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\WebSite\Business\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\WebSite\Business\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\WebSite\Business\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\WebSite\Business\bin\roslyn\System.Collections.Immutable.dll
+E:\WebSite\Business\bin\roslyn\System.Reflection.Metadata.dll
+E:\WebSite\Business\bin\roslyn\vbc.exe
+E:\WebSite\Business\bin\roslyn\VBCSCompiler.exe
+E:\WebSite\Business\bin\roslyn\VBCSCompiler.exe.config
+E:\WebSite\Business\bin\Business.dll.config
+E:\WebSite\Business\bin\Business.dll
+E:\WebSite\Business\bin\Business.pdb
+E:\WebSite\Business\bin\Data.dll
+E:\WebSite\Business\bin\Services.dll
+E:\WebSite\Business\bin\Data.pdb
+E:\WebSite\Business\bin\Services.pdb
+E:\WebSite\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+E:\WebSite\Business\obj\Debug\Business.dll
+E:\WebSite\Business\obj\Debug\Business.pdb
+E:\WebSite\Business\obj\Debug\Business.Migrations.UpdateDatabase.resources
+E:\WebSite\Business\obj\Debug\Business.csproj.GenerateResource.Cache
+E:\WebSite\Business\bin\EntityFramework.dll
+E:\WebSite\Business\bin\EntityFramework.SqlServer.dll
+E:\WebSite\Business\bin\Microsoft.AI.Agent.Intercept.dll
+E:\WebSite\Business\bin\Microsoft.AI.DependencyCollector.dll
+E:\WebSite\Business\bin\Microsoft.AI.PerfCounterCollector.dll
+E:\WebSite\Business\bin\Microsoft.AI.ServerTelemetryChannel.dll
+E:\WebSite\Business\bin\Microsoft.AI.Web.dll
+E:\WebSite\Business\bin\Microsoft.AI.WindowsServer.dll
+E:\WebSite\Business\bin\Microsoft.ApplicationInsights.dll
+E:\WebSite\Business\bin\Microsoft.AspNet.Identity.Core.dll
+E:\WebSite\Business\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+E:\WebSite\Business\bin\Microsoft.AspNet.Identity.Owin.dll
+E:\WebSite\Business\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\WebSite\Business\bin\Microsoft.Owin.dll
+E:\WebSite\Business\bin\Microsoft.Owin.Host.SystemWeb.dll
+E:\WebSite\Business\bin\Microsoft.Owin.Security.Cookies.dll
+E:\WebSite\Business\bin\Microsoft.Owin.Security.dll
+E:\WebSite\Business\bin\Owin.dll
+E:\WebSite\Business\bin\System.Web.Helpers.dll
+E:\WebSite\Business\bin\System.Web.Mvc.dll
+E:\WebSite\Business\bin\System.Web.Optimization.dll
+E:\WebSite\Business\bin\System.Web.Razor.dll
+E:\WebSite\Business\bin\System.Web.WebPages.Deployment.dll
+E:\WebSite\Business\bin\System.Web.WebPages.dll
+E:\WebSite\Business\bin\System.Web.WebPages.Razor.dll
+E:\WebSite\Business\bin\WebGrease.dll
+E:\WebSite\Business\bin\Microsoft.AI.DependencyCollector.xml
+E:\WebSite\Business\bin\Microsoft.AI.ServerTelemetryChannel.xml
+E:\WebSite\Business\bin\Microsoft.AI.Web.xml
+E:\WebSite\Business\bin\Microsoft.AI.WindowsServer.xml
+E:\WebSite\Business\bin\Microsoft.ApplicationInsights.xml
+E:\WebSite\Business\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\WebSite\Business\bin\System.Web.Helpers.xml
+E:\WebSite\Business\bin\System.Web.Mvc.xml
+E:\WebSite\Business\bin\System.Web.Optimization.xml
+E:\WebSite\Business\bin\System.Web.Razor.xml
+E:\WebSite\Business\bin\System.Web.WebPages.xml
+E:\WebSite\Business\bin\System.Web.WebPages.Deployment.xml
+E:\WebSite\Business\bin\System.Web.WebPages.Razor.xml
+E:\WebSite\Business\bin\EntityFramework.xml
+E:\WebSite\Business\bin\EntityFramework.SqlServer.xml
+E:\WebSite\Business\bin\Microsoft.AspNet.Identity.Core.xml
+E:\WebSite\Business\bin\Microsoft.AspNet.Identity.Owin.xml
+E:\WebSite\Business\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+E:\WebSite\Business\bin\Microsoft.Owin.xml
+E:\WebSite\Business\bin\Microsoft.Owin.Host.SystemWeb.xml
+E:\WebSite\Business\bin\Microsoft.Owin.Security.xml
+E:\WebSite\Business\bin\Microsoft.Owin.Security.Cookies.xml
+E:\WebSite\Business\bin\Microsoft.Web.Infrastructure.dll
+E:\WebSite\Business\bin\Newtonsoft.Json.dll
+E:\WebSite\Business\bin\Microsoft.Web.Infrastructure.xml
+E:\WebSite\Business\bin\RazorEngine.dll
+E:\WebSite\Business\bin\RazorEngine.xml
+E:\WebSite\Business\bin\EmailTemplates\EmailVerification.cshtml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\ApplicationInsights.config
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\EmailTemplates\EmailVerification.cshtml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\csc.exe
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\vbc.exe
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\VBCSCompiler.exe
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Business.dll.config
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Business.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Business.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\AutoMapper.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Data.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\EntityFramework.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\EntityFramework.SqlServer.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AI.Web.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.ApplicationInsights.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.Owin.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.Owin.Security.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Owin.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\RazorEngine.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Services.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.Helpers.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.Mvc.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.Optimization.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.Razor.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.WebPages.Deployment.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.WebPages.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.WebPages.Razor.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\WebGrease.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Data.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Services.pdb
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\AutoMapper.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AI.Web.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.ApplicationInsights.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\RazorEngine.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.Helpers.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.Mvc.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.Optimization.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.Razor.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.WebPages.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.WebPages.Deployment.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\System.Web.WebPages.Razor.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\EntityFramework.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\EntityFramework.SqlServer.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.Owin.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.Owin.Security.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\obj\Debug\Business.Migrations.UpdateDatabase.resources
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\obj\Debug\Business.csproj.GenerateResource.Cache
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\obj\Debug\Business.dll
+C:\Users\fraserj\Documents\Visual Studio 2015\Projects\WebSite\Business\obj\Debug\Business.pdb
+D:\WebSite\Business\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\WebSite\Business\bin\roslyn\System.Collections.Immutable.dll
+D:\WebSite\Business\bin\roslyn\VBCSCompiler.exe
+D:\WebSite\Business\bin\ApplicationInsights.config
+D:\WebSite\Business\bin\EmailTemplates\EmailVerification.cshtml
+D:\WebSite\Business\bin\roslyn\csc.exe
+D:\WebSite\Business\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\WebSite\Business\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\WebSite\Business\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\WebSite\Business\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\WebSite\Business\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\WebSite\Business\bin\roslyn\System.Reflection.Metadata.dll
+D:\WebSite\Business\bin\roslyn\vbc.exe
+D:\WebSite\Business\bin\roslyn\VBCSCompiler.exe.config
+D:\WebSite\Business\bin\Business.dll.config
+D:\WebSite\Business\bin\Business.dll
+D:\WebSite\Business\bin\Business.pdb
+D:\WebSite\Business\bin\AutoMapper.dll
+D:\WebSite\Business\bin\Data.dll
+D:\WebSite\Business\bin\EntityFramework.dll
+D:\WebSite\Business\bin\EntityFramework.SqlServer.dll
+D:\WebSite\Business\bin\Microsoft.AI.Agent.Intercept.dll
+D:\WebSite\Business\bin\Microsoft.AI.DependencyCollector.dll
+D:\WebSite\Business\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\WebSite\Business\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\WebSite\Business\bin\Microsoft.AI.Web.dll
+D:\WebSite\Business\bin\Microsoft.AI.WindowsServer.dll
+D:\WebSite\Business\bin\Microsoft.ApplicationInsights.dll
+D:\WebSite\Business\bin\Microsoft.AspNet.Identity.Core.dll
+D:\WebSite\Business\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+D:\WebSite\Business\bin\Microsoft.AspNet.Identity.Owin.dll
+D:\WebSite\Business\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\WebSite\Business\bin\Microsoft.Owin.dll
+D:\WebSite\Business\bin\Microsoft.Owin.Host.SystemWeb.dll
+D:\WebSite\Business\bin\Microsoft.Owin.Security.Cookies.dll
+D:\WebSite\Business\bin\Microsoft.Owin.Security.dll
+D:\WebSite\Business\bin\Microsoft.Web.Infrastructure.dll
+D:\WebSite\Business\bin\Owin.dll
+D:\WebSite\Business\bin\RazorEngine.dll
+D:\WebSite\Business\bin\Services.dll
+D:\WebSite\Business\bin\System.Web.Helpers.dll
+D:\WebSite\Business\bin\System.Web.Mvc.dll
+D:\WebSite\Business\bin\System.Web.Optimization.dll
+D:\WebSite\Business\bin\System.Web.Razor.dll
+D:\WebSite\Business\bin\System.Web.WebPages.Deployment.dll
+D:\WebSite\Business\bin\System.Web.WebPages.dll
+D:\WebSite\Business\bin\System.Web.WebPages.Razor.dll
+D:\WebSite\Business\bin\WebGrease.dll
+D:\WebSite\Business\bin\Data.pdb
+D:\WebSite\Business\bin\Services.pdb
+D:\WebSite\Business\bin\AutoMapper.xml
+D:\WebSite\Business\bin\Microsoft.AI.DependencyCollector.xml
+D:\WebSite\Business\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\WebSite\Business\bin\Microsoft.AI.Web.xml
+D:\WebSite\Business\bin\Microsoft.AI.WindowsServer.xml
+D:\WebSite\Business\bin\Microsoft.ApplicationInsights.xml
+D:\WebSite\Business\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\WebSite\Business\bin\RazorEngine.xml
+D:\WebSite\Business\bin\System.Web.Helpers.xml
+D:\WebSite\Business\bin\System.Web.Mvc.xml
+D:\WebSite\Business\bin\System.Web.Optimization.xml
+D:\WebSite\Business\bin\System.Web.Razor.xml
+D:\WebSite\Business\bin\System.Web.WebPages.xml
+D:\WebSite\Business\bin\System.Web.WebPages.Deployment.xml
+D:\WebSite\Business\bin\System.Web.WebPages.Razor.xml
+D:\WebSite\Business\bin\EntityFramework.xml
+D:\WebSite\Business\bin\EntityFramework.SqlServer.xml
+D:\WebSite\Business\bin\Microsoft.AspNet.Identity.Core.xml
+D:\WebSite\Business\bin\Microsoft.AspNet.Identity.Owin.xml
+D:\WebSite\Business\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+D:\WebSite\Business\bin\Microsoft.Owin.xml
+D:\WebSite\Business\bin\Microsoft.Owin.Host.SystemWeb.xml
+D:\WebSite\Business\bin\Microsoft.Owin.Security.xml
+D:\WebSite\Business\bin\Microsoft.Owin.Security.Cookies.xml
+D:\WebSite\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
+D:\WebSite\Business\obj\Debug\Business.Migrations.UpdateDatabase.resources
+D:\WebSite\Business\obj\Debug\Business.csproj.GenerateResource.Cache
+D:\WebSite\Business\obj\Debug\Business.dll
+D:\WebSite\Business\obj\Debug\Business.pdb
+D:\WebSite\Business\bin\Microsoft.WindowsAzure.Storage.dll
+D:\WebSite\Business\bin\Newtonsoft.Json.dll
+D:\WebSite\Business\bin\Microsoft.Data.Services.Client.dll
+D:\WebSite\Business\bin\Microsoft.Data.OData.dll
+D:\WebSite\Business\bin\Microsoft.Data.Edm.dll
+D:\WebSite\Business\bin\Microsoft.Azure.KeyVault.Core.dll
+D:\WebSite\Business\bin\System.Spatial.dll
+D:\WebSite\Business\bin\Microsoft.WindowsAzure.Storage.pdb
+D:\WebSite\Business\bin\Microsoft.WindowsAzure.Storage.xml
+D:\WebSite\Business\bin\Microsoft.Data.Services.Client.xml
+D:\WebSite\Business\bin\Microsoft.Data.OData.xml
+D:\WebSite\Business\bin\Microsoft.Data.Edm.xml
+D:\WebSite\Business\bin\Microsoft.Azure.KeyVault.Core.xml
+D:\WebSite\Business\bin\System.Spatial.xml
+D:\WebSite\Business\bin\de\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Business\bin\es\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Business\bin\fr\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Business\bin\it\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Business\bin\ja\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Business\bin\ko\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Business\bin\ru\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Business\bin\zh-Hans\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Business\bin\zh-Hant\Microsoft.Data.Services.Client.resources.dll
+D:\WebSite\Business\bin\de\Microsoft.Data.OData.resources.dll
+D:\WebSite\Business\bin\es\Microsoft.Data.OData.resources.dll
+D:\WebSite\Business\bin\fr\Microsoft.Data.OData.resources.dll
+D:\WebSite\Business\bin\it\Microsoft.Data.OData.resources.dll
+D:\WebSite\Business\bin\ja\Microsoft.Data.OData.resources.dll
+D:\WebSite\Business\bin\ko\Microsoft.Data.OData.resources.dll
+D:\WebSite\Business\bin\ru\Microsoft.Data.OData.resources.dll
+D:\WebSite\Business\bin\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\WebSite\Business\bin\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\WebSite\Business\bin\de\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Business\bin\es\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Business\bin\fr\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Business\bin\it\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Business\bin\ja\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Business\bin\ko\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Business\bin\ru\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Business\bin\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Business\bin\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\WebSite\Business\bin\de\System.Spatial.resources.dll
+D:\WebSite\Business\bin\es\System.Spatial.resources.dll
+D:\WebSite\Business\bin\fr\System.Spatial.resources.dll
+D:\WebSite\Business\bin\it\System.Spatial.resources.dll
+D:\WebSite\Business\bin\ja\System.Spatial.resources.dll
+D:\WebSite\Business\bin\ko\System.Spatial.resources.dll
+D:\WebSite\Business\bin\ru\System.Spatial.resources.dll
+D:\WebSite\Business\bin\zh-Hans\System.Spatial.resources.dll
+D:\WebSite\Business\bin\zh-Hant\System.Spatial.resources.dll

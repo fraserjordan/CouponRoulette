@@ -1,0 +1,119 @@
+﻿@using Business.Helpers
+@model Business.Models.IndexViewModel
+
+<!DOCTYPE html>
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div ng-controller="businessHomeController">
+    <div style="margin-top: 20px;">
+        <a href="/Coupon/Create"><md-button class="HomeActionButton Button md-primary">Create Coupon(s)</md-button></a>
+        <md-button ng-click="activateCouponsDialog()" class="HomeActionButton Button md-primary">Activate Coupon(s)</md-button>
+        <md-button ng-click="deactivateCouponsDialog()" class="HomeActionButton Button md-primary">Deactivate Coupon(s)</md-button>
+        <md-button ng-click="deleteCouponsDialog()" class="HomeActionButton Button md-primary">Delete Coupon(s)</md-button>
+    </div>
+
+
+    <div class="InputContainer">
+        <md-card class="PreviewCard CouponCard" style="height: auto;">
+            <md-card-title style="overflow: hidden;" class="NoPadding">
+                <md-card-title-text style="text-align: center;">
+                    <md-toolbar style="background-color: #4CAF50;"class="md-theme-light">
+                        <h1 style="color: white;">
+                            <span>Active Coupons</span>
+                        </h1>
+                    </md-toolbar>
+                    <table class="ActiveCouponTable">
+                        <tr>
+                            <th style="text-align: left;">Coupon</th>
+                            <th>Redeemed</th>
+                            <th>Available</th>
+                        </tr>
+                        <tr ng-repeat="coupon in model.AvailableCoupons">
+                            <td style="text-align: left; width: 45%;">{{coupon.CouponText}}</td>
+                            <td>{{coupon.TotalRedeemed}}</td>
+                            <td>{{coupon.AmountLeft}}</td>
+                        </tr>
+                    </table>
+                </md-card-title-text>
+            </md-card-title>
+        </md-card>
+    </div>
+
+    <script type="text/ng-template" id="activateCouponsDialog.html">
+            <form name="form" ng-controller="businessHomeController">
+                <md-input-container style="text-align: left; margin: 10px 10px 0 10px;" class="MinWidth">
+                    <span>Select saved coupon</span>
+                    <md-select ng-model="activateCouponModel.selectedId" name="Id" ng-required="true" ng-disabled="isLoading">
+                        <md-option ng-repeat="coupon in model.SavedCoupons" ng-value="coupon.Id">
+                            {{coupon.CouponText}}
+                        </md-option>
+                    </md-select>
+                    @Html.Partial("_AngularMessages", "form.Id")
+                </md-input-container>
+                <md-input-container style="text-align: left; margin: 20px 10px 10px 10px;" class="MinWidth">
+                    <span>Amount to activate</span>
+                    <md-select ng-model="activateCouponModel.selectedAmount" name="Quantity" ng-required="true" ng-disabled="isLoading">
+                        <md-option ng-repeat="amount in amounts" ng-value="amount">
+                            {{amount}}
+                        </md-option>
+                    </md-select>
+                    @Html.Partial("_AngularMessages", "form.Quantity")
+                </md-input-container>
+                <md-button ng-click="activateCoupon(form)" ng-disabled="!form.$valid" style="background-color: #4CAF50; color: white;" class="md-primary">activate coupon(s)</md-button>
+            </form>
+        </script>
+
+    <script type="text/ng-template" id="deactivateCouponsDialog.html">
+            <form name="form" ng-controller="businessHomeController">
+                <md-input-container style="text-align: left; margin: 10px 10px 0 10px;" class="MinWidth">
+                    <span>Select saved coupon</span>
+                    <md-select ng-model="deactivateCouponModel.selectedId" name="Id" ng-required="true" ng-disabled="isLoading">
+                        <md-option ng-repeat="coupon in model.AvailableCoupons" ng-value="coupon.Id">
+                            {{coupon.CouponText}}
+                        </md-option>
+                    </md-select>
+                    @Html.Partial("_AngularMessages", "form.Id")
+                </md-input-container>
+                <md-input-container style="text-align: left; margin: 20px 10px 10px 10px;" class="MinWidth">
+                    <span>Amount to deactivate</span>
+                    <md-select ng-model="deactivateCouponModel.selectedAmount" name="Quantity" ng-required="true" ng-disabled="isLoading">
+                        <md-option ng-repeat="amount in amounts" ng-value="amount">
+                            {{amount}}
+                        </md-option>
+                    </md-select>
+                    @Html.Partial("_AngularMessages", "form.Quantity")
+                </md-input-container>
+                <md-button ng-click="deactivateCoupon(form)" ng-disabled="!form.$valid" style="background-color: #4CAF50; color: white;" class="md-primary">deactivate coupon(s)</md-button>
+            </form>
+        </script>
+
+    <script type="text/ng-template" id="deleteCouponsDialog.html">
+            <form name="form" ng-controller="businessHomeController">
+                <md-input-container style="text-align: left; margin: 10px 10px 10px 10px;" class="MinWidth">
+                    <span>Select saved coupon</span>
+                    <md-select ng-model="deleteCouponModel.selectedId" name="Quantity" ng-required="true" ng-disabled="isLoading">
+                        <md-option ng-repeat="coupon in model.SavedCoupons" ng-value="coupon.Id">
+                            {{coupon.CouponText}}
+                        </md-option>
+                    </md-select>
+                    @Html.Partial("_AngularMessages", "form.Quantity")
+                </md-input-container>
+                <md-button ng-click="deleteCoupon(form)" ng-disabled="!form.$valid" style="background-color: #4CAF50; color: white;" class="md-primary">delete saved coupon</md-button>
+            </form>
+        </script>
+
+    <script type="text/javascript">
+        @{
+            var data = new
+            {
+                Model
+            };
+        }
+
+        window.simplecoupons.state['index.model'] = '@Html.Raw(data.ToJson())';
+    </script>
+</div>
+

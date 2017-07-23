@@ -1,0 +1,54 @@
+﻿@using Microsoft.Ajax.Utilities
+@model IEnumerable<Customer.Models.ApplicationUser>
+
+@{ 
+    Layout = null;
+}
+
+    @foreach (var business in Model)
+            {
+        <md-card class="CouponCard">
+            <md-card-title class="NoPadding">
+                <md-card-title-text style="text-align: center;">
+                    <span class="MdTitle md-headline"style="padding-top: 10px;"><strong>@business.BusinessName</strong></span>
+                </md-card-title-text>
+            </md-card-title>
+            <md-card-actions layout="row">
+                <div style="width: 100%; height: 40px; padding-top: 8px;">
+                    <i style="color: #FFC400; width: 10%" class="material-icons">star</i>
+                    <i style="color: #FFC400; width: 10%" class="material-icons">star</i>
+                    <i style="color: #FFC400; width: 10%" class="material-icons">star</i>
+                    <i style="color: #FFC400; width: 10%" class="material-icons">star_half</i>
+                    <i style="color: #FFC400; width: 10%" class="material-icons">star_border</i>
+                </div>
+            </md-card-actions>
+            <md-card-actions layout="row" style="margin-left: 0; margin-right: 0;">
+                <a style="background-color: #BBDEFB; border-top: 1px #2196F3 solid;" class="CouponCardLink" target="_blank" href="http://maps.google.com/?q=@business.BusinessAddress"><i style="color: #2196F3;" class="material-icons IconButton">location_on</i></a>
+                <a style="background-color: #FFF9C4; border-top: 1px #FFCA28 solid;"class="CouponCardLink" href="tel:@business.BusinessPhone"><i style="color: #FFCA28;" class="material-icons IconButton">phone</i></a>
+                @if (business.BusinesssWebsite.IsNullOrWhiteSpace())
+                {
+                    <a style="background-color: #FFCDD2; border-top: 1px #F44336 solid;" class="CouponCardLink" target="_blank" href="https://www.google.co.nz/#q= @business.BusinessName"><i style="color: #F44336;" class="material-icons IconButton">language</i></a>
+                }
+                else
+                {
+                    <a style="background-color: #FFCDD2; border-top: 1px #F44336 solid;" class="CouponCardLink" target="_blank" href="@business.BusinesssWebsite"><i style="color: #F44336;" class="material-icons IconButton">language</i></a>
+                }
+                <a style="background-color: #C8E6C9; border-top: 1px #4CAF50 solid;"class="CouponCardLink CursorPointer" ng-click="ExpandCoupons('@business.Id')"><i style="color: #4CAF50"class="material-icons" ng-click="addNewCouponDialog()">add_circle_outline</i></a>
+
+            </md-card-actions>
+            <div class="Notification @business.Id">
+                <div style="overflow: auto; max-height: 350px;">
+                    <ul class="NoDots">
+                        @foreach (var coupon in business.Coupons.GroupBy(x => x.Title))
+                        {
+                            <li><h3 style="margin-top: 15px; color: white; margin-bottom: 15px;">@coupon.Key</h3></li>
+                            <li><div class="CouponTimeDiv"><i style="vertical-align: middle; color: white;" class="material-icons">access_time</i> @coupon.First().ValidFrom.ToString("htt").ToLower()-@coupon.First().ValidTo.ToString("htt").ToLower()</div><label><md-button style="border-radius: 20px; color: #4CAF50 !important; background-color: white !important; width: 30%;" class="CouponListButton Button" ng-click="RedeemCoupon('@coupon.Key')">get deal</md-button></label></li>
+                            <hr style="width: 90%;" />
+                        }
+                    </ul>
+                </div>
+                <a href="" ng-click="SrinkCoupons('@business.Id')"><i style="cursor: pointer; color: white; margin-bottom: 20px;" class="material-icons">cancel</i></a>
+                <div class="NotificationBorder"></div>
+            </div>
+        </md-card>
+    }
