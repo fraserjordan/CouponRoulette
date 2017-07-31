@@ -17,11 +17,13 @@ namespace Customer.Factories
             _userService = new UserService();
         }
 
-        public IndexViewModel CreateIndexViewModel()
+        public IndexViewModel CreateIndexViewModel(string userEmail)
         {
             var model = new IndexViewModel();
+            var user = _userService.GetUserByEmail(userEmail);
+
             var businessesInfo = _userService.GetAllBusinessesInfo().Where(x => x.AddressVerificationStatus == AddressVerificationStatus.Verified);
-            model.Businesses = Mapper.Map<List<BusinessViewModel>>(businessesInfo);
+            model.Business = Mapper.Map<BusinessViewModel>(businessesInfo);
             return model;
         }
     }

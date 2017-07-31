@@ -270,6 +270,7 @@
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BusinessViewModel.cs" />
     <Compile Include="Models\CouponModel.cs" />
+    <Compile Include="Models\CouponViewModel.cs" />
     <Compile Include="Models\CustomerViewModel.cs" />
     <Compile Include="Models\IndexViewModel.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -525,10 +526,6 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
-    <Content Include="Views\Business\EditCoupon.cshtml" />
-    <Content Include="Views\Business\Index.cshtml" />
-    <Content Include="Views\Customer\CouponList.cshtml" />
-    <Content Include="Views\Customer\Index.cshtml" />
     <Content Include="Views\Home\ErrorList.cshtml" />
     <Content Include="Views\Shared\_AngularMessages.cshtml" />
     <Content Include="Views\Shared\_DefaultAngularMessages.cshtml" />

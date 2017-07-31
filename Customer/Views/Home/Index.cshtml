@@ -4,16 +4,9 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-
-
 <script type="text/javascript" src="https://cdn.jsdelivr.net/lodash/4.13.1/lodash.min.js"></script>
 
-<div id="search" class="CustomerSearchIconContainer">
-    <label onclick="expandSearch()" style="color: black; cursor: pointer;"><i class="material-icons">search</i></label>
-</div>
 <div ng-controller="homeController" class="Main" style="margin-bottom: 25px; margin-top: 20PX;">
-    <div class="CustomerSearch" ng-controller="searchController">
-    </div>
     <div class="Coupons">
         <div class="CouponCard" ng-repeat="business in model.Businesses">
             <md-card style="position: absolute" class="CouponCard" id="{{business.Id}}">
@@ -47,6 +40,5 @@
                 Model
             };
         }
-
         window.simplecoupons.state['index.model'] = '@Html.Raw(data.ToJson())';
 </script>

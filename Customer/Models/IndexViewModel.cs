@@ -4,7 +4,7 @@ namespace Customer.Models
 {
     public class IndexViewModel
     {
-        public List<BusinessViewModel> Businesses { get; set; }
+        public CouponViewModel Coupon { get; set; }
 
         public CustomerViewModel Customer { get; set; }
     }

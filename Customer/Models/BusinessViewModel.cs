@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using Data.Enums;
-
-namespace Customer.Models
+﻿namespace Customer.Models
 {
     public class BusinessViewModel
     {
