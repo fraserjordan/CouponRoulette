@@ -48,6 +48,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Security" />
@@ -64,33 +65,26 @@
     <Compile Include="Entities\AvailableCoupon.cs" />
     <Compile Include="Entities\ApplicationUser.cs" />
     <Compile Include="Entities\BusinessInfo.cs" />
-    <Compile Include="Entities\CouponTransactionHistory.cs" />
+    <Compile Include="Entities\CouponHistory.cs" />
     <Compile Include="Entities\CustomerInfo.cs" />
-    <Compile Include="Entities\ActiveCoupon.cs" />
     <Compile Include="Entities\SavedCoupon.cs" />
     <Compile Include="Enums\AddressVerificationStatus.cs" />
     <Compile Include="Enums\AccountType.cs" />
-    <Compile Include="Interfaces\IBusinessInfoRepository.cs" />
+    <Compile Include="Enums\AvailableCouponStatus.cs" />
+    <Compile Include="Enums\CouponHistoryReason.cs" />
+    <Compile Include="Interfaces\IBusinessRepository.cs" />
     <Compile Include="Interfaces\ICouponRepository.cs" />
-    <Compile Include="Interfaces\ICustomerInfoRepository.cs" />
+    <Compile Include="Interfaces\ICustomerRepository.cs" />
     <Compile Include="Interfaces\IUserRepository.cs" />
-    <Compile Include="Migrations\201704190507383_initial.cs" />
-    <Compile Include="Migrations\201704190507383_initial.Designer.cs">
-      <DependentUpon>201704190507383_initial.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201704192037046_AddCouponTextToAvailableCoupons.cs" />
-    <Compile Include="Migrations\201704192037046_AddCouponTextToAvailableCoupons.Designer.cs">
-      <DependentUpon>201704192037046_AddCouponTextToAvailableCoupons.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201704200355110_AddMenuUrlToBusinessInfo.cs" />
-    <Compile Include="Migrations\201704200355110_AddMenuUrlToBusinessInfo.Designer.cs">
-      <DependentUpon>201704200355110_AddMenuUrlToBusinessInfo.cs</DependentUpon>
+    <Compile Include="Migrations\201710100823568_Initial.cs" />
+    <Compile Include="Migrations\201710100823568_Initial.Designer.cs">
+      <DependentUpon>201710100823568_Initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repository\BusinessInfoRepository.cs" />
+    <Compile Include="Repository\BusinessRepository.cs" />
     <Compile Include="Repository\CouponRepository.cs" />
-    <Compile Include="Repository\CustomerInfoRepository.cs" />
+    <Compile Include="Repository\CustomerRepository.cs" />
     <Compile Include="Repository\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -98,14 +92,8 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201704190507383_initial.resx">
-      <DependentUpon>201704190507383_initial.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704192037046_AddCouponTextToAvailableCoupons.resx">
-      <DependentUpon>201704192037046_AddCouponTextToAvailableCoupons.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201704200355110_AddMenuUrlToBusinessInfo.resx">
-      <DependentUpon>201704200355110_AddMenuUrlToBusinessInfo.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201710100823568_Initial.resx">
+      <DependentUpon>201710100823568_Initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

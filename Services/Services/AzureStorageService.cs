@@ -12,7 +12,7 @@ namespace Services.Services
 {
     public class AzureStorageService : IAzureStorageService
     {
-        private readonly IBusinessInfoService _businessInfoService;
+        private readonly IBusinessService _businessService;
         private static readonly string accountName = "fraserteststorage";
         private static readonly string accessKey = "cOG5ee85cfrN4FbtT6bANeP+zDD03UFb21VwH7/yig3egL7DaNPkunXYuampjevHXY+NXx0DBMASEtFz4iu7Eg==";
         private static readonly string menusContainerName = "freecouponsmenus";
@@ -20,7 +20,7 @@ namespace Services.Services
 
         public AzureStorageService()
         {
-            _businessInfoService = new BusinessInfoService();
+            _businessService = new BusinessService();
             var creds = new StorageCredentials(accountName, accessKey);
             var storageAccount = new CloudStorageAccount(creds, useHttps: true);
             _blobClient = storageAccount.CreateCloudBlobClient();
@@ -38,7 +38,7 @@ namespace Services.Services
             });
             CloudBlockBlob blockBlob = container.GetBlockBlobReference(businessInfoId + ".pdf");
             blockBlob.UploadFromStream(file.InputStream);
-            _businessInfoService.UpdateMenuUrl(int.Parse(businessInfoId), blockBlob.Uri.ToString());
+            _businessService.UpdateMenuUrl(int.Parse(businessInfoId), blockBlob.Uri.ToString());
         }
     }
 }

@@ -16,13 +16,13 @@ namespace Business.Controllers
     [AddressVerified]
     public class ManageController : BaseController
     {
-        private readonly IBusinessInfoService _businessInfoService;
+        private readonly IBusinessService _businessService;
         private readonly IUserService _userService;
         private readonly IAzureStorageService _azureStorageService;
 
         public ManageController()
         {
-            _businessInfoService = new BusinessInfoService();
+            _businessService = new BusinessService();
             _userService = new UserService();
             _azureStorageService = new AzureStorageService();
         }
@@ -30,7 +30,7 @@ namespace Business.Controllers
         public ActionResult Index()
         {
             var manageFactory = new ManageViewFactory();
-            var businessInfo = _businessInfoService.GetBusinessInfoByEmail(User.Identity.Name);
+            var businessInfo = _businessService.GetBusinessInfoByEmail(User.Identity.Name);
             var model = manageFactory.CreateIndexViewModel(businessInfo);
             return View(model);
         }
@@ -39,7 +39,7 @@ namespace Business.Controllers
         public JsonResult UpdateBusinessInfo(BusinessInfoViewModel model)
         {
             var businessInfoServiceModel = Mapper.Map<BusinessInfoServiceModel>(model);
-            var result = _businessInfoService.UpdateBusinessInfo(User.Identity.Name, businessInfoServiceModel);
+            var result = _businessService.UpdateBusinessInfo(User.Identity.Name, businessInfoServiceModel);
             return new JsonResult()
             {
                 ContentType = "application/json",

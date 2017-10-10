@@ -22,13 +22,13 @@ namespace Customer.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-        private readonly ICustomerInfoService _customerInfoService;
+        private readonly ICustomerService _customerService;
         private readonly IEmailService _emailService;
         private IAuthenticationManager AuthenticationManager => HttpContext.GetOwinContext().Authentication;
 
         public AccountController()
         {
-            _customerInfoService = new CustomerInfoService();
+            _customerService = new CustomerService();
             _emailService = new Services.Services.EmailService();
         }
 
@@ -140,7 +140,7 @@ namespace Customer.Controllers
                 result = UserManager.Create(user, model.Password);
                 if (result.Succeeded)
                 {
-                    _customerInfoService.CreateCustomerInfo(user.Id);
+                    _customerService.CreateCustomerInfo(user.Id);
                     string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new {userId = user.Id, code = code},
                         protocol: Request.Url.Scheme);

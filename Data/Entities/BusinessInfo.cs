@@ -24,7 +24,5 @@ namespace Data.Entities
         public string MenuUrl { get; set; }
         public AddressVerificationStatus AddressVerificationStatus { get; set; }
         public string AddressVerificationCode { get; set; }
-        public virtual ICollection<SavedCoupon> SavedCoupons { get; set; }
-        public virtual ICollection<AvailableCoupon> AvailableCoupons { get; set; }
     }
 }

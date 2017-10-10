@@ -16,3 +16,12 @@ D:\WebSite\Business.Tests\bin\Debug\WebDriver.xml
 D:\WebSite\Business.Tests\obj\Debug\Business.Tests.dll
 D:\WebSite\Business.Tests\obj\Debug\Business.Tests.pdb
 D:\WebSite\Business.Tests\obj\Debug\Business.Tests.csprojResolveAssemblyReference.cache
+D:\GIT\CouponRoullette\Business.Tests\bin\Debug\Business.Tests.dll
+D:\GIT\CouponRoullette\Business.Tests\bin\Debug\Business.Tests.pdb
+D:\GIT\CouponRoullette\Business.Tests\bin\Debug\nunit.framework.dll
+D:\GIT\CouponRoullette\Business.Tests\bin\Debug\WebDriver.dll
+D:\GIT\CouponRoullette\Business.Tests\bin\Debug\nunit.framework.xml
+D:\GIT\CouponRoullette\Business.Tests\bin\Debug\WebDriver.xml
+D:\GIT\CouponRoullette\Business.Tests\obj\Debug\Business.Tests.csproj.CoreCompileInputs.cache
+D:\GIT\CouponRoullette\Business.Tests\obj\Debug\Business.Tests.dll
+D:\GIT\CouponRoullette\Business.Tests\obj\Debug\Business.Tests.pdb

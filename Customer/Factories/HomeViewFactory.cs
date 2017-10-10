@@ -17,14 +17,14 @@ namespace Customer.Factories
             _userService = new UserService();
         }
 
-        public IndexViewModel CreateIndexViewModel(string userEmail)
+        public IndexViewModel CreateIndexViewModel()
         {
-            var model = new IndexViewModel();
-            var user = _userService.GetUserByEmail(userEmail);
+            //var model = new IndexViewModel();
+            //var user = _userService.GetUserByEmail();
 
-            var businessesInfo = _userService.GetAllBusinessesInfo().Where(x => x.AddressVerificationStatus == AddressVerificationStatus.Verified);
-            model.Business = Mapper.Map<BusinessViewModel>(businessesInfo);
-            return model;
+            //var businessesInfo = _userService.GetAllBusinessesInfo().Where(x => x.AddressVerificationStatus == AddressVerificationStatus.Verified);
+            //model.Customer = Mapper.Map<BusinessViewModel>(businessesInfo);
+            return new IndexViewModel();
         }
     }
 }

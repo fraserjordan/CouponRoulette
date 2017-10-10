@@ -20,7 +20,8 @@ namespace Services.Services
             var response = new ServiceResponse();
             try
             {
-                response.Success = _couponRepository.CreateCoupon(couponText, userId);
+                _couponRepository.CreateCoupon(couponText, userId);
+                response.Success = true;
             }
             catch (Exception e) {
                 // log error message
@@ -35,7 +36,8 @@ namespace Services.Services
             var response = new ServiceResponse();
             try
             {
-                response.Success = _couponRepository.ActivateCoupons(couponId, amount, userId);
+                _couponRepository.ActivateCoupons(couponId, amount, userId);
+                response.Success = true;
             }
             catch (Exception e)
             {
@@ -50,7 +52,8 @@ namespace Services.Services
             var response = new ServiceResponse();
             try
             {
-                response.Success = _couponRepository.DeactivateCoupons(couponId, amount, userId);
+                _couponRepository.DeactivateCoupons(couponId, amount, userId);
+                response.Success = true;
             }
             catch (Exception e)
             {
@@ -65,7 +68,8 @@ namespace Services.Services
             var response = new ServiceResponse();
             try
             {
-                response.Success = _couponRepository.DeleteCoupons(couponId,  userId);
+                _couponRepository.DeleteCoupons(couponId, userId);
+                response.Success = true;
             }
             catch (Exception e)
             {

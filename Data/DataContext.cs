@@ -15,8 +15,7 @@ namespace Data
 
         public DbSet<SavedCoupon> SavedCoupons { get; set; }
         public DbSet<AvailableCoupon> AvailableCoupons { get; set; }
-        public DbSet<ActiveCoupon> ActiveCoupons { get; set; }
-        public DbSet<CouponTransactionHistory> CouponTransactionHistory { get; set; }
+        public DbSet<CouponHistory> CouponHistory { get; set; }
 
         public static DataContext Create()
         {
@@ -28,6 +27,11 @@ namespace Data
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<ApplicationUser>().HasOptional(x => x.BusinessInfo);
+            modelBuilder.Entity<AvailableCoupon>().ToTable("AvailableCoupon");
+            modelBuilder.Entity<BusinessInfo>().ToTable("BusinessInfo");
+            modelBuilder.Entity<CouponHistory>().ToTable("CouponHistory");
+            modelBuilder.Entity<CustomerInfo>().ToTable("CustomerInfo");
+            modelBuilder.Entity<SavedCoupon>().ToTable("SavedCoupon");
         }
     }
 }

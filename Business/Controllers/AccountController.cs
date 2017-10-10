@@ -22,13 +22,13 @@ namespace Business.Controllers
     {
         private ApplicationSignInManager _signInManager;
         private ApplicationUserManager _userManager;
-        private readonly IBusinessInfoService _businessInfoService;
+        private readonly IBusinessService _businessService;
         private readonly IEmailService _emailService;
         private IAuthenticationManager AuthenticationManager => HttpContext.GetOwinContext().Authentication;
 
         public AccountController()
         {
-            _businessInfoService = new BusinessInfoService();
+            _businessService = new BusinessService();
             _emailService = new EmailService();
         }
 
@@ -149,7 +149,7 @@ namespace Business.Controllers
         [AllowAnonymous]
         public ActionResult VerifyPhysicalAddress(string email, string code)
         {
-            var response = _businessInfoService.VerifyPhysicalAddressCode(email, code);
+            var response = _businessService.VerifyPhysicalAddressCode(email, code);
 
             return new JsonResult
             {
@@ -181,7 +181,7 @@ namespace Business.Controllers
                 result = UserManager.Create(user, model.Password);
                 if (result.Succeeded)
                 {
-                    _businessInfoService.CreateBusinessInfo(user.Id, model.BusinessName, model.Lat, model.Lng, model.FormattedAddress, model.PhoneNumber, model.FormattedPhoneNumber, model.Website, model.Rating, model.PlaceId);
+                    _businessService.CreateBusinessInfo(user.Id, model.BusinessName, model.Lat, model.Lng, model.FormattedAddress, model.PhoneNumber, model.FormattedPhoneNumber, model.Website, model.Rating, model.PlaceId);
                     string code = await UserManager.GenerateEmailConfirmationTokenAsync(user.Id);
                     var callbackUrl = Url.Action("ConfirmEmail", "Account", new { userId = user.Id, code = code }, protocol: Request.Url.Scheme);
                     _emailService.SendRequireEmailValidation(model.Email, ConfigurationManager.AppSettings["ContactEmailAddress"], model.BusinessName, callbackUrl);

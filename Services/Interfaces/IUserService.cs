@@ -1,6 +1,5 @@
-﻿using System.Collections.Generic;
-using Data.Entities;
-using Services.Models;
+﻿using Data.Entities;
+using System.Collections.Generic;
 
 namespace Services.Interfaces
 {

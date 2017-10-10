@@ -119,9 +119,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Interfaces\IAzureStorageService.cs" />
-    <Compile Include="Interfaces\IBusinessInfoService.cs" />
+    <Compile Include="Interfaces\IBusinessService.cs" />
     <Compile Include="Interfaces\ICouponService.cs" />
-    <Compile Include="Interfaces\ICustomerInfoService.cs" />
+    <Compile Include="Interfaces\ICustomerService.cs" />
     <Compile Include="Interfaces\IEmailService.cs" />
     <Compile Include="Interfaces\IUserService.cs" />
     <Compile Include="Models\ActiveCouponModel.cs" />
@@ -135,9 +135,9 @@
       <DependentUpon>ReturnMessages.resx</DependentUpon>
     </Compile>
     <Compile Include="Services\AzureStorageService.cs" />
-    <Compile Include="Services\BusinessInfoService.cs" />
+    <Compile Include="Services\BusinessService.cs" />
     <Compile Include="Services\CouponService.cs" />
-    <Compile Include="Services\CustomerInfoService.cs" />
+    <Compile Include="Services\CustomerService.cs" />
     <Compile Include="Services\EmailService.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>

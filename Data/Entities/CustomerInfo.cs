@@ -6,8 +6,8 @@ namespace Data.Entities
     public class CustomerInfo
     {
         public int Id { get; set; }
-        public int CouponExpiredCount { get; set; }
-        public int CompaintCount { get; set; }
-        public virtual ActiveCoupon ActiveCoupon { get; set; }
+        public int CouponUnRedeemedCount { get; set; }
+        public int CouponRedeemedCount { get; set; }
+        public int ComplaintCount { get; set; }
     }
 }
