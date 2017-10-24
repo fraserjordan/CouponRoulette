@@ -10,6 +10,8 @@
             $scope.isLoading = false;
 
             $scope.couponModel = {
+                title: "",
+                type: "",
                 quantitytOne: "",
                 itemOne: "",
                 multiplierOption: "",
@@ -17,6 +19,7 @@
                 quantityTwo: "",
                 itemTwo: ""
             }
+            $scope.types = [{text: "Breakfast", value: 0 }, { text: "Lunch", value: 1 }, { text: "Dinner", value: 2 }];
 
             $scope.changeFreeOptionInput = function(val) {
                 if (val === "for free") {
@@ -49,7 +52,9 @@
                     type: "POST",
                     url: '/Coupon/Create',
                     data: {
-                        CouponDealText: "Get " + $scope.couponModel.quantityOne + " " +
+                        couponTitle: $scope.couponModel.title,
+                        couponType: $scope.couponModel.type,
+                        couponText: "Get " + $scope.couponModel.quantityOne + " " +
                             $scope.couponModel.itemOne + " " +
                             $scope.couponModel.multiplierOption + " " +
                             $scope.couponModel.price + " " +

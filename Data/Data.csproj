@@ -72,6 +72,7 @@
     <Compile Include="Enums\AccountType.cs" />
     <Compile Include="Enums\AvailableCouponStatus.cs" />
     <Compile Include="Enums\CouponHistoryReason.cs" />
+    <Compile Include="Enums\CouponType.cs" />
     <Compile Include="Interfaces\IBusinessRepository.cs" />
     <Compile Include="Interfaces\ICouponRepository.cs" />
     <Compile Include="Interfaces\ICustomerRepository.cs" />
@@ -79,6 +80,14 @@
     <Compile Include="Migrations\201710100823568_Initial.cs" />
     <Compile Include="Migrations\201710100823568_Initial.Designer.cs">
       <DependentUpon>201710100823568_Initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710101924341_RemoveAmountLeftFromAvailableCoupons.cs" />
+    <Compile Include="Migrations\201710101924341_RemoveAmountLeftFromAvailableCoupons.Designer.cs">
+      <DependentUpon>201710101924341_RemoveAmountLeftFromAvailableCoupons.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201710210142009_AddCouponType.cs" />
+    <Compile Include="Migrations\201710210142009_AddCouponType.Designer.cs">
+      <DependentUpon>201710210142009_AddCouponType.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -94,6 +103,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201710100823568_Initial.resx">
       <DependentUpon>201710100823568_Initial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710101924341_RemoveAmountLeftFromAvailableCoupons.resx">
+      <DependentUpon>201710101924341_RemoveAmountLeftFromAvailableCoupons.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201710210142009_AddCouponType.resx">
+      <DependentUpon>201710210142009_AddCouponType.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -6,7 +6,11 @@
         function($scope, $mdDialog, $mdToast, $compile, state, alertService) {
 
             $scope.model = JSON.parse(state('index.model')).Model;
+            var self = $scope;
             $scope.isLoading = false;
+
+            $scope.query = {}
+            $scope.queryBy = '$';
 
             $scope.activateCouponModel = {
                 selectedId: null,
@@ -24,30 +28,51 @@
 
             $scope.amounts = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "10"];
 
+            $scope.expandActions = function(event) {
+                var element = event.target;
+                $(element).closest('md-card').find('md-card-actions').toggle();
+                $(element).toggleClass('flip');
+            }
+
             $scope.setSelectableAmounts = function(amountLeft) {
                 for (var i = 0; i < amountLeft; i++) {
                     $scope.deactivateDeleteCouponsAmounts.push("" + i + "");
                 }
             }
 
-            $scope.activateCouponsDialog = function() {
+            $scope.activateCouponsDialog = function (couponId) {
+                $scope.activateCouponModel.selectedId = couponId;
                 $mdDialog.show({
                     templateUrl: 'activateCouponsDialog.html',
-                    clickOutsideToClose: true
+                    clickOutsideToClose: true,
+                    controller: function () {
+                        return self;
+                    },
+                    controllerAs: 'ctrl'
                 });
             }
 
-            $scope.deactivateCouponsDialog = function() {
+            $scope.deactivateCouponsDialog = function (couponId) {
+                $scope.deactivateCouponModel.selectedId = couponId;
                 $mdDialog.show({
                     templateUrl: 'deactivateCouponsDialog.html',
-                    clickOutsideToClose: true
+                    clickOutsideToClose: true,
+                    controller: function () {
+                        return self;
+                    },
+                    controllerAs: 'ctrl'
                 });
             }
 
-            $scope.deleteCouponsDialog = function() {
+            $scope.deleteCouponsDialog = function (couponId) {
+                $scope.deleteCouponModel.selectedId = couponId;
                 $mdDialog.show({
                     templateUrl: 'deleteCouponsDialog.html',
-                    clickOutsideToClose: true
+                    clickOutsideToClose: true,
+                    controller: function () {
+                        return self;
+                    },
+                    controllerAs: 'ctrl'
                 });
             }
 

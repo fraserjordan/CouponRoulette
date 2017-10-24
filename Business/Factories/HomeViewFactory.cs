@@ -1,6 +1,8 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using AutoMapper;
 using Business.Models;
+using Data.Enums;
 using Services.Interfaces;
 using Services.Services;
 
@@ -17,14 +19,23 @@ namespace Business.Factories
 
         public IndexViewModel CreateIndexViewModel(string userId)
         {
-            var activeCoupons = _couponService.GetActiveCouponsById(userId);
+            var availableCoupons = _couponService.GetAvailableCouponsById(userId);
             var savedCoupons = _couponService.GetSavedCouponsById(userId);
 
             var model = new IndexViewModel
             {
-                AvailableCoupons = Mapper.Map<List<AvailableCouponViewModel>>(activeCoupons),
+                AvailableCoupons = new List<AvailableCouponViewModel>(),
                 SavedCoupons = Mapper.Map<List<SavedCouponViewModel>>(savedCoupons)
             };
+
+            foreach (var savedCoupon in model.SavedCoupons)
+            {
+
+                savedCoupon.AmountAvailable = availableCoupons.Count(x =>
+                    x.CouponText == savedCoupon.CouponText && x.Status == AvailableCouponStatus.Available);
+                savedCoupon.AmountRedeemed = availableCoupons.Count(x =>
+                    x.CouponText == savedCoupon.CouponText && x.Status == AvailableCouponStatus.Taken);
+            }
 
             return model;
         }

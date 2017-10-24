@@ -55,6 +55,7 @@
             </md-card-title>
         </md-card>
 
+
         <md-card class="ManageCardContainer" style="height: auto;">
             <md-card-title class="NoPadding">
                 <md-card-title-text style="text-align: center;">
@@ -66,7 +67,7 @@
                     <div id="GeneralInput">
                         <form action="/Manage/ChangePassword" method="post" name="form">
                             <div class="InputContainer">
-                                <md-input-container>
+                                <md-input-container class="NoMargin" style="margin-top: 15px !important;">
                                     <label>Old password</label>
                                     <input type="password" ng-model="changePasswordModel.OldPassword" Name="OldPassword" ng-required="true" ng-minlength="4" ng-maxlength="20" />
                                     @Html.Partial("_AngularMessages", "form.OldPassword")

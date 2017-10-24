@@ -30,11 +30,11 @@ namespace Business.Controllers
         }
 
         [HttpPost]
-        public JsonResult Create(string couponDealText)
+        public JsonResult Create(CreateCouponModel model)
         {
             var user = _userService.GetUserByEmail(User.Identity.Name);
 
-            var response = _couponService.CreateCoupons(couponDealText, user.Id);
+            var response = _couponService.CreateCoupons(model, user.Id);
 
             return new JsonResult
             {

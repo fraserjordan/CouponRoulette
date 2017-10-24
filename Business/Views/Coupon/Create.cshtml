@@ -11,9 +11,26 @@
         <div id="GeneralInput">
             <div class="InputContainer">
                 <md-input-container style="text-align: left;" class="MinWidth">
-                    <span>Get</span>
+                    <label>Coupon Type</label>
+                    <md-select style="margin-top: 16px;" name="Type" ng-model="couponModel.type" ng-disabled="isLoading" ng-required="true">
+                        <md-option ng-repeat="type in types" ng-value="type.value">
+                            {{type.text}}
+                        </md-option>
+                    </md-select>
+                    @Html.Partial("_AngularMessages", "form.Type")
+                </md-input-container>
+            </div>
+            <div class="InputContainer">
+                <md-input-container style="text-align: left; margin: 0;" class="MinWidth">
+                    <label>Title</label>
+                    <input type="text" ng-model="couponModel.title" name="Title" ng-required="true"/>
+                    @Html.Partial("_AngularMessages", "form.Title")
+                </md-input-container>
+            </div>
+            <div class="InputContainer">
+                <md-input-container style="text-align: left; margin-top: 0;" class="MinWidth">
                     <label>Quantity</label>
-                    <md-select style="margin-top: 16px;" name="QuantityOne" ng-model="couponModel.quantityOne" ng-disabled="isLoading" ng-required="true">
+                    <md-select name="QuantityOne" ng-model="couponModel.quantityOne" ng-disabled="isLoading" ng-required="true">
                         <md-option ng-repeat="quantity in quantityOptions" ng-value="quantity">
                             {{quantity}}
                         </md-option>
@@ -43,7 +60,7 @@
                 <div class="InputContainer">
                     <md-input-container style="text-align: left; margin-bottom: 0;" class="MinWidth">
                         <label>Price</label>
-                        <input type="text" ng-model="couponModel.price" typ="number" ng-maxlength="3" name="Price" ng-required="!hidePriceOptions" />
+                        <input type="text" ng-model="couponModel.price" typ="number" ng-maxlength="3" name="Price" ng-required="!hidePriceOptions"/>
                         @Html.Partial("_AngularMessages", "form.Price")
                     </md-input-container>
                 </div>
@@ -68,16 +85,17 @@
                     </md-input-container>
                 </div>
             </div>
-            <h4 style="margin-bottom: 0;">Preview of your deal.</h4>
-            <div class="FormContent" style="width: 80%">
-                <md-card>
-                    <md-card-title class="PreviewCardTitleContainer">
-                        <div class="previewDealTitle">
-                            <div class="previewDealTitleText">Get {{couponModel.quantityOne}} {{couponModel.itemOne}} {{couponModel.multiplierOption}} {{couponModel.price === '' ? '' : "$"+couponModel.price}} {{couponModel.quantityTwo}} {{couponModel.itemTwo}}</div>
-                        </div>
-                    </md-card-title>
-                </md-card>
-                <md-button class="Button" ng-disabled="!form.$valid" ng-click="createCoupon()" style="width: 200px; margin-bottom: 25px; margin-top: 15px;">Create Coupon</md-button>
+            <h4>Preview of your deal.</h4>
+            <div class="InputContainer">
+                <div class="PreviewDealTextContainer">
+                    <div class="PreviewDealTitle">{{couponModel.title}}</div>
+                    <div class="PreviewDealText">Get {{couponModel.quantityOne}} {{couponModel.itemOne}} {{couponModel.multiplierOption}} {{couponModel.price === '' ? '' : "$"+couponModel.price}} {{couponModel.quantityTwo}} {{couponModel.itemTwo}}</div>
+                </div>
+            </div>
+            <div class="InputContainer">
+                <div style="display: inline-block;">
+                    <md-button class="Button" ng-disabled="!form.$valid" ng-click="createCoupon()" style="width: 200px; margin-bottom: 25px; margin-top: 15px;">Create Coupon</md-button>
+                </div>
             </div>
         </div>
     </div>

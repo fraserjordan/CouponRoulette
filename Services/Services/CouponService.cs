@@ -15,12 +15,12 @@ namespace Services.Services
         {
             _couponRepository = new CouponRepository();
         }
-        public ServiceResponse CreateCoupons(string couponText, string userId)
+        public ServiceResponse CreateCoupons(CreateCouponModel model, string userId)
         {
             var response = new ServiceResponse();
             try
             {
-                _couponRepository.CreateCoupon(couponText, userId);
+                _couponRepository.CreateCoupon(model.CouponTitle, model.CouponText, model.CouponType, userId);
                 response.Success = true;
             }
             catch (Exception e) {
@@ -79,7 +79,7 @@ namespace Services.Services
             return response;
         }
 
-        public List<AvailableCoupon> GetActiveCouponsById(string userId)
+        public List<AvailableCoupon> GetAvailableCouponsById(string userId)
         {
             try
             {

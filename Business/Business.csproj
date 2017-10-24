@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -211,6 +212,10 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\Local.mdf" />
+    <Content Include="App_Data\Local_log.ldf">
+      <DependentUpon>Local.mdf</DependentUpon>
+    </Content>
     <Content Include="bower_components\angular-match\angular-match.js" />
     <Content Include="bower_components\angular-match\angular-match.min.js" />
     <Content Include="bower_components\angular-match\karma.conf.js" />
@@ -420,7 +425,6 @@
     <Content Include="Views\Shared\_EmailLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
     <Folder Include="bin\" />
     <Folder Include="Enums\" />
     <Folder Include="Views\Base\" />

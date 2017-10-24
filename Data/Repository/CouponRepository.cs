@@ -16,7 +16,7 @@ namespace Data.Repository
         {
             _dataContext = new DataContext();
         }
-        public void CreateCoupon(string couponText, string userId)
+        public void CreateCoupon(string couponTitle, string couponText, CouponType couponType, string userId)
         {
             var user = _dataContext.Users.FirstOrDefault(x => x.Id == userId);
             if (user != null)
@@ -24,7 +24,9 @@ namespace Data.Repository
                 var coupon = new SavedCoupon
                 {
                     AmountRedeemed = 0,
+                    CouponTitle = couponTitle,
                     CouponText = couponText,
+                    CouponType = couponType,
                     Business = user,
                     Deleted = false
                 };
@@ -44,15 +46,15 @@ namespace Data.Repository
                 var existingActiveCoupons = _dataContext.AvailableCoupons.Include(x => x.SavedCoupon).Where(x => x.SavedCoupon.Id == couponId && user.Id == userId).ToList();
                 if (existingActiveCoupons.Count < maxAvailableCouponLimit)
                 {
-                    var availableCoupon = new AvailableCoupon
+                    for (int i = 0; i < amount && i + existingActiveCoupons.Count < maxAvailableCouponLimit; i++)
                     {
-                        AmountLeft = amount,
-                        CouponText = savedCoupon.CouponText,
-                        SavedCoupon = savedCoupon,
-                        Status = AvailableCouponStatus.Available
-                    };
-                    for (int i = 0; i < maxAvailableCouponLimit; i++)
-                    {
+                        var availableCoupon = new AvailableCoupon
+                        {
+                            CouponText = savedCoupon.CouponText,
+                            SavedCoupon = savedCoupon,
+                            Status = AvailableCouponStatus.Available
+                        };
+
                         _dataContext.AvailableCoupons.Add(availableCoupon);
                     }
                 }
@@ -92,7 +94,7 @@ namespace Data.Repository
             var user = _dataContext.Users.FirstOrDefault(x => x.Id == userId);
             if (user != null)
             {
-                return _dataContext.AvailableCoupons.Include(x => x.Customer).Where(x => x.Customer.Id == userId).ToList();
+                return _dataContext.AvailableCoupons.Include(x => x.SavedCoupon).Where(x => x.SavedCoupon.Business.Id == userId).ToList();
             }
             return new List<AvailableCoupon>();
         }

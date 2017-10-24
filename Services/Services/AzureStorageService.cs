@@ -13,23 +13,28 @@ namespace Services.Services
     public class AzureStorageService : IAzureStorageService
     {
         private readonly IBusinessService _businessService;
-        private static readonly string accountName = "fraserteststorage";
-        private static readonly string accessKey = "cOG5ee85cfrN4FbtT6bANeP+zDD03UFb21VwH7/yig3egL7DaNPkunXYuampjevHXY+NXx0DBMASEtFz4iu7Eg==";
-        private static readonly string menusContainerName = "freecouponsmenus";
-        private readonly CloudBlobClient _blobClient;
+        private static readonly string AccountName = ConfigurationManager.AppSettings["StorageAccountName"];
+        private static readonly string AccessKey = ConfigurationManager.AppSettings["StorageAccountKey"];
+        private static readonly string MenusContainerName = ConfigurationManager.AppSettings["MenusContainerName"];
+        private CloudBlobClient _blobClient;
 
         public AzureStorageService()
         {
             _businessService = new BusinessService();
-            var creds = new StorageCredentials(accountName, accessKey);
+        }
+
+        private void IntiateStorageConnection()
+        {
+            var creds = new StorageCredentials(AccountName, AccessKey);
             var storageAccount = new CloudStorageAccount(creds, useHttps: true);
             _blobClient = storageAccount.CreateCloudBlobClient();
-
         }
 
         public void UploadToBlobStorage(HttpPostedFileBase file, string businessInfoId)
         {
-            CloudBlobContainer container = _blobClient.GetContainerReference(menusContainerName);
+            IntiateStorageConnection();
+
+            CloudBlobContainer container = _blobClient.GetContainerReference(MenusContainerName);
 
             container.CreateIfNotExists();
             container.SetPermissions(new BlobContainerPermissions()

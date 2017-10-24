@@ -9,6 +9,6 @@ namespace Business.Models
     {
         public string BusinessName { get; set; }
         public List<AvailableCouponViewModel> AvailableCoupons { get; set; }
-        public object SavedCoupons { get; internal set; }
+        public List<SavedCouponViewModel> SavedCoupons { get; internal set; }
     }
 }
