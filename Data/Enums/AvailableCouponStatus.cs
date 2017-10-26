@@ -3,6 +3,6 @@
     public enum AvailableCouponStatus
     {
         Available,
-        Taken
+        Assigned
     }
 }

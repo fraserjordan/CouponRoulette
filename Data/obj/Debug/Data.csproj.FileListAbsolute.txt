@@ -79,5 +79,6 @@ D:\GIT\CouponRoullette\Data\bin\Debug\Microsoft.AspNet.Identity.EntityFramework.
 D:\GIT\CouponRoullette\Data\obj\Debug\Data.Migrations.Initial.resources
 D:\GIT\CouponRoullette\Data\obj\Debug\Data.csproj.GenerateResource.Cache
 D:\GIT\CouponRoullette\Data\obj\Debug\Data.Migrations.RemoveAmountLeftFromAvailableCoupons.resources
-D:\GIT\CouponRoullette\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache
 D:\GIT\CouponRoullette\Data\obj\Debug\Data.Migrations.AddCouponType.resources
+D:\GIT\CouponRoullette\Data\obj\Debug\Data.Migrations.AddDatesDataToCouponEntities.resources
+D:\GIT\CouponRoullette\Data\obj\Debug\Data.csprojResolveAssemblyReference.cache

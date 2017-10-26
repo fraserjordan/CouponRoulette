@@ -418,7 +418,6 @@ textarea {
     width: 100%;
     max-width: 900px;
     max-height: 800px;
-    overflow: auto;
     margin: auto;
     margin-top: 35px;
 }
@@ -459,6 +458,7 @@ textarea {
     text-align: center;
 }
 /*#endregion GENERAL*/
+
 /*#region CONTACT PAGE*/
 .ContactCardContainer {
     display: inline-block;
@@ -617,32 +617,27 @@ textarea {
 /*#endregion*/
 
 /*#region MANAGE*/
-.ManageCardContainer {
-    display: inline-block;
-    max-width: 400px;
-    width: 100%;
-    margin-top: 30px;
-}
+.ManageContentContainer {
+    padding-left: 15%;
+    padding-right: 15%;
 
+}
 .ManageActionButton {
-    width: 70%; 
-    margin-bottom: 20px !important;
+    width: 100%;
+    margin: 0 !important;
 }
 
-.ManageBusinessInfoTable {
-    width: 100%; 
-    margin-top: 15px; 
-    margin-bottom: 15px; 
-    margin-left: 10px; 
+.business-info-container {
     text-align: left;
-    font-size: 10pt;
-    padding-right: 10px;
+}
+.attach-file-button {
+    padding-top: 7px !important;
+    background-color: #4caf50 !important;
 }
 /*#endregion*/
-
 /*#region CONFIRMATION MESSAGES*/
 .ConfirmationMessageCardBody {
-    padding: 15px 30px 15px 30px; 
+    padding: 15px 30px 15px 30px;
     text-align: justify;
 }
 

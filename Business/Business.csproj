@@ -246,6 +246,7 @@
     <Content Include="Scripts\app\controllers\forgotPasswordController.js" />
     <Content Include="Scripts\app\controllers\resetPasswordController.js" />
     <Content Include="Scripts\app\controllers\searchController.js" />
+    <Content Include="Scripts\app\directives\file-picker.js" />
     <Content Include="Scripts\app\directives\ng-file-upload\FileAPI.js" />
     <Content Include="Scripts\app\directives\ng-file-upload\FileAPI.min.js" />
     <Content Include="Scripts\app\directives\ng-file-upload\ng-file-upload-all.js" />

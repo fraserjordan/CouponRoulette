@@ -1,4 +1,5 @@
-﻿using Data.Entities;
+﻿using System;
+using Data.Entities;
 using Data.Interfaces;
 using System.Collections.Generic;
 using System.Data.Entity;
@@ -23,11 +24,11 @@ namespace Data.Repository
             {
                 var coupon = new SavedCoupon
                 {
-                    AmountRedeemed = 0,
                     CouponTitle = couponTitle,
                     CouponText = couponText,
                     CouponType = couponType,
                     Business = user,
+                    DateCreated = DateTime.UtcNow,
                     Deleted = false
                 };
                 _dataContext.SavedCoupons.Add(coupon);

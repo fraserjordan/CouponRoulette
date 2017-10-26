@@ -65,18 +65,23 @@ namespace Business.Controllers
         }
 
         [HttpPost]
-        public bool UploadMenu(string businessInfoId)
+        public ActionResult SaveMenu(string menuUrl)
         {
-            if (Request.Files.Count > 0)
+            var businessInfoId = _businessService.GetBusinessInfoByEmail(User.Identity.Name).Id;
+            if (string.IsNullOrEmpty(menuUrl))
             {
-                var file = Request.Files[0];
-
-                if (file != null && file.ContentLength > 0)
+                if (Request.Files.Count > 0)
                 {
-                    _azureStorageService.UploadToBlobStorage(file, businessInfoId);
+                    var file = Request.Files[0];
+
+                    if (file != null && file.ContentLength > 0)
+                    {
+                        menuUrl = _azureStorageService.UploadToBlobStorage(file, businessInfoId);
+                    }
                 }
             }
-            return true;
+            _businessService.UpdateMenuUrl(businessInfoId, menuUrl);
+            return RedirectToAction("Index");
         }
     }
 }

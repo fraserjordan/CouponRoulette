@@ -89,9 +89,9 @@ namespace Data.Repository
 
         public bool UpdateMenuUrl(int businessInfoId, string menuUrl)
         {
-            var user = _context.Users.FirstOrDefault(x => x.BusinessInfo.Id == businessInfoId);
-            if (user == null) return false;
-            user.BusinessInfo.MenuUrl = menuUrl;
+            var businessInfo = _context.BusinessInfo.FirstOrDefault(x => x.Id == businessInfoId);
+            if (businessInfo == null) return false;
+            businessInfo.MenuUrl = menuUrl;
             return _context.SaveChanges() > 0;
         }
 

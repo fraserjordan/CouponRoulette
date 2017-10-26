@@ -14,6 +14,11 @@
                 ConfirmPassword: ""
             };
 
+            $scope.menu = {
+                url: "",
+                fileName: ""
+            }
+
             $scope.validateNewPassword = function(form) {
                 form.NewPassword.$validate();
             }
@@ -78,30 +83,26 @@
                 });
             }
 
-            $scope.uploadMenu = function() {
-                $("#menuUpload").click();
+            $scope.menuUrlChange = function() {
+                $scope.menu.fileName = null;
+                $scope.$apply();
             }
 
-            // upload on file select or drop
-            $scope.upload = function (file) {
-                onLoading();
-                Upload.upload({
-                    url: 'Manage/UploadMenu',
-                    data: {
-                        file: file,
-                        'businessInfoId': $scope.model.Id
-                    },
-                    success: function (data) {
-                        onLoadingFinish();
-                        $scope.isLoading = false;
-                        if (data.Success) {
-                            alertService.showAlert(data.Success, data.Messages[0], reloadPage);
+            $scope.selectFile = function () {
+                $("#fileInput").bind('change',
+                    function (e) {
+                        $scope.menu.url = null;
+                        var files = e.target.files;
+                        if (files[0]) {
+                            const file = files[0];
+                            $scope.menu.fileName = file.name;
+                            $scope.$apply();
                         } else {
-                            alertService.showAlert(data.Success, data.Messages[0]);
+                            $scope.menu.fileName = null;
                         }
-                    }
                 });
-            };
+                $("#fileInput").click();
+            }
         }
     ]);
 }());

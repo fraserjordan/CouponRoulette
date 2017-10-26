@@ -23,6 +23,7 @@ namespace Business
                     "~/Scripts/app/services/alertService.js",
                     "~/Scripts/app/services/common.js",
                     "~/Scripts/app/directives/ng-match.js",
+                    "~/Scripts/app/directives/file-picker.js",
                     "~/Scripts/app/directives/ng-file-upload/FileAPI.min.js",
                     "~/Scripts/app/directives/ng-file-upload/ng-file-upload-all.min.js",
                     "~/Scripts/app/directives/ng-file-upload/ng-file-upload-shim.min.js",

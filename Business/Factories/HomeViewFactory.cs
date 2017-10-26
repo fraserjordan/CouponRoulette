@@ -24,17 +24,15 @@ namespace Business.Factories
 
             var model = new IndexViewModel
             {
-                AvailableCoupons = new List<AvailableCouponViewModel>(),
                 SavedCoupons = Mapper.Map<List<SavedCouponViewModel>>(savedCoupons)
             };
 
             foreach (var savedCoupon in model.SavedCoupons)
             {
-
                 savedCoupon.AmountAvailable = availableCoupons.Count(x =>
                     x.CouponText == savedCoupon.CouponText && x.Status == AvailableCouponStatus.Available);
                 savedCoupon.AmountRedeemed = availableCoupons.Count(x =>
-                    x.CouponText == savedCoupon.CouponText && x.Status == AvailableCouponStatus.Taken);
+                    x.CouponText == savedCoupon.CouponText && x.Status == AvailableCouponStatus.Assigned);
             }
 
             return model;

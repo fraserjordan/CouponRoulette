@@ -25,7 +25,6 @@ namespace Data.Repository
             if (user == null) return false;
             var customerInfo = new CustomerInfo()
             {
-                ComplaintCount = 0,
                 CouponRedeemedCount = 0,
                 CouponUnRedeemedCount = 0
             };

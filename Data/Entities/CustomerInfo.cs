@@ -8,6 +8,5 @@ namespace Data.Entities
         public int Id { get; set; }
         public int CouponUnRedeemedCount { get; set; }
         public int CouponRedeemedCount { get; set; }
-        public int ComplaintCount { get; set; }
     }
 }

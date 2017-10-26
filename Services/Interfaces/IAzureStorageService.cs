@@ -4,6 +4,6 @@ namespace Services.Interfaces
 {
     public interface IAzureStorageService
     {
-        void UploadToBlobStorage(HttpPostedFileBase file, string businessInfoId);
+        string UploadToBlobStorage(HttpPostedFileBase file, int businessInfoId);
     }
 }

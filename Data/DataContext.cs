@@ -16,6 +16,8 @@ namespace Data
         public DbSet<SavedCoupon> SavedCoupons { get; set; }
         public DbSet<AvailableCoupon> AvailableCoupons { get; set; }
         public DbSet<CouponHistory> CouponHistory { get; set; }
+        public DbSet<CustomerInfo> CustomerInfo { get; set; }
+        public DbSet<BusinessInfo> BusinessInfo { get; set; }
 
         public static DataContext Create()
         {

@@ -1,4 +1,5 @@
-﻿using Data.Enums;
+﻿using System;
+using Data.Enums;
 
 namespace Data.Entities
 {
@@ -7,8 +8,8 @@ namespace Data.Entities
         public int Id { get; set; }
         public string CouponTitle { get; set; }
         public string CouponText { get; set; }
-        public int AmountRedeemed { get; set; }
         public bool Deleted { get; set; }
+        public DateTime DateCreated { get; set; }
         public CouponType CouponType { get; set; }
         public ApplicationUser Business { get; set; }
     }

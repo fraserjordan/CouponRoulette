@@ -30,7 +30,7 @@ namespace Services.Services
             _blobClient = storageAccount.CreateCloudBlobClient();
         }
 
-        public void UploadToBlobStorage(HttpPostedFileBase file, string businessInfoId)
+        public string UploadToBlobStorage(HttpPostedFileBase file, int businessInfoId)
         {
             IntiateStorageConnection();
 
@@ -43,7 +43,7 @@ namespace Services.Services
             });
             CloudBlockBlob blockBlob = container.GetBlockBlobReference(businessInfoId + ".pdf");
             blockBlob.UploadFromStream(file.InputStream);
-            _businessService.UpdateMenuUrl(int.Parse(businessInfoId), blockBlob.Uri.ToString());
+            return blockBlob.Uri.ToString();
         }
     }
 }
