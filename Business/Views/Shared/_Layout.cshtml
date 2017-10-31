@@ -26,42 +26,22 @@
             state: {}
         };
     </script>
-    <div class="wrapper">
-        <div id="MainBody" style="height: 100%;">
+    <div class="main" layout="column" layout-align="space-between center">
+        <div class="navbar">
             <header style="text-align: center">
                 <div aria-busy="false" aria-label="Loading, please wait." role="progressbar"></div>
             </header>
-            <div class="navbar">
-                <div style="text-align: center;">
-                    <a class="GreyLink SiteTitle" href="/Home/Index">Simple Coupons</a>
-                    @Html.Partial("_LoginPartial")
-                </div>
+            <div style="text-align: center;">
+                <a class="GreyLink SiteTitle" href="/Home/Index">Coupon Roulette</a>
+                @Html.Partial("_LoginPartial")
             </div>
+        </div>
+        <div style="width: 100%;" flex="80">
             @RenderBody()
         </div>
-        <div class="push"></div>
-    </div>
-    <div class="footer">
-        <label>© <a href="/Home/Index">Simple Coupons 2017</a></label> - <label><a href="/Home/Contact">Contact us</a></label>
+        <div class="footer">
+            <label>© <a href="/Home/Index">Simple Coupons 2017</a></label> - <label><a href="/Home/Contact">Contact us</a></label>
+        </div>
     </div>
 </body>
 </html>
-@*                <div class="SearchContainer" ng-controller="searchController">*@
-@*                    <md-input-container>*@
-@*                        <input Class="SearchInput" ng-model="searchTerm" id="SearchInput" class="" />*@
-@*                    </md-input-container>*@
-@*                </div>*@
-
-@*<script>*@
-@*    (function() {*@
-@*        event = function(event) {*@
-@*            if (event.animationName == 'nodeInserted') {*@
-@*                $(".pac-container").appendTo(".SearchContainer")*@
-@*            }*@
-@*        }*@
-@**@
-@*        document.addEventListener('animationstart', event, false);*@
-@*        document.addEventListener('MSAnimationStart', event, false);*@
-@*        document.addEventListener('webkitAnimationStart', event, false);*@
-@*    })();*@
-@*</script>*@

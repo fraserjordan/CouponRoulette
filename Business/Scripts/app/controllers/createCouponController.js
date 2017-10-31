@@ -19,7 +19,7 @@
                 quantityTwo: "",
                 itemTwo: ""
             }
-            $scope.types = [{text: "Breakfast", value: 0 }, { text: "Lunch", value: 1 }, { text: "Dinner", value: 2 }];
+            $scope.types = [{text: "Breakfast", value: 1 }, { text: "Lunch", value: 2 }, { text: "Dinner", value: 3 }];
 
             $scope.changeFreeOptionInput = function(val) {
                 if (val === "for free") {

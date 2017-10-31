@@ -1,3 +1,4 @@
 ﻿(function() {
-    angular.module('freestuffServices', []);
-}());
+    angular.module('freestuffServices', ['ngMaterial'])
+        
+})();

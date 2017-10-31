@@ -1,5 +1,6 @@
 ﻿@model string
 
+<div class="md-errors-spacer"></div>
 <div ng-messages="@(Model).$error" multiple md-auto-hide="false" ng-show="@(Model).$touched || meta.ui.review">
     @Html.Partial("_DefaultAngularMessages")
 </div>

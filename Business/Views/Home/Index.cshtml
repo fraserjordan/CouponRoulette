@@ -8,104 +8,117 @@
 }
 
 <div ng-controller="businessHomeController">
-    <div class="InputContainer">
-        <div class="ContentContainer">
-            <div class="ContentHeader">
-                <h1 style="color: white;">Coupons</h1>
+    <div class="content-container home-content-container">
+        <div class="content-header">
+            <h1 style="color: white;">Coupons</h1>
+        </div>
+        <a href="/Coupon/Create" style="text-decoration: none;">
+            <div class="CreateCouponButton FlexContainer">
+                <div class="FlexItem"><h4 style="color: white;">Create Coupon(s)</h4></div>
             </div>
-            <a href="/Coupon/Create" style="text-decoration: none;">
-                <div class="CreateCouponButton FlexContainer">
-                    <div class="FlexItem"><h4 style="color: white;">Create Coupon(s)</h4></div>
-                </div>
-            </a>
-            <div class="SearchCouponsContainer FlexContainer">
-                <div class="FlexItem"><i class="material-icons SearchCouponsIcon">search</i></div>
-                <div class="FlexItem"><input placeholder="Search" class="SearchCouponsInput" type="text" ng-model="query[queryBy]" /></div>
-                </div>
-            <div class="ContentBody">
-                <md-card ng-show="model.SavedCoupons.length > 0" class="Coupon" ng-repeat="coupon in model.SavedCoupons | filter:query">
+        </a>
+        <div class="content-body">
+            <div ng-show="model.SavedCoupons.length > 0">
+                <md-card class="Coupon">
+                    <md-card-title class="search-coupon-container">
+                        <md-card-title-text layout="row" layout-align="start center">
+                            <div flex="5"><i class="material-icons">search</i></div>
+                            <div flex="95" class="left-align-text"><input placeholder="Search" class="search-coupon-input" type="text" ng-model="query[queryBy]" /></div>
+                        </md-card-title-text>
+                    </md-card-title>
+                </md-card>
+                <md-card class="Coupon" ng-repeat="coupon in model.SavedCoupons | filter:query">
                     <md-card-title>
                         <md-card-title-text>
                             <span class="md-headline"><strong>{{coupon.CouponTitle}}</strong></span>
                             <span class="md-subhead"><strong>{{coupon.CouponText}}</strong></span>
                             <span class="md-subhead">Redeemed: {{coupon.AmountRedeemed}} | Available: {{coupon.AmountAvailable}}</span>
                         </md-card-title-text>
-                        <i ng-click="expandActions($event)" class="material-icons CouponActionsToggle">&#xE5CF;</i>
+                        <i ng-click="expandActions($event)" class="material-icons coupon-actions-toggle">&#xE5CF;</i>
                     </md-card-title>
                     <md-card-actions layout="row" layout-align="center">
-                        <div class="CouponActions">
-                            <md-button ng-click="activateCouponsDialog(coupon.Id)" class="CouponActionButton Button md-primary">Activate Coupon(s)</md-button>
-                            <md-button style="background-color: #4CAF50 !important;"ng-click="deactivateCouponsDialog(coupon.Id)" class="CouponActionButton Button md-primary">Deactivate Coupon(s)</md-button>
-                            <md-button ng-click="deleteCouponsDialog(coupon.Id)" class="CouponActionButton Button RedButton md-primary">Delete Coupon</md-button>
+                        <div class="coupon-actions" layout="row" layout-align="space-around center">
+                            <div flex="30"><md-button ng-click="activateCouponsDialog(coupon.Id)" class="coupon-action-dialog-button Button Button md-primary">Activate Coupon(s)</md-button></div>
+                            <div flex="30"><md-button ng-click="deactivateCouponsDialog(coupon.Id)" class="coupon-action-dialog-button green-background Button md-primary">Deactivate Coupon(s)</md-button></div>
+                            <div flex="30"><md-button ng-click="deleteCouponsDialog(coupon.Id)" class="coupon-action-dialog-button red-background Button md-primary">Delete Coupon</md-button></div>
                         </div>
                     </md-card-actions>
                 </md-card>
-                <md-card ng-show="model.SavedCoupons.length == 0">
-                    <md-card-title>
-                        <md-card-title-text>
-                            <span class="md-headline">It doesn't look like you have any coupons created, click the "Create Coupon(s)" button above to get started!</span>
-                        </md-card-title-text>
-                    </md-card-title>
-                </md-card>
             </div>
-</div>
+            <md-card ng-show="model.SavedCoupons.length == 0">
+                <md-card-title>
+                    <md-card-title-text>
+                        <span class="md-headline">It doesn't look like you have any coupons created, click the "Create Coupon(s)" button above to get started!</span>
+                    </md-card-title-text>
+                </md-card-title>
+            </md-card>
+        </div>
     </div>
 
     <script type="text/ng-template" id="activateCouponsDialog.html">
-        <div class="ContentHeader" style="background-color: #8BC34A;">
-            <h1 style="color: white;">Activate</h1>
+        <div class="content-container">
+            <div class="content-header">
+                <h1 style="color: white;">Activate</h1>
+            </div>
+            <div class="content-body">
+                <md-content class="md-no-momentum" layout-margin>
+                    <form name="form">
+                        <p>Please select the amount of coupons you want to activate</p>
+                        <md-input-container class="md-block left-align-text">
+                            <md-select ng-model="ctrl.activateCouponModel.selectedAmount" name="Quantity" ng-required="true" ng-disabled="ctrl.isLoading">
+                                <label>Amount</label>
+                                <md-option ng-repeat="amount in ctrl.amounts" ng-value="amount">
+                                    {{amount}}
+                                </md-option>
+                            </md-select>
+                            @Html.Partial("_AngularMessages", "form.Quantity")
+                        </md-input-container>
+                        <md-button ng-click="ctrl.activateCoupon(form)" ng-disabled="!form.$valid" class="coupon-action-dialog-button Button md-primary">activate coupon(s)</md-button>
+                    </form>
+                </md-content>
+            </div>
         </div>
-        <div class="CouponsActionDialogContainer">
-            <form name="form">
-                <p>Please select the amount of coupons you want to activate</p>
-                <md-input-container style="text-align: left; margin: 20px 10px 10px 10px;" class="MinWidth">
-                    <md-select ng-model="ctrl.activateCouponModel.selectedAmount" name="Quantity" ng-required="true" ng-disabled="ctrl.isLoading">
-                        <label>Amount</label>
-                        <md-option ng-repeat="amount in ctrl.amounts" ng-value="amount">
-                            {{amount}}
-                        </md-option>
-                    </md-select>
-                    @Html.Partial("_AngularMessages", "form.Quantity")
-                </md-input-container>
-                <md-button ng-click="ctrl.activateCoupon(form)" ng-disabled="!form.$valid" class="CouponActionButton Button md-primary">activate coupon(s)</md-button>
-            </form>
-        </div>
-    
     </script>
 
     <script type="text/ng-template" id="deactivateCouponsDialog.html">
-        <div class="ContentHeader" style="background-color: #4CAF50;">
-            <h1 style="color: white;">Deactivate</h1>
-        </div>
-        <div class="CouponsActionDialogContainer">
-            <form name="form">
-                <p>Please select the amount of coupons you want to deactivate, any coupons already with a customer will remain that way</p>
-                <md-input-container style="text-align: left; margin: 20px 10px 10px 10px;" class="MinWidth">
-                    <span>Amount</span>
-                    <md-select ng-model="ctrl.deactivateCouponModel.selectedAmount" name="Quantity" ng-required="true" ng-disabled="ctrl.isLoading">
-                        <md-option ng-repeat="amount in ctrl.amounts" ng-value="amount">
-                            {{amount}}
-                        </md-option>
-                    </md-select>
-                    @Html.Partial("_AngularMessages", "form.Quantity")
-                </md-input-container>
-                <md-button style="background-color:#4CAF50 !important;"ng-click="ctrl.deactivateCoupon(form)" ng-disabled="!form.$valid" class="CouponActionButton Button md-primary">deactivate coupon(s)</md-button>
-            </form>
+        <div class="content-container">
+            <div class="content-header green-background">
+                <h1 style="color: white;">Deactivate</h1>
             </div>
-    
+            <div class="content-body">
+                <md-content class="md-no-momentum" layout-margin>
+                    <form name="form">
+                        <p>Please select the amount of coupons you want to deactivate, any coupons already with a customer will remain that way</p>
+                        <md-input-container class="md-block left-align-text">
+                            <span>Amount</span>
+                            <md-select ng-model="ctrl.deactivateCouponModel.selectedAmount" name="Quantity" ng-required="true" ng-disabled="ctrl.isLoading">
+                                <md-option ng-repeat="amount in ctrl.amounts" ng-value="amount">
+                                    {{amount}}
+                                </md-option>
+                            </md-select>
+                            @Html.Partial("_AngularMessages", "form.Quantity")
+                        </md-input-container>
+                        <md-button ng-click="ctrl.deactivateCoupon(form)" ng-disabled="!form.$valid" class="coupon-action-dialog-button green-background md-primary">deactivate coupon(s)</md-button>
+                    </form>
+                </md-content>
+            </div>
+        </div>
     </script>
 
     <script type="text/ng-template" id="deleteCouponsDialog.html">
-        <div class="ContentHeader" style="background-color: #F44336;">
-            <h1 style="color: white;">Delete</h1>
+        <div class="content-container">
+            <div class="content-header red-background">
+                <h1 style="color: white;">Delete</h1>
+            </div>
+            <div class="content-body">
+                <md-content class="md-no-momentum" layout-margin>
+                    <form name="form">
+                        <p>Are you sure you want to delete this coupon? All currentley active coupons will be deleted, all coupons held by customers will remain that way</p>
+                        <md-button ng-click="ctrl.deleteCoupon(form)" class="coupon-action-dialog-button red-background md-primary">delete coupon</md-button>
+                    </form>
+                </md-content>
+            </div>
         </div>
-        <div class="CouponsActionDialogContainer">
-            <form name="form">
-                <p>Are you sure you want to delete this coupon? All currentley active coupons will be deleted, all coupons held by customers will remain that way</p>
-                <md-button ng-click="ctrl.deleteCoupon(form)" class="CouponActionButton Button RedButton md-primary">delete coupon</md-button>
-            </form>
-        </div>
-    
     </script>
     <script type="text/javascript">
         @{

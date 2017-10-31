@@ -5,12 +5,12 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<div class="Main" ng-controller="manageAccountController">
-    <div class="ContentContainer ManageContentContainer">
-        <div class="ContentHeader">
+<div ng-controller="manageAccountController">
+    <div class="content-container">
+        <div class="content-header">
             <h1 style="color: white;">Business Info</h1>
         </div>
-        <div class="ContentBody">
+        <div class="content-body">
             <md-content class="md-no-momentum" layout-margin>
                 <div layout="row" class="business-info-container">
                     <div flex="20">
@@ -36,66 +36,79 @@
             </md-content>
         </div>
     </div>
-
-    <div class="ContentContainer ManageContentContainer">
-        <div class="ContentHeader">
+    <div class="spacer"></div>
+    <div class="content-container">
+        <div class="content-header">
             <h1 style="color: white;">Menu</h1>
         </div>
-        <div class="ContentBody">
-            <md-content class="md-no-momentum" layout-margin>
-                <form  action="/Manage/SaveMenu" method="post" name="menuForm" enctype="multipart/form-data">
-                    <md-input-container class="md-block" layout-align="center center">
-                        <label>Menu URL</label>
-                        <input type="text" ng-change="menuUrlChange()" ng-model="menu.url" Name="menuUrl" ng-required="menu.fileName == null"/>
-                        @Html.Partial("_AngularMessages", "form.MenuUrl")
-                    </md-input-container>
-                    <h3>- OR -</h3>
-                        <input id="fileInput" accept=".pdf" type="file" name="file" ng-hide="true">
-                        <md-input-container class="md-block" layout-align="center center">
-                            <label>Upload PDF</label>
-                            <input type="text" ng-model="menu.fileName" disabled>
-                            <md-button id="uploadButton" ng-click="selectFile()" class="attach-file-button md-fab md-mini">
-                                <i class="material-icons">attach_file</i>
-                            </md-button>
-                        </md-input-container>
-                    <md-input-container class="md-block">
-                        <md-button type="submit" class="ManageActionButton Button md-primary">Save Menu</md-button>
-                    </md-input-container>
-                </form>
-            </md-content>
-        </div>
+        <div class="content-body">
+            <div layout="row">
+                <div flex="10"></div>
+                <div flex="80">
+                    <md-content class="md-no-momentum" layout-margin>
+                        <form action="/Manage/SaveMenu" method="post" name="menuForm" enctype="multipart/form-data">
+                            <p ng-show="model.MenuUrl == ''" class="red-text">You have no menu buddy</p>
+                            <p ng-show="model.MenuUrl !== ''"><a href="{{model.MenuUrl}}" target="_blank">View Menu</a></p>
+                            <md-input-container class="md-block left-align-text" layout-align="center center">
+                                <label>Menu URL</label>
+                                <input type="text" ng-change="menuUrlChange()" ng-model="menu.url" Name="MenuUrl" ng-required="menu.fileName == '' || menu.fileName == null"/>
+                                @Html.Partial("_AngularMessages", "menuForm.MenuUrl")
+                            </md-input-container>
+                            <h3>- OR -</h3>
+                            <input id="fileInput" accept=".pdf" type="file" name="file" ng-hide="true">
+                            <md-input-container class="md-block" layout-align="center center">
+                                <label>Upload PDF</label>
+                                <input type="text" ng-model="menu.fileName" disabled>
+                                <md-button id="uploadButton" ng-click="selectFile()" class="attach-file-button md-fab md-mini">
+                                    <i class="material-icons">attach_file</i>
+                                </md-button>
+                            </md-input-container>
+                            <md-input-container class="md-block">
+                                <md-button type="submit" ng-disabled="!menuForm.$valid" class="ManageActionButton Button md-primary">Save Menu</md-button>
+                            </md-input-container>
+                        </form>
+                    </md-content>
+                </div>
+                <div flex="10"></div>
+            </div>
+        </div>   
     </div>
-                
-    <div class="ContentContainer ManageContentContainer">
-        <div class="ContentHeader">
+    <div class="spacer"></div>
+    <div class="content-container">
+        <div class="content-header">
             <h1 style="color: white;">Change Password</h1>
         </div>
-        <div class="ContentBody">
-            <form action="/Manage/ChangePassword" method="post" name="changePasswordForm">
-                <md-content class="md-no-momentum" layout-margin>
-                    <md-input-container class="md-block" layout-align="center center">
-                        <label>Old password</label>
-                        <input type="password" ng-model="changePasswordModel.OldPassword" Name="OldPassword" ng-required="true" ng-minlength="4" ng-maxlength="20"/>
-                        @Html.Partial("_AngularMessages", "form.OldPassword")
-                    </md-input-container>
-                    <md-input-container class="md-block" layout-align="center center">
-                        <label>New password</label>
-                        <input type="password" ng-model="changePasswordModel.NewPassword" ng-model-options="{allowInvalid: true}" match="changePasswordModel.ConfirmPassword" Name="NewPassword" ng-required="true" ng-minlength="4" ng-maxlength="20"/>
-                        @Html.Partial("_AngularMessages", "form.NewPassword")
-                    </md-input-container> 
-                    <md-input-container class="md-block" layout-align="center center">
-                        <label>Confirm password</label>
-                        <input type="password" ng-model="changePasswordModel.ConfirmPassword" ng-model-options="{allowInvalid: true}" match="changePasswordModel.NewPassword" Name="ConfirmPassword" ng-required="true" ng-minlength="4" ng-maxlength="20"/>
-                        @Html.Partial("_AngularMessages", "form.ConfirmPassword")
-                    </md-input-container>
-                    <md-input-container class="md-block">
-                        <md-button ng-disabled="!changePasswordForm.$valid" ng-click="changePassword()" class="ManageActionButton Button md-primary">Change Password</md-button>
-                    </md-input-container>
-                </md-content>
-            </form>
+        <div class="content-body">
+            <div layout="row">
+                <div flex="10"></div>
+                <div flex="80">
+                    <md-content class="md-no-momentum" layout-margin>
+                        <form action="/Manage/ChangePassword" method="post" name="changePasswordForm">
+                            <md-input-container class="md-block left-align-text" layout-align="center center">
+                                <label>Old password</label>
+                                <input type="password" ng-model="changePasswordModel.OldPassword" Name="OldPassword" ng-required="true" ng-minlength="4" ng-maxlength="20"/>
+                                @Html.Partial("_AngularMessages", "changePasswordForm.OldPassword")
+                            </md-input-container>
+                            <md-input-container class="md-block left-align-text" layout-align="center center">
+                                <label>New password</label>
+                                <input type="password" ng-model="changePasswordModel.NewPassword" ng-model-options="{allowInvalid: true}" match="changePasswordModel.ConfirmPassword" Name="NewPassword" ng-required="true" ng-minlength="4" ng-maxlength="20"/>
+                                @Html.Partial("_AngularMessages", "changePasswordForm.NewPassword")
+                            </md-input-container>
+                            <md-input-container class="md-block left-align-text" layout-align="center center">
+                                <label>Confirm password</label>
+                                <input type="password" ng-model="changePasswordModel.ConfirmPassword" ng-model-options="{allowInvalid: true}" match="changePasswordModel.NewPassword" Name="ConfirmPassword" ng-required="true" ng-minlength="4" ng-maxlength="20"/>
+                                @Html.Partial("_AngularMessages", "changePasswordForm.ConfirmPassword")
+                            </md-input-container>
+                            <md-input-container class="md-block">
+                                <md-button ng-disabled="!changePasswordForm.$valid" ng-click="changePassword()" class="ManageActionButton Button md-primary">Change Password</md-button>
+                            </md-input-container>
+                        </form>
+                    </md-content>
+                </div>
+                <div flex="10"></div>
+            </div>
         </div>
     </div>
-
     <script type="text/javascript">
         @{
             var data = new
@@ -103,7 +116,6 @@
                 Model
             };
         }
-
         window.simplecoupons.state['index.model'] = '@Html.Raw(data.ToJson())';
     </script>
 </div>
