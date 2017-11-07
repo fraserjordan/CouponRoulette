@@ -50,7 +50,7 @@ namespace Business.Tests
                 IWebElement businessAddressInput = driver.FindElement(By.Id("BusinessAddress"));
                 businessAddressInput.SendKeys("burger");
 
-                IWebElement submitButton = driver.FindElement(By.ClassName("ManageActionButton"));
+                IWebElement submitButton = driver.FindElement(By.ClassName("action-button"));
                 Assert.AreEqual(true, submitButton.Enabled);
             }
         }
