@@ -3,10 +3,8 @@
 @{
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
-<script src="https://apis.google.com/js/platform.js" async defer></script>
-<meta name="google-signin-client_id" content="363572496373-tn42gftgl916gglv7de1mv57tbssuq6h.apps.googleusercontent.com">
 
-<title>Login - Simple Coupons></title>
+<title>Login</title>
 
 <form method="POST" action="/Account/Login" name="form" ng-controller="loginController">
     <div class="content-container login-content-container">
@@ -32,7 +30,7 @@
                             <md-checkbox tabindex="3" name="RememberMe" ng-disabled="isSubmitting" ng-model="rememberMe" ng-change="SwitchRememberMe()">remember me?</md-checkbox>
                         </md-input-container>
                         <md-input-container class="md-block left-align-text" layout-align="center center">
-                            <md-button tabindex="4" ng-disabled="!form.$valid" ng-click="login()" class="ManageActionButton Button md-primary">Login</md-button>
+                            <md-button tabindex="4" ng-disabled="!form.$valid" ng-click="login()" class="action-button button md-primary">Login</md-button>
                         </md-input-container>
                         <label class="ForgotPasswordLinkContainer"><a tabindex="5" href="/Account/ForgotPassword">Forgot password?</a></label>
                     </md-content>

@@ -5,7 +5,7 @@
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<title>Register - Simple Coupons</title>
+<title>Register</title>
 
 <form action="/Account/Register" ng-controller="registerController" method="post" name="form">
     <div class="content-container RegisterContentContainer">
@@ -45,7 +45,7 @@
                             <input type="hidden" name="PlaceId" value="{{business.placeId}}"/>
                         </md-input-container>
                         <md-input-container class="md-block" layout-align="center center">
-                            <md-button class="ManageActionButton Button md-primary" ng-click="register(form)" ng-disabled="!form.$valid || disableSubmit">register</md-button>
+                            <md-button class="action-button button md-primary" ng-click="register(form)" ng-disabled="!form.$valid || disableSubmit">register</md-button>
                         </md-input-container>
                     </md-content>
                 </div>

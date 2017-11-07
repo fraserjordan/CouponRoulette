@@ -32,16 +32,16 @@
                 <div aria-busy="false" aria-label="Loading, please wait." role="progressbar"></div>
             </header>
             <div style="text-align: center;">
-                <a class="GreyLink SiteTitle" href="/Home/Index">Coupon Roulette</a>
+                <a class="site-title" href="/Home/Index">Coupon Roulette</a>
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
         <div style="width: 100%;" flex="80">
             @RenderBody()
         </div>
-        <div class="footer">
+        <footer>
             <label>© <a href="/Home/Index">Simple Coupons 2017</a></label> - <label><a href="/Home/Contact">Contact us</a></label>
-        </div>
+        </footer>
     </div>
 </body>
 </html>

@@ -286,8 +286,6 @@ D:\WebSite\Business\bin\ru\System.Spatial.resources.dll
 D:\WebSite\Business\bin\zh-Hans\System.Spatial.resources.dll
 D:\WebSite\Business\bin\zh-Hant\System.Spatial.resources.dll
 D:\GIT\CouponRoullette\Business\obj\Debug\Business.csprojResolveAssemblyReference.cache
-D:\GIT\CouponRoullette\Business\obj\Debug\Business.Migrations.UpdateDatabase.resources
-D:\GIT\CouponRoullette\Business\obj\Debug\Business.csproj.GenerateResource.Cache
 D:\GIT\CouponRoullette\Business\obj\Debug\Business.csproj.CoreCompileInputs.cache
 D:\GIT\CouponRoullette\Business\obj\Debug\Business.dll
 D:\GIT\CouponRoullette\Business\obj\Debug\Business.pdb

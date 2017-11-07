@@ -31,12 +31,12 @@
                     </div>
                 </div>
                 <md-input-container class="md-block">
-                    <md-button ng-click="updateInfoFromGoogle()" class="ManageActionButton Button md-primary">Update Info from Google</md-button>
+                    <md-button ng-click="updateInfoFromGoogle()" class="action-button button md-primary">Update Info from Google</md-button>
                 </md-input-container>
             </md-content>
         </div>
     </div>
-    <div class="spacer"></div>
+    <div class="md-spacer"></div>
     <div class="content-container">
         <div class="content-header">
             <h1 style="color: white;">Menu</h1>
@@ -64,7 +64,7 @@
                                 </md-button>
                             </md-input-container>
                             <md-input-container class="md-block">
-                                <md-button type="submit" ng-disabled="!menuForm.$valid" class="ManageActionButton Button md-primary">Save Menu</md-button>
+                                <md-button type="submit" ng-disabled="!menuForm.$valid" class="action-button button md-primary">Save Menu</md-button>
                             </md-input-container>
                         </form>
                     </md-content>
@@ -73,7 +73,7 @@
             </div>
         </div>   
     </div>
-    <div class="spacer"></div>
+    <div class="md-spacer"></div>
     <div class="content-container">
         <div class="content-header">
             <h1 style="color: white;">Change Password</h1>
@@ -100,7 +100,7 @@
                                 @Html.Partial("_AngularMessages", "changePasswordForm.ConfirmPassword")
                             </md-input-container>
                             <md-input-container class="md-block">
-                                <md-button ng-disabled="!changePasswordForm.$valid" ng-click="changePassword()" class="ManageActionButton Button md-primary">Change Password</md-button>
+                                <md-button ng-disabled="!changePasswordForm.$valid" ng-click="changePassword()" class="action-button button md-primary">Change Password</md-button>
                             </md-input-container>
                         </form>
                     </md-content>

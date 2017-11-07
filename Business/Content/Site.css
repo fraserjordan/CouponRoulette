@@ -1,48 +1,19 @@
 ﻿
-/*LAYOUT PAGE**/
-
-/*CHANGE AUTOFILL BACKGROUND COLOR*/
-input:-webkit-autofill {
-    -webkit-box-shadow: 0 0 0px 1000px white inset;
-}
-
-.navbar {
-  width: 100%;
-  display: inline-block;
-  background-color: #4CAF50;
-  box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.26);
-  margin-bottom: 50px;
-}
-h1 {
-  color: #8BC34A;
-}
-h2 {
-  color: #8BC34A;
-}
-h3 {
-  color: #8BC34A;
-}
-h4 {
-  color: #8BC34A;
-}
-h5 {
-  color: #8BC34A;
-}
-h6 {
-  color: #8BC34A;
-}
-body {
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  background-color: #E0E0E0;
-  text-align: center;
-  height: 100%;
-  padding-bottom: 50px !important;
-}
+/*#region LAYOUT*/
 html {
-  background-color: #E0E0E0;
-  height: 100%;
+    background-color: #E0E0E0;
+    height: 100%;
 }
-.footer {
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #E0E0E0;
+    text-align: center;
+    height: 100%;
+    padding-bottom: 50px !important;
+}
+
+footer {
     padding-top: 4px;
     color: white;
     width: 100%;
@@ -52,345 +23,54 @@ html {
     position: fixed;
 }
 
-.footer a {
+footer a {
     color: white !important;
 }
 
-.AccountButton {
-    width: 100px;
-    background-color: white !important;
-    color: #4CAF50 !important;
+h1, h2, h3, h4, h5, h6{
+    color: #8BC34A;
 }
 
-.Coupons {
-  height: auto;
-  display: block;
-  max-width: 600px;
-}
-.CouponControls {
-  margin-top: 35px;
-  margin-bottom: 20px;
-  text-align: center;
-}
-.CouponTable {
+.navbar {
   width: 100%;
-  padding: 0 10px 0 10px;
-}
-.CouponCardLink {
-  text-align: center;
-  padding-top: 13px;
-  height: 35px;
-}
-md-card md-card-actions {
-    margin: 0 !important;
-}
-md-toast .md-toast-content {
-    height: auto !important;
-    width: 100%;
-    color: black;
-    background-color: #8BC34A;
-}
-.stop-scrolling {
-  height: 100%;
-  overflow: hidden;
-}
-.MinimizeDiv {
-    height: 20px;
-}
-.CouponCard {
-    margin-bottom: 20px;
-    max-width: 1200px;
-    width: 100%;
-    height: 226px;
-    -webkit-transition: height 0.5s; 
-    -moz-transition: height 0.5s; 
-    -ms-transition: height 0.5s; 
-    -o-transition: height 0.5s; 
-    transition: height 0.5s;  
-}
-.ReviewSperator {
-    height: 50px;
-    width: 1px;
-    background-color: grey;
-    float: right;
-    margin-top: 15px;
-    margin-right: 10px;
-}
-.RatingContainer {
-    float: right;
-    margin-right: 20px;
-}
-.RatingNumber {
-    display: block;
-    color: #EB6E00;
-    font-size: 35pt;
+  display: inline-block;
+  background-color: #4CAF50;
+  box-shadow: 0 20px 15px 0 rgba(0, 0, 0, 0.26);
+  margin-bottom: 50px;
+    padding-bottom: 10px;
 }
 
-span.stars, span.stars>* {
-    display: inline-block;
-    background: url(/Content/Images/stars.png) 0 -16px repeat-x;
-    width: 80px;
-    height: 16px;
-}
-span.stars>*{
-    max-width:80px;
-    background-position: 0 0;
-}
-.MaxHeight {
-    height: 100%;
-}
-.MdTitle {
-    margin: 20px;
-    font-size: 18pt;
-}
-.NoPadding {
-  padding: 0;
-}
-.AccountCouponCard {
-  max-width: 600px;
-  width: auto;
-  height: 150px;
-}
-.BusinessCouponCard {
-  max-width: 600px;
-  width: auto;
-  height: 75px;
-}
-.SearchButton {
-  margin-bottom: 20px !important;
-  margin-top: 20px !important;
-  width: 80%;
-}
-.CardNavButton {
-  margin: 0 30px 0 30px;
-}
-.SearchInputContainer {
-  margin-right: 50px;
-  margin-left: 50px;
-  margin-bottom: 5px !important;
-  margin-top: 15px !important;
-}
-.Fixed {
-  position: fixed;
-}
-.FloatToTop {
-  -webkit-transform: translate3d(-100%, 0, 0);
-  -o-transform: translate3d(-100%, 0, 0);
-  -moz-transform: translate3d(-100%, 0, 0);
-  -ms-transform: translate3d(-100%, 0, 0);
-}
-.CustomerSearchIconContainer {
-  width: 100%;
-  height: 25px;
-  margin-top: 15px;
-}
-.BusinessCouponTitle {
-  padding: 10px 16px 16px;
-}
 .main {
   min-height: 700px;
     padding-bottom: 50px;
 }
-.NoDots {
-  margin-top: 0;
-  list-style-type: none;
-  padding-left: 0;
-  display: inline-block;
-  width: 100%;
-}
-.GoogleMapDiv {
-  width: 300px;
-  height: 250px;
-}
-.MinWidth {
-    min-width: 200px;
-}
-.Circle {
-    background-color: #4CAF50;
-    width: 40px;
-    height: 40px;
-    min-width: 0 !important;
-    float: left;
-    border-radius: 40px;
-}
-.CouponListButton {
-  float: right;
-  margin: 0;
-  margin-bottom: 2% !important;
-  margin-right: 10%;
-}
-.CouponListTitle {
-  float: left;
-  margin: 0;
-  margin-left: 10%;
-  margin-top: 2%;
-}
-.pac-icon {
-  height: 0 !important;
-  width: 0 !important;
-}
-.pac-item {
-  border-top: 0 !important;
-}
-@media (max-width: 600px) {
-    .previewDealActionText {
-        margin-top: 15px;
-        float: left;
-        margin: 15px;
-        width: 85%;
-        text-align: left;
-        font-size: 12pt;
-        margin-left: 50px;
-    }
-    .SiteTitle {
-        font-size: 38pt;
-    }
-}
-@media (max-width: 400px) {
-    .SiteTitle {
-        font-size: 30pt;
-    }
-}
-@media (min-width: 600px) {
-    .previewDealActionText {
-        margin-top: 15px;
-        float: left;
-        margin: 15px;
-        width: 85%;
-        text-align: left;
-        font-size: 18pt;
-        margin-left: 50px;
-    }
-    .SiteTitle {
-        font-size: 50pt;
-    }
-}
+/*#endregion LAYOUT*/
 
-.NotificationBorder {
-  height: 5px;
-  width: 100%;
-  background-color: green;
-  bottom: 0;
-  position: absolute;
+/*#region ACCOUNT PARTIAL*/
+.account-button {
+    background-color: white !important;
+    color: #4CAF50 !important;
+    width: 160px;
 }
-.Expand {
-  max-height: 400px;
+/*#endregion ACCOUNT PARTIAL*/
+
+/*#region GENERAL*/
+.site-title {
+    font-weight: bolder;
+    color: white;
 }
-.CouponTimeDiv {
-  float: left;
-  min-width: 35%;
-  padding: 5px 4px 5px 4px;
-  border: #E0E0E0 1px solid;
-  border-radius: 20px;
-  margin-left: 10%;
-  color: white;
+.md-spacer {
+    margin: 25px 0 25px 0;
 }
-.CreateCouponInputContainer {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+.sm--spacer {
+    margin: 12.5px 0 12.5px 0;
 }
-.CursorPointer {
-  cursor: pointer;
-  width: 24%;
-}
-.DialogDiv {
-  width: auto;
-  height: auto;
-  padding: 15px 5px 15px 5px;
-}
-.DialogInput {
-  width: 100%;
-  text-align: left;
-}
-.DialogButton {
-  width: 90%;
-  margin: 0 0 0 0 !important;
-}
-.AccountActions {
-  width: 80%;
-  height: 50px;
-  background-color: #388E3C;
-  display: inline-block;
-  box-shadow: 0 10px 15px 5px rgba(0, 0, 0, 0.26);
-}
-.Button {
-  background-color: #8BC34A !important;
-  color: white !important;
-}
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-  white-space: normal;
-}
-.FormContent {
-  display: inline-block;
-  text-align: center;
-  margin-top: 25px;
-  width: 100%;
-  height: 100%;
-}
-::-webkit-input-placeholder {
-  color: #A6A6A6;
-  font-size: 16px;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-weight: lighter;
-}
-:-moz-placeholder {
-  /* Firefox 18- */
-  color: #A6A6A6;
-  font-size: 16px;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-weight: lighter;
-}
-::-moz-placeholder {
-  /* Firefox 19+ */
-  color: #A6A6A6;
-  font-size: 16px;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-weight: lighter;
-}
-:-ms-input-placeholder {
-  color: #A6A6A6;
-  font-size: 16px;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
-  font-weight: lighter;
-}
-.NavbarTitle {
-  margin-bottom: 50px;
-}
-.navbarAccount {
-  padding: 20px 20px 0 0;
+.xs-spacer {
+    margin: 5px 0 5px 0;
 }
 .text-danger {
     color: #F44336;
 }
-.text-danger>ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-.SiteTitle {
-  font-weight: bolder;
-  color: white;
-}
-.FormSubmit {
-  margin: 25px 0 25px 100px;
-}
-
-.CardFormSectionHeader {
-    font-size: 26pt;
-    color: white;
-}
-
-.CardFormSectionHeaderContainer {
-    background-color: #4CAF50 !important;
-}
-
-/*#region GENERAL*/
-.spacer {
-    margin: 25px 0 25px 0;
-}
-
 .content-container {
     border-radius: 5px;
     width: 100%;
@@ -398,48 +78,34 @@ span.stars>*{
     max-height: 800px;
     margin: auto;
 }
-
 .content-header {
     background-color: #4CAF50;
     color: white;
     padding: 5px;
     text-align: center;
 }
-
 .content-body {
     background-color: white;
     padding: 15px 15px 15px 15px;
 }
-
 *:focus {
     outline: none !important;
 }
-
 .flip {
     transform: rotate(-180deg);
 }
-
-.FlexContainer {
-    height: 100%;
-    padding: 0;
-    margin: 0;
-    display: -webkit-box;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.FlexItem {
-    text-align: center;
-}
-
 .left-align-text {
     text-align: left;
 }
 .red-text {
     color: red;
+}
+.button {
+    background-color: #8BC34A !important;
+    color: white !important;
+}
+.light-green-background {
+    background-color: #8BC34A !important;
 }
 .green-background {
     background-color: #4CAF50 !important;
@@ -447,23 +113,36 @@ span.stars>*{
 .red-background {
     background-color: #F44336 !important;
 }
+.action-button {
+    width: 100%;
+    margin: 0 !important;
+}
+@media (max-width: 600px) {
+    .site-title {
+        font-size: 38pt;
+    }
+}
+
+@media (max-width: 400px) {
+    .site-title {
+        font-size: 30pt;
+    }
+}
+
+@media (min-width: 600px) {
+    .site-title {
+        font-size: 50pt;
+    }
+}
 /*#endregion GENERAL*/
 
 /*#region CONTACT PAGE*/
-.ContactCardContainer {
-    display: inline-block;
-    max-width: 400px;
+.business-location {
     width: 100%;
-    margin-top: 35px
+    height: 350px;
 }
-.ContactEmailBodyLabel{
-    color: rgba(0,0,0,0.26);
-    display: block; 
-    margin-bottom: 5px;
-    font-weight: 500;
-}
-.ContactEmailBodyTextArea {
-    border-color: rgba(0,0,0,0.26);
+.contact-button {
+    
 }
 
 /*#endregion CONTACT PAGE*/
@@ -497,18 +176,6 @@ span.stars>*{
 }
 /*#endregion*/
 
-/*#region SEARCH SHIT*/
-.SearchContainer {
-    float: right;
-    height: 50px;
-    width: 70%;
-}
-
-.SearchInput {
-    width: 50%;
-}
-/*#endregion*/
-
 /*#region LOGIN PAGE*/
 
 /*#endregion*/
@@ -517,47 +184,22 @@ span.stars>*{
 
 /*#endregion*/
 
-/*#region RESET PASSWORD PAGE*/
-.ResetPasswordFormContainer {
-    display: inline-block;
-    max-width: 300px;
-    width: 100%;
-}
-/*#endregion*/
-
-/*#region FORGOT PASSWORD PAGE*/
-.ForgotPasswordFormHeader {
-    font-size: 21pt;
-    color: white;
-}
-/*#endregion*/
-
 /*#region HOME PAGE*/
 .home-content-container {
      max-width: 980px;
 }
-.ActiveCouponTable {
-    width: 100%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-.CouponsContainer {
-    width: 100%;
-    max-width: 1200px;
-    display: inline-block;
-}
-.CreateCouponButton {
+.create-coupon-button {
     background-color: #8bc34a;
     cursor: pointer;
     width: 100%;
     height: 50px;
     padding: 10px 0 10px 0;
 }
-.CreateCouponButton h4 {
+.create-coupon-button h4 {
     margin: 0;
 }
 
-.CreateCouponButton:hover {
+.create-coupon-button:hover {
     background-color: #388e3c;
 }
 .search-coupon-container {
@@ -571,37 +213,29 @@ span.stars>*{
     font-weight: bolder;
     width: 100%;
 }
-.CouponActionsExpanderContainer {
-    cursor: pointer;
-}
-.CouponsActionDialogContainer {
-    padding: 15px;
-    max-width: 250px;
-}
-.Coupon:focus {
-    background-color: #E0E0E0;
-}
 .coupon-actions-toggle {
     cursor: pointer;
     height: 25px;
 }
 .coupon-actions {
     padding: 10px 15px 10px 15px;
-    border-top: #4CAF50 solid thin;
+    border-top: lightgray solid thin;
     width: 90%;
 }
 .coupon-action-dialog-button {
     width: 100%;
     margin: 0 !important;
+    min-width: 175px !important;
+}
+@media (max-width: 675px) {
+    .coupon-action-dialog-button {
+        font-size: 9pt !important;
+        min-width: 150px !important;
+    }
 }
 /*#endregion*/
 
 /*#region MANAGE*/
-.ManageActionButton {
-    width: 100%;
-    margin: 0 !important;
-}
-
 .business-info-container {
     text-align: left;
 }
@@ -609,45 +243,25 @@ span.stars>*{
     padding-top: 7px !important;
     background-color: #4caf50 !important;
 }
-/*#endregion*/
 
-/*#region CONFIRMATION MESSAGES*/
-.ConfirmationMessageCardBody {
-    padding: 15px 30px 15px 30px;
-    text-align: justify;
-}
-
-.ConfirmationMessageCard {
-    height: auto; 
-    max-width: 450px;
+@media (max-width: 450px) {
+    .business-info-container {
+        font-size: 10pt;
+    }
 }
 /*#endregion*/
 
-/*#region STYLE CLASSES*/
-.NoTopMargin {
-    margin-top: 0 !important;
+/*#region GOOGLE*/
+.pac-icon {
+    height: 0 !important;
+    width: 0 !important;
 }
-.NoLeftMargin {
-    margin-left: 0 !important;
+.pac-item {
+    border-top: 0 !important;
 }
-.NoRightMargin {
-    margin-right: 0 !important;
-}
-.NoBottomMargin {
-    margin-left: 0 !important;
-}
-.NoMargin {
-    margin: 0 !important;
-}
-.OneHundredPercentWidth {
-    width: 100% !important;
-}
-.CenterAlignText {
-    text-align: center !important;
-}
-/*#endregion*/
+/*#endregion GOOGLE*/
 
-
+/*CHANGE PLACEHOLDER TEXT COLOR*/
 ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
     font-family: Roboto, "Helvetica Neue", sans-serif;
     color: #C5C5C5;
@@ -660,4 +274,9 @@ span.stars>*{
 }
 :-moz-placeholder { /* Firefox 18- */
     color: #C5C5C5;
+}
+
+/*CHANGE AUTOFILL BACKGROUND COLOR*/
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;
 }

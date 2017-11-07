@@ -32,7 +32,6 @@ namespace Business
             //Create all maps
             config.CreateMap<BusinessInfo, BusinessInfoViewModel>();
             config.CreateMap<SavedCoupon, SavedCouponViewModel>();
-            config.CreateMap<AvailableCoupon, AvailableCouponViewModel>();
 
             Mapper.Initialize(config);
         }

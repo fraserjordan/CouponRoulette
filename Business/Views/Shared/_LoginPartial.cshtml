@@ -3,12 +3,12 @@
 <div>
     @if (Request.IsAuthenticated)
     {
-        <a id="ManageAccountLink" href="/Manage"><md-button class="AccountButton" style="margin-bottom: 10px;">account</md-button></a>
-        <a id="LogoffLink" href="/Account/Logoff"><md-button class="AccountButton" style="margin-bottom: 10px;">logoff</md-button></a>
+        <a id="ManageAccountLink" href="/Manage"><md-button class="account-button">account</md-button></a>
+        <a id="LogoffLink" href="/Account/Logoff"><md-button class="account-button">logoff</md-button></a>
     }
     else
     {
-        <a id="RegisterLink" href="/Account/Register"><md-button class="AccountButton" style="margin-bottom: 10px;">register</md-button></a>
-        <a id="LoginLink" href="/Account/Login"><md-button class="AccountButton" style="margin-bottom: 10px;">login</md-button></a>
+        <a id="RegisterLink" href="/Account/Register"><md-button class="account-button">register</md-button></a>
+        <a id="LoginLink" href="/Account/Login"><md-button class="account-button">login</md-button></a>
     }
 </div>

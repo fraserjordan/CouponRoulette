@@ -47,11 +47,6 @@ namespace Business.Controllers
             };
         }
 
-        public ActionResult ChangePassword()
-        {
-            return View();
-        }
-
         [HttpPost]
         public async Task<JsonResult> ChangePassword(ChangePasswordViewModel model)
         {

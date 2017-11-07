@@ -38,7 +38,7 @@
 
             var myLatLng = { lat: -36.897295, lng: 174.823737 };
 
-            map = new google.maps.Map(document.getElementById("BusinessLocation"), {
+            map = new google.maps.Map(document.getElementsByClassName("business-location")[0], {
                 center: myLatLng,
                 zoom: 15,
                 draggable: false,

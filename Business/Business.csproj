@@ -195,18 +195,11 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Helpers\ObjectExtensions.cs" />
-    <Compile Include="Migrations\201612291105496_UpdateDatabase.cs" />
-    <Compile Include="Migrations\201612291105496_UpdateDatabase.Designer.cs">
-      <DependentUpon>201612291105496_UpdateDatabase.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\User.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\BasicEmailModel.cs" />
     <Compile Include="Models\BusinessInfoViewModel.cs" />
-    <Compile Include="Models\AvailableCouponViewModel.cs" />
-    <Compile Include="Models\EditCouponViewModel.cs" />
+    <Compile Include="Models\ChangePasswordViewModel.cs" />
     <Compile Include="Models\IndexViewModel.cs" />
-    <Compile Include="Models\ManageViewModels.cs" />
     <Compile Include="Models\SavedCouponViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -398,7 +391,6 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
     <Content Include="Views\Account\ConfirmEmail.cshtml" />
     <Content Include="Views\Account\ForgotPassword.cshtml" />
     <Content Include="Views\Account\ForgotPasswordConfirmation.cshtml" />
@@ -406,12 +398,7 @@
     <Content Include="Views\Account\Register.cshtml" />
     <Content Include="Views\Account\ResetPassword.cshtml" />
     <Content Include="Views\Account\ResetPasswordConfirmation.cshtml" />
-    <Content Include="Views\Manage\AddPhoneNumber.cshtml" />
-    <Content Include="Views\Manage\ChangePassword.cshtml" />
     <Content Include="Views\Manage\Index.cshtml" />
-    <Content Include="Views\Manage\ManageLogins.cshtml" />
-    <Content Include="Views\Manage\SetPassword.cshtml" />
-    <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Scripts\jquery-1.10.2.min.map" />
@@ -419,16 +406,12 @@
     <Content Include="Views\Shared\_DefaultAngularMessages.cshtml" />
     <Content Include="Views\Coupon\Create.cshtml" />
     <Content Include="Views\Account\RequireEmailVerification.cshtml" />
-    <Content Include="Views\Error\NotAddressVerified.cshtml" />
     <Content Include="Views\Account\RequireAddressVerification.cshtml" />
     <Content Include="Views\Account\VerifyPhysicalAddress.cshtml" />
     <Content Include="Views\Account\VerifiedPhysicalAddress.cshtml" />
-    <Content Include="Views\Shared\_EmailLayout.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="bin\" />
-    <Folder Include="Enums\" />
-    <Folder Include="Views\Base\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -446,11 +429,6 @@
       <Project>{8ba3b8c1-2477-496e-95ea-96e39690f42a}</Project>
       <Name>Services</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="Migrations\201612291105496_UpdateDatabase.resx">
-      <DependentUpon>201612291105496_UpdateDatabase.cs</DependentUpon>
-    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
